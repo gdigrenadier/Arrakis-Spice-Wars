@@ -19,5 +19,5 @@ PC
  # CREDITS
  
   - Major thanks to Hyasabaru for making the original Dune II mod for Rusted Warfare.
-  - Westwood Studio's for making the original Dune games.
+  - Westwood Studios for making the original Dune games.
   - Luke for creating Rusted Warfare.
