@@ -1,0 +1,149 @@
+
+[core]
+@copyFromSection: template_consYardDesc
+class: CustomUnitMetadata
+tags: building, consYard, capturable, mainBuilding, 2x2
+#showInEditor: true
+#overrideAndReplace: commandCenter
+
+price: 0
+maxHp: 400
+techLevel: 1
+buildSpeed: 2s
+
+radius: 25
+displayRadius: 25
+isBio: false
+isBuilding: true
+
+#selfBuildRate:2s
+#selfRegenRate:0.005
+
+footprint: -1,-1,0,0
+constructionFootprint: -1,-1,0,0
+buildingToFootprintOffsetX:0
+buildingToFootprintOffsetY:0
+
+nanoRange: 9999
+
+energyMax: 2
+startEnergyAtZero: true
+
+
+[hiddenAction_onCreate]
+addResources: IGNORE
+
+[action_sell]
+isVisible: false
+spawnUnits: IGNORE
+
+[placementRule_Main]
+@copyFrom_skipThisSection: true
+
+[placementRule_1x1]
+@copyFrom_skipThisSection: true
+
+[placementRule_2x2]
+@copyFrom_skipThisSection: true
+
+[placementRule_3x2]
+@copyFrom_skipThisSection: true
+
+[placementRule_3x3]
+@copyFrom_skipThisSection: true
+
+#========== Faction Info ==========#
+
+[action_houseAtreides]
+@copyFromSection: template_houseAtreidesDesc
+pos: -1
+buildSpeed: 0s
+isVisible: if self.globalTeamTags(includes="houseAtreidesMod")
+isActive: false
+unitShownInUI: NONE
+displayType: infoOnlyNoBox
+
+iconImage: SHARED:blank.png
+iconExtraImage: ROOT:Data/Images/houseAtreides.png
+iconExtraColor: #FFFFFFFF
+onlyOneUnitAtATime: true
+isAlsoViewableByAllies: true
+isAlsoViewableByEnemies: true
+
+[action_houseOrdos]
+@copyFromSection: action_houseAtreides, template_houseOrdosDesc
+isVisible: if self.globalTeamTags(includes="houseOrdosMod")
+
+iconExtraImage: ROOT:Data/Images/houseOrdos.png
+
+[action_houseHarkonnen]
+@copyFromSection: action_houseAtreides, template_houseHarkonnenDesc
+isVisible: if self.globalTeamTags(includes="houseHarkonnenMod")
+iconExtraImage: ROOT:Data/Images/houseHarkonnen.png
+
+[action_houseSardaukar]
+@copyFromSection: action_houseAtreides, template_houseSardaukarDesc
+isVisible: if self.globalTeamTags(includes="houseSardaukarMod")
+iconExtraImage: ROOT:Data/Images/houseSardaukar.png
+
+#============ Build Templates ==============#
+
+[template_actionQueueBuilding]
+playSoundToPlayerOnQueue: ROOT:Data/soundFx/click.ogg:0.8
+isLocked: if self.energyIncludingQueued(greaterThan=1)
+isLockedAlt2: if not self.resource(type="Power", greaterThan=0)
+unitShownInUI: ${target}
+ai_considerSameAsBuilding: ${target}
+isVisible: if not self.hasFlag(id=${flagId})
+addResources: setFlag=${flagId}, energy=2, readyBuilding=1
+textAddUnitName: ${target}
+descriptionAddFromUnit: ${target}
+pos: ${flagId}
+allowMultipleInQueue: false
+
+[template_placeBuilding]
+isGuiBlinking: true
+price: readyBuilding=1
+forceNano: true
+name: ${target}
+isVisible: if self.hasFlag(id=${flagId})
+addResources: unsetFlag=${flagId}, energy=-2
+pos: ${flagId}
+
+[resource_readyBuilding]
+hidden:true
+
+#============ End of Build Templates ==============#
+
+[graphics]
+imageScale: 1.25
+total_frames: 3
+image: main.png
+icon_build: ROOT:Data/Images/Icons/icon_constyard.png
+image_back: ROOT:Data/Images/back_2x2.png
+whenBeingBuiltMakeTransparentTill:0
+showEnergyBar: false
+animation_idle_start: 1
+animation_idle_end: 2
+animation_idle_speed: 32
+image_turret: NONE
+image_shadow: NONE
+shadowOffsetX:1
+shadowOffsetY:1
+
+[attack]
+isMelee: true
+canAttack: false
+canAttackFlyingUnits: false
+canAttackLandUnits: true
+canAttackUnderwaterUnits: false
+isFixedFiring: true
+maxAttackRange: 0
+shootDelay: 5s
+
+[ai]
+useAsBuilder: true
+maxEachBase:1
+maxGlobal: 2
+buildPriority: 0.1
+noneInBaseExtraPriority: 0.9

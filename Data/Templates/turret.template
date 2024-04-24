@@ -1,0 +1,49 @@
+
+[core]
+copyFrom: building.template, strings.template
+fogOfWarSightRange:5
+tags: 1x1, turret, building
+buildSpeed: 0s
+selfBuildRate: 1.6s
+effectOnDeath:CUSTOM:explodeBuilding2
+
+[hiddenAction_lowHPSmokeFire2]
+@copyFrom_skipThisSection: true
+
+[placementRule_Main]
+searchDistance: 38
+
+[placementRule_1x1]
+searchDistance: 26
+
+[placementRule_2x2]
+searchDistance: 35
+
+[placementRule_3x2]
+searchDistance: 45
+
+[placementRule_3x3]
+searchDistance: 48
+
+[effect_explodeBuilding2_2]
+@copyFrom_skipThisSection: true
+
+[effect_explodeBuilding2_3]
+@copyFrom_skipThisSection: true
+
+[effect_explodeBuilding2_4]
+@copyFrom_skipThisSection: true
+
+[effect_explodeBuilding2_5]
+@copyFrom_skipThisSection: true
+
+[graphics]
+image_wreak:ROOT:Data/Images/wreak_1x1.png
+showQueueBar: false
+
+[ai]
+buildPriority: 0.12
+recommendedInEachBaseNum: 5
+recommendedInEachBasePriorityIfUnmet: 0.24
+noneInBaseExtraPriority:0.5
+maxEachBase: 8

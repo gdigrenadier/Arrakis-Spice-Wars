@@ -1,0 +1,7 @@
+
+[core]
+soundOnMoveOrder: ROOT:Data/Voices/vehvoice2.wav, ROOT:Data/Voices/vehvoice7.wav, ROOT:Data/Voices/vehvoice8.wav, ROOT:Data/Voices/vehvoice9.wav, ROOT:Data/Voices/vehvoice10.wav, ROOT:Data/Voices/vehvoice11.wav
+
+soundOnNewSelection:ROOT:Data/Voices/vehvoice.wav, ROOT:Data/Voices/vehvoice3.wav, ROOT:Data/Voices/vehvoice4.wav, ROOT:Data/Voices/vehvoice5.wav, ROOT:Data/Voices/vehvoice6.wav
+
+soundOnAttackOrder: ROOT:Data/Voices/vehvoice2.wav, ROOT:Data/Voices/vehvoice7.wav, ROOT:Data/Voices/vehvoice8.wav, ROOT:Data/Voices/vehvoice9.wav, ROOT:Data/Voices/vehvoice10.wav, ROOT:Data/Voices/vehvoice11.wav

@@ -1,0 +1,28 @@
+
+#Expansion Guide by Hyasabaru
+
+I only made this if someone would make their own Expansion for this Mod.
+
+Here's a list of Global Tags that would needed for the Activator to Bond with the Main Mod:
+
+#Activators
+
+"customExpansion" - Custom Expansion 1
+"customExpansion2" - Custom Expansion 2
+"customExpansion3" - Custom Expansion 3
+"miniExpansion" - A mini expansion that only contains few features, also Special Like Zombie Faction (Just an Example lol)
+
+#Skipping Tags
+#NOTE: It doesn't make any since if you add Prev Actions as it always trigger it
+
+"skipSelection" - Used to Skip Custom 1
+"skipSelection2" - Used to Skip Custom 2
+"skipSelection3" - Used to Skip Custom 3
+
+#Miscellaneous but still useful
+
+"hideAtreidesFaction" - Hides Atreides Faction
+"hideOrdosFaction" - Hides Ordos Faction
+"hideHarkonnenFaction" - Hides Harkonnen Faction
+
+Alright! Thanks for Reading (^_^ )

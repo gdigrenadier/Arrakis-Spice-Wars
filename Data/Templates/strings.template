@@ -1,0 +1,789 @@
+
+#English Set by Hyasabaru & GDI Grenadier
+#Russian Set by Pepegeniym 
+
+#=====Buildings=====#
+
+[template_consYardDesc]
+displayText: Construction Yard
+displayDescription: -A Construction Yard is required to build any new structures.\n-It contains all materials required for building structures on Dune.
+displayText_ru: Стротельная площадка
+displayDescription_ru: -Для постройки любых новых сооружений требуется Строительная площадка.\n-В ней есть все материалы, необходимые для строительства построек на Дюне.
+
+[template_atreidesConsYardDesc]
+displayText: Construction Yard
+displayDescription: [Atreides]\n-A Construction Yard is required to build any new structures.\n-It contains all materials required for building structures on Dune.
+displayText_ru: Стротельная площадка
+displayDescription_ru: [Атриды]\n-Для постройки любых новых сооружений требуется Строительная площадка.\n-В ней есть все материалы, необходимые для строительства построек на Дюне.
+
+[template_ordosConsYardDesc]
+displayText: Construction Yard
+displayDescription: [Ordos]\n-A Construction Yard is required to build any new structures.\n-It contains all materials required for building structures on Dune.
+displayText_ru: Стротельная площадка
+displayDescription_ru: [Ордосы]\n-Для постройки любых новых сооружений требуется Строительная площадка.\n-В ней есть все материалы, необходимые для строительства построек на Дюне.
+
+[template_harkonnenConsYardDesc]
+displayText: Construction Yard
+displayDescription: [Harkonnen]\n-A Construction Yard is required to build any new structures.\n-It contains all materials required for building structures on Dune.
+displayText_ru: Стротельная площадка
+displayDescription_ru: [Харконены]\n-Для постройки любых новых сооружений требуется Строительная площадка.\n-В ней есть все материалы, необходимые для строительства построек на Дюне.
+
+[template_sardaukarConsYardDesc]
+displayText: Construction Yard
+displayDescription: [Sardaukar]\n-A Construction Yard is required to build any new structures.\n-It contains all materials required for building structures on Dune.
+displayText_ru: Стротельная площадка
+displayDescription_ru: [Сардоукар]\n-Для постройки любых новых сооружений требуется Строительная площадка.\n-В ней есть все материалы, необходимые для строительства построек на Дюне.
+
+[template_slabDesc]
+displayText: Slab
+displayDescription: -Slabs may serve as roadways and make up the foundations that are required before erecting structures.\n-Slabs cannot be repaired if damaged, and must be replaced or abandoned.
+displayText_ru: Плита
+displayDescription_ru: -Плиты могут служить проезжей частью и составлять фундамент, который требуется перед возведением сооружений.\n-Плиты нельзя ремонтировать, если они повреждены, и их необходимо заменять.
+
+[template_slabsDesc]
+@copyFromSection: template_slabDesc
+displayText: Slabs
+displayText_ru: Плиты
+
+[template_sgenDesc]
+displayText: Stealth Generator
+displayDescription: -Stealth Generators are capable of giving buildings stealth within its range.\n-Vehicles and Infantry cannot be stealthed.
+displayText_ru: Стелс генератор
+displayDescription_ru: -Стелс генераторы способны сделать здания невидимыми в пределах своего радиуса действия.\n-Транспортные средства и пехоту нельзя скрыть.
+
+[template_windtrapDesc]
+displayText: Windtrap
+displayDescription: -The Wind Traps provide power and water to an installation.\n+100 Power
+displayText_ru:Ветряк
+displayDescription_ru: - Ветряки обеспечивают электроэнергией и водой установку.\n+100 Power
+
+[template_advwindtrapDesc]
+displayText: Advanced Windtrap
+displayDescription: -The Advanced Wind Traps provide more power and water to an installation than a normal Wind Trap.\n+300 Power
+displayText_ru: Улучшеный ветряк
+displayDescription_ru: - улучшеные ветряки обеспечивают установку большей мощностью и водой, чем обычный Ветряк.\n+300 Power.
+
+[template_refineryDesc]
+displayText: Spice Refinery
+displayDescription: -The Refinery is the basis of all spice production on Dune.\n-Includes 1 Harvester
+displayText_ru: Завод по переработке Спайса
+displayDescription_ru: -Очистительный завод является основой производства всего Спайса на Дюне.\n-Включает в себя 1 Харвестер.
+
+[template_barracksDesc]
+displayText: Barracks
+displayDescription: -Barracks are required to produce and train Light Infantry units.
+displayText_ru: Казармы
+displayDescription_ru: - Казармы необходимы для производства и обучения подразделений легкой пехоты.
+
+[template_trooperWORDesc]
+displayText: Wor
+displayDescription: -The WOR facility produces Heavy Trooper units by providing advanced training and weaponry.
+displayText_ru: Продвинутые казармы
+displayDescription_ru: -Продвинутые казармы производит юниты Тяжелая пехота, предоставляя продвинутую подготовку и вооружение.
+
+[template_outpostDesc]
+displayText: Outpost
+displayDescription: -The radar capabilities of an Outpost are used for detecting incoming enemies.\n-An Outpost is required before any new military units can be produced.
+displayText_ru: Аванпост
+displayDescription_ru: -Возможности радара аванпоста используются для обнаружения приближающихся врагов.\n-Аванпост необходим, прежде чем можно будет производить какие-либо новые воинские части.
+
+[template_siloDesc]
+displayText: Silo
+displayDescription: -Silos hold harvested spice.\n-When the Refinery completes the conversion process, it automatically distributes the spice evenly among the silos. 
+displayText_ru: Хранилище Спайса
+displayDescription_ru: - В хранилищах спайса хранится собранный Спайс.\n - Когда перерабатывающий завод завершает процесс преобразования, он автоматически равномерно 
+распределяет специи между силосами. 
+
+[template_spiceTraderDesc]
+displayText: Spice Trader
+displayDescription: -Buildings that trade for spice with Arrakis' natives. -Generates 5 spice every second.
+
+[template_habitatDesc]
+displayText: Civilian Habitat
+displayDescription: A home for the natives or civilians of Arrakis.
+
+[template_radarDesc]
+displayText: Civilian Radar
+displayDescription: A radar facility used by natives and civilians to spy on faction troop movements on the harsh world of Arrakis.
+
+[template_solarDesc]
+displayText: Solar Panels
+displayDescription: A Solar Array paired with some batteries. Used primarily by businesses and the population of Arrakis.
+
+[template_containDesc]
+displayText: Civilian Containers
+displayDescription: Containers used by businesses and the population of Arrakis.
+
+[template_advsiloDesc]
+displayText: Advanced Silo
+displayDescription: -Advanced Silos hold more harvested spice than a basic silo.\n-When the Refinery completes the conversion process, it automatically distributes the spice evenly among the silos. 
+displayText_ru: Расширинное хранилище Спайса
+displayDescription_ru: -Расширенные хранилища спайса содержат больше собранного Спайса, чем базовые.\n-Когда перерабатывающий завод завершает процесс преобразования, он автоматически распределяет специи.
+
+[template_lightFactoryDesc]
+displayText: Light Factory
+displayDescription: -The Light Factory produces small, lightly armored, combat vehicles.
+displayText_ru: Завод лёгкой техники
+displayDescription_ru: - Завод лёгкой техники производит небольшие, легкобронированные боевые машины.
+
+[template_heavyFactoryDesc]
+displayText: Heavy Factory
+displayDescription: -The Heavy Factory produces large, tracked, military or spice harvesting vehicles.
+displayText_ru: Тяжелый завод техники
+displayDescription_ru: - Тяжелый завод техники производит большие, гусеничные, военные машины или машины для сбора Спайса.
+
+[template_superFactoryDesc]
+displayText: Super Heavy Factory
+displayDescription: -The Super Heavy Factory produces Harkonnen's super units.
+
+[template_cannonTurretDesc]
+displayText: Turret
+displayDescription: -Ground Based Turret\n-This stationary turret fires armor-piercing rounds at a close range.\n-Can only attack ground units.
+displayText_ru: Наземная турель
+displayDescription_ru: -Наземная турель\n-Эта стационарная турель стреляет бронебойными снарядами с близкого расстояния.\n-Может атаковать только наземные юниты.
+
+[template_deviatorTurretDesc]
+displayText: Deviator Turret
+displayDescription: -Ground Based Turret armed with Deviator Missiles.\n-This stationary turret fires Deviator Missiles which are capable of confusing the enemy, turning them to your side.
+displayText_ru: Турель Девиатор
+displayDescription_ru: -Наземная турель, вооруженная ракетами-девиаторами.\n-Эта стационарная турель стреляет ракетами-девиаторами, способными сбить с толку противника, захватывая его на вашу сторону.
+
+[template_devastatorTurretDesc]
+displayText: Devastator Turret
+displayDescription: -Ground Based Turret armed with Devastator Cannons.\n-This stationary turret fires large rounds which are capable of destroying the biggest of targets.
+displayText_ru: Турель-опустошитель
+displayDescription_ru: -Наземная турель, вооруженная опустошителями.\n-Эта стационарная турель стреляет крупными снарядами, способными уничтожить самую крупную цель.
+
+[template_sonicTurretDesc]
+displayText: Sonic Turret
+displayDescription: -Ground Based Turret armed with Sonic Weaponry.\n-This stationary turret fires Sonic Waves which are capable of ripping apart solid objects.
+displayText_ru: звуковая турель
+displayDescription_ru: -Наземная турель, вооруженная звуковым оружием.\n-Эта стационарная турель стреляет звуковыми волнами, способными разрывать твердые объекты.
+
+[template_rocketTurretDesc]
+displayText: Rocket Turret
+displayDescription: -Ground Based Turret\n-An upgraded version of the standard Turret, the missle turret also has long range, high explosive projectiles.\n-Can attack ground and air.
+displayText_ru: Ракетная турель
+displayDescription_ru: -Наземная турель\n-Улучшенная версия стандартной турели, ракетная турель также имеет дальнобойные осколочно-фугасные снаряды.\n-Может атаковать землю
+
+[template_wallDesc]
+displayText: Wall
+displayDescription: -Walls can be used for structure enhancement and fortification purposes.\n-like the concrete slabs, walls cannot be repaired.
+displayText_ru: Стена
+displayDescription_ru: -Стены можно использовать для улучшения конструкции и укрепления.\n-как и бетонные плиты, стены нельзя ремонтировать.
+
+[template_repairFacilityDesc]
+displayText: Repair Facility
+displayDescription: -A Repair Facility is required to repair damaged vehicles.\n-Credits are charged according to the extent of damage and type of vehicle repaired.
+displayText_ru: Ремонтная мастерская
+displayDescription_ru: - Для ремонта поврежденной техники требуется ремонтная мастерская.\n - Кредиты начисляются в зависимости от степени повреждения и типа отремонтированного транспортного средства.
+
+[template_starportDesc]
+displayText: Starport
+displayDescription: -The Starport allows you to trade with the Tlalil.\n-They provide access to special units.
+displayText_ru: космопорт
+displayDescription_ru: -
+
+[template_hiTechDesc]
+displayText: Hi-Tech
+displayDescription: -The High Tech Factory produces airborne unit, such as the Carryalls.
+displayText_ru: Завод высоких технологий
+displayDescription_ru: - Завод высоких технологий производит авиадесантные юниты, такие как Носитель.
+
+[template_houseOfIXDesc]
+displayText: House of IX
+displayDescription: -The IX facility provides the ability to research new technologies for use in combat.
+
+[template_palaceDesc]
+displayText: Palace
+displayDescription: -Palaces are awarded to chosen leaders who show great bravery and prowess in their missions.\n-Many Palaces feature unique additional options.
+displayText_ru: Дворец
+displayDescription_ru: -Дворцы присуждаются избранным лидерам, проявившим большую храбрость и отвагу в своих миссиях.\n-Многие дворцы имеют уникальные дополнительные возможности.
+
+[template_DTSiloDesc]
+displayText: Death Hand Silo
+displayDescription: -The Death Hand Silo produces and stores Death Hand Missiles for use.\n-WHile it does hold great strength its power usage is heavy.
+displayText_ru: Ракетная установка Руки Смерти
+displayDescription_ru: - Ракетная установка "Руки Смерти" производит и хранит Ракеты "Руки Смерти" для использования.\n-Хотя он действительно обладает большой силой, его потребление энергии велико.
+
+#=====Units=====#
+[template_soldierDesc]
+displayText: Soldier
+displayDescription: -An lightly armored foot soldier, equipped with 9mm RP assault rifle which fire armor piercing rounds.\n-Only have a limited firing range and speed.
+displayText_ru: Солдат
+displayDescription_ru: -Легко бронированный пехотинец, вооруженный 9-мм штурмовой винтовкой RP, которая стреляет бронебойными патронами.\n-Только имеет ограниченную дальность стрельбы и скорость.
+
+[template_infantryDesc]
+displayText: Infantry
+displayDescription: -They consists of lightly armored foot soldiers, equipped with 9mm RP assault rifles which fire armor piercing rounds.\n-Infantry have a limited firing range and speed.
+displayText_ru: Пехота
+displayDescription_ru: -Они состоят из легкобронированных пехотинцев, вооруженных 9-мм штурмовыми винтовками RP, которые стреляют бронебойными снарядами.\n-Пехота имеет ограниченную дальность стрельбы. 
+
+[template_discThrowerDesc]
+displayText: Disc Thrower
+displayDescription: -An lightly armored foot soldier, equipped with explosive discs that effective versus infantry and vehicles.
+
+[template_trooperDesc]
+displayText: Trooper
+displayDescription: -Trooper is armed with 10mm Rotary Cannon firing armor piercing incendiary rounds and FS Rockets.\n-Has heavy, mechanized power sits which enhance performance and speed.
+displayText_ru: Солдат
+displayDescription_ru: - Солдат вооружен 10-мм вращающейся пушкой, стреляющей бронебойно-зажигательными снарядами, и ракетами FS.\n - Имеет тяжелые механизированные силовые установки, повышающие производительность. 
+
+[template_cyborgDesc]
+displayText: Cyborg Reaper
+displayDescription: -The Cyborg Reaper is the Harkonnens elite mechanized infantry.\n-They are much more costly than the average trooper, but make up for it in their strength.
+
+[template_troopersDesc]
+displayText: Troopers
+displayDescription: -Troopers are armed with 10mm Rotary Cannons firing armor piercing incendiary rounds and FS Rockets.\n-They wear heavy, mechanized power sits which enhance performance and speed.
+displayText_ru: Солдаты
+displayDescription_ru: - Солдаты вооружены 10-мм вращающимися пушками, стреляющими бронебойно-зажигательными снарядами, и ракетами FS.\n - Они носят тяжелые механизированные силовые сиденья, которые повышают  производительность и скорость
+
+[template_trikeDesc]
+displayText: Trike
+displayDescription: -The Trike is a lightly armored, three-wheeled, vehicle which fires armor piercing rounds.\n-It has limited firing range, but moves rapidly.
+displayText_ru: Трайк
+displayDescription_ru: - Трайк — это легкобронированное трехколесное транспортное средство, стреляющее бронебойными снарядами.\n — У него ограниченная дальность стрельбы, но он быстро передвигается.
+
+[template_ordosRaiderDesc]
+displayText: Raider
+displayDescription: -The Ordos Raider is similar to the standard Trike, however, it has the power to turn invisible when not in combat.
+displayText_ru: Рейдер
+displayDescription_ru: -Налетчик Ордоса похож на стандартный трайк, однако он может становиться невидимым вне боя.
+
+[template_quadDesc]
+displayText: Quad
+displayDescription: -The Quad is a lightly armored, four-wheeled vehicle which fires armor piercing incendiary rounds.\n-The slower Quad is stronger than the Trike in both armor and firepower.
+displayText_ru: Квадроцикл
+displayDescription_ru: - Квадроцикл — это легкобронированная четырехколесная машина, которая стреляет бронебойно-зажигательными снарядами. 
+
+[template_heavyQuadDesc]
+displayText: Heavy Quad
+displayDescription: -The Heavy Quad is Harkonnen's version of the Quad. It is slightly more resiliant than the normal Quad and deals slightly more damage, but at the cost of it being worth more and being slightly slower.
+
+[template_lightTankDesc]
+displayText: Light Tank
+displayDescription: -The light tank is a lightly armored, tracked tank firing high explosive rounds.\n-It is faster than the other tanks.
+
+[template_hoverTankDesc]
+displayText: Hover Light Tank
+displayDescription: -The hover light tank is a lightly armored, hovering tank firing high explosive rounds.\n-It is much faster than the other tanks.
+
+[template_laserHoverTankDesc]
+displayText: Hover Laser Tank
+displayDescription: -The hover laser tank is a lightly armored, hovering tank that uses lasers to defeat its enemy.\n-It is incredibly fast compared to the other tanks.
+
+[template_mediumTankDesc]
+displayText: Medium Tank
+displayDescription: -The medium tank is a medium armored, tracked tank firing high explosive rounds.\n-It has average speed.
+
+[template_heavyTankDesc]
+displayText: Heavy Tank
+displayDescription: -The Heavy tank is a medium armored, tracked tank firing high explosive rounds from its two barrels.\n-It is slower than the combat tank but holds more firepower.
+
+[template_combatTankDesc]
+displayText: Cracked
+displayDescription: -Cracked
+
+[template_stealthTankDesc]
+displayText: Stealth Tank
+displayDescription: -The Stealth tank is a lightly armored, tracked tank that can fire direct impact missiles which destroy air and land units.\n-It is fast and capable of using Stealth.\n-Its weapon may be limited on its own, paired with Stealth there are chances to make moves which can end wars.
+displayText_ru: Танк-неведимка
+displayDescription_ru: -Танк "Неведимка" — это легкобронированный гусеничный танк, который может стрелять ракетами прямого попадания, которые уничтожают воздушные и наземные боевые единицы.\n-Он быстр и способен с помощью скрытности.\n-Его оружие может быть ограничено само по себе, в сочетании со скрытностью есть шансы сделать ходы, которые могут положить конец войнам.
+
+[template_harvesterDesc]
+displayText: Civilian Harvester
+displayDescription: -The Civilians and Natives of Arrakis use harvesters themselves to make money.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+
+[template_advharvesterDesc]
+displayText: Advanced Harvester
+displayDescription: -Atredies' advanced harvester. It allows for more spice collection than the other factions' harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+displayText_ru:Улучшеный харвестер
+displayDescription_ru: -Усовершенствованный харвестер Атриды. Это позволяет собирать больше специй, чем сборщики других фракций. \n-Комбайн отделяет спайс от песка .\n-Непригодный песок выбрасывается через выхлопную систему.\n-После заполнения комбайн автоматически отправляет сырой снюс на перерабатывающий завод для переработки на Спайс.
+
+[template_heavyharvesterDesc]
+displayText: Heavy Harvester
+displayDescription: -Harkonnen's Heavy harvester. Its fitted with more armour than the other harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+displayText_ru: Тяжелый Харвестер
+displayDescription_ru: - Тяжелый Харвестер Харконенов. Он оснащен большей броней, чем другие комбайны. \n-Комбайн отделяет снюс от песка.\n-Непригодный песок выбрасывается через выхлопную систему.\n-После заполнения комбайн автоматически отправляет сырой снюс на перерабатывающий завод для переработки на Спайс.
+
+[template_stealthharvesterDesc]
+displayText: Stealth Harvester
+displayDescription: -Ordos' Stealth harvester. It has the ability to become stealthed which allows it to harvest without being easily noticed. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+displayText_ru: Стелс-харвестер 
+displayDescription_ru: - Невидимый харвестер Ордоса. У него есть способность становиться незаметным, что позволяет ему собирать урожай снюса незаметно. \n-Комбайн отделяет снюс от песка.\n-Непригодный песок выбрасывается через выхлопную систему.\n-После заполнения комбайн автоматически отправляет сырой снюс на перерабатывающий завод для переработки на Спайс.
+
+[template_ordosharvesterDesc]
+displayText: Stealth Harvester
+displayDescription: -The Stealth Harvester acts similar to most harvesters, except it has a ability to turn invisible using its Stealth Tech.
+displayText_ru: Стелс-харвестер
+displayDescription_ru: - Стелс-харвестер действует подобно большинству харвестеров, за исключением того, что он может становиться невидимым, используя технологию Стелс-техника.
+
+[template_mcvDesc]
+displayText: MCV
+displayDescription: The MCV scout vehicle is used to find rock outcroppings suitable for erection of new installations.\n-Upon locating an appropriate site the MCV will transform itself to a Construction Yard.
+displayText_ru: МСЦ
+displayDescription_ru: Разведывательный автомобиль МСЦ используется для поиска обнажений горных пород, подходящих для возведения новых сооружений.\n-Найдя подходящее место, МСЦ превратиться в строительную площадку.
+
+[template_missileLauncherDesc]
+displayText: Missile Tank
+displayDescription: -The Missile Tank fires a battle support missle similar to the Rocket Turret.\n-The Missile Tank has long range strike capability, and although inaccurate, it fires two missiles for greater coverage, and moves faster than the heavier battle tanks.
+displayText_ru: Ракетный танк 
+displayDescription_ru: - Ракетный танк стреляет боевой ракетой поддержки, похожей на ракетную турель.\n- Ракетный танк может поражать на дальние дистанции, и, хотя он неточен, он выпускает две ракеты для большего охвата и движется быстрее, чем более тяжелые боевые танки.
+
+[template_mobileAADesc]
+displayText: Mobile AA
+displayDescription: -The Mobile AA acts as Harkonnen's Anti Air as a replacement for the Missile Tank. \n-It has missiles that are incredibly accurate and fast allowing their capabilities to be unmatched. \n- It is faster then the average tank and has the ability to deny a larger area from Aircraft than the other factions Missile Tanks.
+displayText_ru: Мобильный АА 
+displayDescription_ru: - Мобильная ПВО действует как ПВО Харконнена в качестве замены Ракетному Танку. \n-У него есть ракеты, которые невероятно точны и быстры, что делает их возможности непревзойденными. \n- Он быстрее среднего танка и имеет возможность защищать большую территорию от самолетов, чем ракетные танки других фракций.
+
+[template_mirageTankDesc]
+displayText: Mirage Tank
+displayDescription: -The Mirage Tank is a vehicle that can disguise itself as common objects like spice when not moving. \n-It has a powerful cannon which can take enemies by surprise paired with its disguise ability.\n-Hiding it in Spice Fields will bring a advantage against the enemy.
+displayText_ru: Танк Мираж 
+displayDescription_ru: - Танк Мираж — это техника, которая может маскироваться под обычные объекты, такие как спайс, когда не движется. \n-У него есть мощная пушка, которая может застать врагов врасплох в сочетании с его способностью маскировки.\n-Скрытие его на полях Спайса даст преимущество перед врагом.
+
+[template_siegeTankDesc]
+displayText: Siege Tank
+displayDescription: -The Siege Tank is a tracked vehicle with dual cannons.\n-These cannons fire armor piercing incendiary rounds, giving it more than twice the firepower of the smaller Combat tank.\n-It has twice the armor, and is slower than most tanks.
+displayText_ru: Осадный танк 
+displayDescription_ru: - Осадный танк — это гусеничная машина со сдвоенными пушками.\n-Эти пушки стреляют бронебойно-зажигательными снарядами, что дает ему вдвое большую огневую мощь, чем у боевого танка меньшего размера.\n-У него вдвое больше брони и он медленнее. чем большинство танков.
+
+[template_ornithopterDesc]
+displayText: Ornithopter
+displayDescription: -The Ornithopter is a lightly armored aircraft capable of firing battle support rockets.\n-The Ornithopter utilizes the unusual M-Flex technology which creates the distinctive "flapping" motion of the wings.\n-It is the highly maneuverable and the fastest aircraft on Dune.
+displayText_ru: Орнихоптер 
+displayDescription_ru: - Орнихоптер — это легкобронированный самолет, способный запускать ракеты боевой поддержки.\n-В Орнитоптере используется необычная технология M-Flex, которая создает характерное "взмахивающее" движение крыльев.\n-Это очень маневренный и самый быстрый самолет на Дюне.
+
+[template_gunshipDesc]
+displayText: Gunship
+displayDescription: -The Gunship is a slow, tanky aircraft thats its highly effective against ground units.
+
+[template_carryallDesc]
+displayText: Carryall
+displayDescription: -The Carryall is a lightly armored aircraft with no weapons.\n-It is able to lift and transport heavy machinery and vehicles.
+displayText_ru: Носитель
+displayDescription_ru: — Носитель — это легкобронированный самолет без вооружения.\n — Он может поднимать и перевозить тяжелую технику и транспортные средства.
+#\n-Carryalls are utilized primarily for transporting Harvesters.
+
+[template_sandwormDesc]
+displayText: Sandworm
+displayDescription: -The Sand Worms are indigenous to Dune.\n-Attracted by vibrations, they frequent battlefields and often devour numerous combatants.\n-Sand Worms are almost impossible to destroy, have a voracious appetite, and will consume military hardware.
+displayText_ru: Песчаный червь 
+displayDescription_ru: - Песчаные черви - коренные жители Дюны.\n - Привлеченные вибрациями, они часто посещают поля сражений и часто пожирают многочисленных бойцов.\n - Песчаных червей практически невозможно уничтожить, они обладают ненасытным аппетитом и потребляют военную технику.
+
+#=====Special Units=====#
+
+[template_atreidesSonicTankDesc]
+displayText: Sonic Tank
+displayDescription: -Developed by the Atreides, this tank utilizes sound waves technology to fire a powerful blast of sonic energy at its target.\n-The high energy frequencies break down the molecular structure of affected victims.
+displayText_ru: Звуковой Танк 
+displayDescription_ru: - Этот усовершенствованный танк, разработанный Атридами, использует технологию звуковых волн, чтобы выстрелить в цель мощным взрывом звуковой энергии.\n-Высокие энергетические частоты разрушают молекулярную структуру пораженных жертв.
+
+[template_atreidesDisruptorTankDesc]
+displayText: Disruptor Tank
+displayDescription: -Developed by the Atreides, this enhanced version of the sonic tank utilizes sound beam technology to fire a powerful beam of sonic energy at its target.\n-The high energy frequencies break down the molecular structure of affected victims.
+
+[template_ordosSaboteurDesc]
+displayText: Saboteur
+displayDescription: -The Saboteur is a special military unit belonging to Ordos.\n-Trained in the art of espionage and terrorism at the palace, a single Saboteur can destroy almost any structure or vehicle.
+displayText_ru: Диверсант 
+displayDescription_ru: -Диверсант — это особое воинское подразделение, принадлежащее Ордосу.\n-Обученный искусству шпионажа и терроризма во дворце, один диверсант может разрушить почти любое строение или транспортное средство.
+
+[template_ordosUltravioletDesc]
+displayText: Ultraviolet Artillery
+displayDescription: -The Ordos Ultraviolet Artillery is a a immensely long ranged artillery unit.\n-The Ultraviolet Artillery can cause immense damage at long ranges. Their main drawback is their slowness and lack of armour
+displayText_ru: девиатор 
+displayDescription_ru: - Ордос Девиатор — это стандартный ракетный танк, стреляющий уникальной боеголовкой.\n- Боеголовка содержит газ нервно-паралитического действия, который не повреждает транспортные средства или сооружения, но его эффекты сбивают врагов с толку и могут временно изменить их лояльность и перевести на вашу сторону.
+
+[template_harkonnenDevastatorDesc]
+displayText: Devastator
+displayDescription: -Developed by the Harkonnens, this tank fires dual plasma charges. It is the most powerful tank on Dune, yet it is very slow.\n-The Devastator is nuclear powered, and may become unstable in combat.
+displayText_ru: Опустошитель 
+displayDescription_ru: - Этот танк, разработанный Харконенами, стреляет двойными плазменными зарядами. Это самый мощный танк на Дюне, но он очень медленный.\n-Опустошитель работает на ядерном топливе и может стать нестабильным в бою.
+
+[template_harkonnenMammothDesc]
+displayText: "Mammoth" Super Heavy Tank
+displayDescription: -This titan of a tank is peak Harkonnen Engineering, its surpasses all known life on Arrakis.\n-This tank is capable of destoying everything in its path with a inferno following its treads, civilisations have fell due to its sheer might.\n-The Mammoth Super Heavy Tank is a near invincible land cruiser armed with cannons the sizes of men and ammo capable of destroying civilian buildings in one shot.\n-It is that expensive and monstrous that Harkonnen commanders are only allowed one in the battlefield.\n-Use it wisely.
+
+[template_sardaukarTrooperDesc]
+displayText: Sardaukar Trooper
+displayDescription: -The Sardauker are the Emperor's elite troopers.\n-They have superior firepower and armor.\n-Spies report the Sardaukar's armament includes a rotary cannon which fires armor piercing rounds in addition to a mobile missle launcher that fires shaped charge.
+displayText_ru: Сардаукарский солдат displayDescription_ru: -Сардаукеры - элитные солдаты Императора.\n-Они обладают превосходной огневой мощью и броней.\n-Шпионы сообщают, что вооружение сардаукаров включает вращающуюся пушку, которая стреляет бронебойными снарядами, в дополнение к мобильной ракетной установке, стреляющей кумулятивными зарядами.
+
+#displayDescription_tl: -Ang Sardauker ay mga elite troopers ng Emperor.\n-Nagtatataglay sila ng malakas na armas at matibay na kasuutan.\n-Ayon sa mga espiya, ang sandata ng Sardaukar ay nagsasama ng isang Rotary Cannon na may armor-piercing bullets at bilang karagdagan sa isang mobile missile launcher na gumagamit ng shaped charge na rocket
+
+
+[template_sardaukarTroopersDesc]
+displayText: Sardaukar Troopers
+displayDescription: -The Sardauker are the Emperor's elite troopers.\n-They have superior firepower and armor.\n-Spies report the Sardaukar's armament includes a rotary cannon which fires armor piercing rounds in addition to a mobile missle launcher that fires shaped charge.
+displayText_ru: Сардаукарские солдаты
+displayDescription_ru: -Сардаукеры - элитные солдаты Императора.\n-Они обладают превосходной огневой мощью и броней.\n-Шпионы сообщают, что вооружение сардаукаров включает вращающуюся пушку, которая стреляет бронебойными снарядами, в дополнение к мобильной ракетной установке, стреляющей кумулятивными зарядами.
+
+#displayDescription_tl: -Ang Sardauker ay mga elite troopers ng Emperor.\n-Nagtatataglay sila ng malakas na armas at matibay na kasuutan.\n-Ayon sa mga espiya, ang sandata ng Sardaukar ay nagsasama ng isang Rotary Cannon na may armor-piercing bullets at bilang karagdagan sa isang mobile missile launcher na gumagamit ng shaped charge na rocket
+
+
+[template_fremenWarriorDesc]
+displayText: Fremen Warrior
+displayDescription: -The Fremen are native to dune.\n-Elite fighters, the Fremens' familiarity with the hostile terrain makes them a difficult adversary.
+displayText_ru: Фриман
+displayDescription_ru: - Фриманы родом из дюн.\n - Элитные бойцы, знакомство фрименов с враждебной местностью делает их опасными противниками.
+#displayDescription_tl: -Ang Fremen ay mga katutubo ng dune.\n-Mga pawang mandirigma, ang pagkaka-pamilyar ng Fremens sa mapang-akit na lupain ay hindi madali para sa kanila.
+
+
+[template_fremenWarriorsDesc]
+displayText: Fremen Warriors
+displayDescription: -The Fremen are native to dune.\n-Elite fighters, the Fremens' familiarity with the hostile terrain makes them a difficult adversary.
+displayText_ru: отряд Фриманов
+displayDescription_ru: - Фриманы родом из дюн.\n - Элитные бойцы, знакомство фрименов с враждебной местностью делает их опасными противниками.
+#displayDescription_tl: -Ang Fremen ay mga katutubo ng dune.\n-Mga pawang mandirigma, ang pagkaka-pamilyar ng Fremens sa mapang-akit na lupain ay hindi madali para sa kanila.
+
+#=====Additions=====#
+
+[template_rawSpiceDesc]
+displayText: Spice
+displayDescription: -Harvestable
+displayText_ru: Снюс 
+displayDescription_ru: -Урожай, можно собрать харвестером
+
+[template_houseSelectorDesc]
+displayText: House Selector
+displayDescription: -Selects House
+displayText_ru: Селектор домов(фракции для тупых)
+displayDescription_ru: -Выбирает Дом
+
+[template_razingOutpostDesc]
+displayText: Outpost
+displayDescription: -Calls Reinforcement
+displayText_ru: Аванпост
+displayDescription_ru: -Вызывает подкрепление
+
+[template_starportFrigateDesc]
+displayText: Frigate
+displayDescription: -Used to Deliver the traded units \n -Cannot be attack
+displayText_ru: Фрегат
+displayDescription_ru: -Используется для доставки проданных юнитов\n -Не может быть атакован
+
+[template_sandboxFrigateDesc]
+displayText: Sandbox Frigate
+displayDescription: -Sandbox Unit\n-Can't be attacked\n-Can transport units too
+displayText_ru: фрегат песочницы
+displayDescription_ru: - Юнит-песочница\n-Не может быть атакован\n-Можно также транспортировать юниты
+
+#=====Miscellaneous=====#
+
+[template_upgradeNote]
+text: Upgrade
+description: -Upgrade this building
+isLockedMessage: -Needs repair first
+text_ru: Улучшить
+description_ru: -Улучшить данное строение 
+isLockedMessage_ru: -Нужно сначала поченить
+
+[template_repairOnNote]
+text: Repair
+description: -Repair this building
+isLockedMessage: -Insufficient Spice
+text_ru: ремонт
+description_ru: -Отремонтировать это здание
+isLockedMessage: -Недостаточно Спайса
+
+[template_repairFacilityNote]
+isLockedAltMessage: -Still repairing a unit...
+isLockedAltMessage_ru: -Все еще чиню юнит...
+[template_buildingRepairNote]
+isLockedAlt2Message: -Still repairing...
+isLockedAlt2Message_ru: -Все еще ремонтирую...
+
+[template_createQueueNote]
+isLockedAltMessage: -Queue in progress...
+isLockedAltMessage_ru: -Выполняется очередь...
+
+[template_repairOffNote]
+text: Stop Repair
+description: -Cancel this repairing
+text_ru: Остановить ремонт
+description_ru: -Отменить этот ремонт
+
+[template_actionHarvestNote]
+text: Harvest
+text_ru: Урожай
+[template_actionUnloadNote]
+text: Unload
+text_ru: Разгрузить
+[template_actionQueueBuilding]
+isLockedMessage: Building in progress
+isLockedAlt2Message: Low Power
+
+[template_placementRuleNote]
+cannotPlaceMessage: Must place together with another building
+cannotPlaceMessage_ru:Должен размещаться рядом с другим зданием
+[template_mcvDeploymentNote]
+isLockedMessage: -Cannot deploy on slabs
+isLockedMessage_ru: -Невозможно развернуть на плитах
+[template_houseAtreidesDesc]
+text: House Atreides
+description: [Technology & Economics Faction]\n\n[Features]\n-Sonic Weaponry\n-Fremen Allies
+text_ru:Дом Атриды
+description_ru:[Фракция технологий и экономики]\n\n[Особенности]\n-Звуковое оружие\n-Союзники фрименов
+
+[template_houseOrdosDesc]
+text: House Ordos
+description: [Stealth & Sabotage Faction]\n\n[Features]\n-Deviator Weaponry\n-Map Reveal
+text_ru: Дом Ордосы
+description_ru:[Фракция скрытности и саботажа]\n\n[Особенности]\n-Оружие Девиатора\n-Открытие карты
+
+[template_houseHarkonnenDesc]
+text: House Harkkonen
+description: [Strength & Offensive Faction]\n\n[Features]\n-Devastator Weaponry\n-Tank Reinforcements
+text_ru: Дом Харконены 
+description_ru:[Сила и наступательная фракция]\n\n[Особенности]\n-оружие-опустошитель\n-танковые подкрепления
+
+[template_houseSardaukarDesc]
+text: Emperor's Army
+description: [Infantry & Manpower Faction]\n\n[Features]\n-Sardaukar Troopers\n-
+text_ru: Дом Сардоукары
+description_ru:[Фракция пехоты и живой силы]\n\n[Особенности]\n-Сардаукарские солдаты\n-
+
+#=====Abilities=====#
+
+[template_selfDestructDesc]
+text: Self-Destruct
+description: -This will make the Tank go Self-Destruct\n-Cannot be cancel
+text_ru: Самоуничтожение
+description_ru: -Это приведет к самоуничтожению танка\n-Нельзя отменить
+
+[template_selfDestructingDesc]
+text: Self-Destructing
+description: -This Tank is about to Self-Destruct!
+text_ru: Самоуничтожение
+description_ru: - Этот танк вот-вот самоуничтожится!
+
+[template_tankreincool]
+@copyFromSection: template_cooldownNote
+description: -We are gathering the Reinforcements necessary.
+description_ru: -Мы собираем необходимое подкрепление.
+
+[template_revealcool]
+@copyFromSection: template_cooldownNote
+description: -Charging the Satelite.
+
+[template_reveal]
+@copyFromSection: template_cooldownNote
+description: -Reveal Area?
+
+[template_tankrein]
+text: Release the Tank Reinforcements.
+text_ru: Выпустите танковые подкрепления.
+[template_cooldownNote]
+text: Cooldown...
+text_ru:Перезарядка...
+
+[template_cooldownNote]
+text: Cooldown...
+
+[template_atreidesPalaceActionDesc]
+text: Call Fremen
+text_ru: Позвоните фрименов
+
+[template_atreidesCooldownNote]
+@copyFromSection: template_cooldownNote
+description: -Calling Fremen for Reinforcements...
+description_ru:-Вызов фрименов за подкреплением...
+
+[template_ordosCooldownNote]
+@copyFromSection: template_cooldownNote
+description: -Looking for a soldier to be choosen...
+description_ru: -Ищу солдата для выбора...
+
+[template_ordosPalaceActionDesc]
+text: Call Saboteur
+text_ru: Вызов саботажника
+
+[template_harkonnenCooldownNote]
+@copyFromSection: template_cooldownNote
+description: -We are gathering the Reinforcements necessary.
+description_ru: Мы собираем необходимое подкрепление.
+
+[template_deathHandDesc]
+text: -Fire the Death Hand. Finish the job.
+text_ru:-Огонь ракетой Рука Смерти. Закончить войну.
+
+[template_deathCooldownDesc]
+@copyFromSection: template_cooldownNote
+description: -Creating a missile for use...
+description_ru:-Создание ракеты для использования...
+
+[template_harkonnenPalaceActionDesc]
+text: Release the Tank Reinforcements.
+text_ru:Выпустить танковые подкрепления.
+
+[template_tradingDesc]
+isLockedMessage: -Out of stock!
+isLockedMessage_ru: -Нет в наличии!
+
+[template_resetAuctionDesc]
+text: Reset Order
+text_ru:Сбросить заказ
+
+[template_orderProceedDesc]
+text: Send Order
+text_ru:Отправить заказ
+
+[template_deliveryOnTheWayDesc]
+text: Arriving...
+description: -Ordered units will arrive in 10 seconds.
+text_ru:Прибытие...
+description_ru:- Заказанные юниты прибудут через 10 секунд.
+
+#=====Requirements=====#
+
+[template_requiresWindtrap]
+isLockedAltMessage: Requires Windtrap
+isLockedAltMessage_ru:Требуется Ветряк
+
+[template_requiresOutpost]
+isLockedAltMessage: Requires Outpost
+isLockedAltMessage_ru:Требуется Аванпост
+
+[template_requiresOutpostAndLightFactory]
+isLockedAltMessage: Requires Outpost and Light Factory
+isLockedAltMessage_ru:Требуется Аванпост и Завод лёгкой техники
+
+[template_requiresRefinery]
+isLockedAltMessage: Requires Spice Refinery
+isLockedAltMessage_ru:Требуется Перерабатывающий завод Спайса
+
+[template_requiresLightFactory]
+isLockedAltMessage: Requires Light Factory
+isLockedAltMessage_ru:Требуется Завод лёгкой техники
+
+[template_requiresHeavyFactory]
+isLockedAltMessage: Requires Heavy Factory
+
+[template_requiresBarracks]
+isLockedAltMessage: Requires Barracks
+isLockedAltMessage_ru:Требуется Казарма 
+
+[template_requiresStarport]
+isLockedAltMessage: Requires Starport
+isLockedAltMessage_ru:Требуется Космопорт
+
+[template_requiresHouseOfIX]
+isLockedAltMessage: Requires House of IX
+isLockedAltMessage_ru:Требуется Дом IX
+
+[template_researchLock]
+isLockedAltMessage: The required research for this unit has not been completed.
+isLockedAlt2Message: The required research for this unit has not been completed.
+
+[template_unitCap]
+isLockedMessage: You cannot build anymore of this unit.
+
+#=====Help Infos=====#
+
+[template_helpShowItDesc]
+text: Show Help
+description: -Shows the basics on how to play Dune II: Expanded.
+
+[template_helpHideItDesc]
+text: Hide Help
+description: -Hide the basics.
+
+[template_helpAboutSpiceDesc]
+text: Spice
+description: -Spice can be converted as your funds.\n-To get Spice, you need an Harvester and Refinery, they're needed to collect and convert to Funds.
+
+[template_helpAboutStorageDesc]
+text: Storage
+description: -When your storage is full, Spice cannot be collect.\n-You need to build Silos to get more Storage\n-Refinery also provide Storage.
+
+[template_helpAboutUpgradeDesc]
+text: Upgrade
+description: -Upgrade can unlock new units.\n-Factories and Barracks are upgradable, low tier Units aren't really effective in small numbers so it is better to produce high tier Units.
+
+[template_helpAboutDefenseDesc]
+text: Defense
+description: -Turrets are used to protect your Territory.\n-The Basic Turrets are good due to their cheap cost, but the Tier-3 Turrets are better due to their strength at the cost of money and power.
+
+[template_helpAboutExpandDesc]
+text: Expand
+description: -Expanding to more territory is the best way to get more Spice in D2E.\n-MCVs can be used to expand easily, deploying near Spice Fields is the best choice for you to expand your economy.\n-MCVs are purchasable through Upgraded Heavy Factory and Starport.
+
+[template_helpAboutTransportDesc]
+text: Transport
+description: -Some land units are too slow to travel long distances.\n-Carryalls are the most effective to transport any unit with.\n-Carryalls are purchasable through Hi-Tech, which can be unlocked by building a Light Factory.
+
+[template_helpAboutIXDesc]
+text: House Of IX Research
+description: -The House Of IX allows commanders in combat aquire technologies to give them an advantage when fighting in the spice fields.
+
+[template_helpAboutPalaceDesc]
+text: Palace Abilities
+description: -Each Faction has their own unique abilities from Palace.\n-Atredies can request Fremen Reinforcements which automatically charge into battle.\n-Harkonnen have access to Tank Reinforcements.\n-Ordos have access to a a small map reveal, which are useful to find out the enemy's plans.
+
+[template_helpAboutDeathDesc]
+text: Death Hand Missiles
+description: -Every faction have the ability to construct the Death Hand Silo, a building which allows the use of the Dteah Hand superweapon.\n-Death Hands can be countered using Counter-DT weaponry.
+
+#=====Research=====#
+
+[template_sonicUpgradeDesc]
+text: Sonic Research
+description: -Begins research on Advanced Sonic Technology.\n-This allows the construction of weapons capable of ripping apart solid objects.
+
+[template_heavyWeapUpgradeDesc]
+text: Heavy Weapons Improvements Research
+description: -Begins research on Heavy Weapons Technology.\n-This upgrades infantry to have better weapons.
+
+[template_guardianUpgradeDesc]
+text: Guardian Tank Research
+description: -Begins research on Guardian Tank Technology.\n-Replaces the Medium Tank with the Guardian tank.
+
+[template_autoloaderUpgradeDesc]
+text: Automatic Loaders Research
+description: -Begins research on Automatic Loading Technology.\n-Replaces the Medium Tank/Guardian Tank and the Hawk Artillery's with a automatic shell loader, which greatly increases rate of fire.
+
+[template_disruptorUpgradeDesc]
+text: Disruptor Heavy Tank Research
+description: -Begins research on Disruptor Tank Technology.\n-Replaces the Sonic Tank with the Disruptor Heavy Tank, a improved Sonic Tank that is heavier, slower, more heavily armoured tank that packs a massive punch.
+
+[template_heavyLaserUpgradeDesc]
+text: Heavy Laser Research
+description: -Begins research on Heavy Laser Technology.\n-This allows the construction of laser weapons capable of cutting steel with little effort.
+
+[template_stealthUpgradeDesc]
+text: Stealth System Research
+description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+
+[template_ultravioletUpgradeDesc]
+text: Ultraviolet Artillery Research
+description: -Begins research on Ultraviolet Artillery Technology.\n-This allows the construction of heavy artillery weapons that utilizes heavy laser weapons to destroy targets from long distances.
+
+[template_stealthUpgradeDesc]
+text: Stealth System Research
+description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+
+[template_stealthUpgradeDesc]
+text: Stealth System Research
+description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+
+[template_devestatorUpgradeDesc]
+text: Devastator Shell Research
+description: -Begins research on Devastator Shell Technology.\n-This allows the construction of weapons capable of destroying anything in its path.
+
+[template_mammothUpgradeDesc]
+text: Mammoth Research
+description: -Begins research on the Mammoth.\n-This allows the construction of the Mammoth Super Heavy Tank, a vehicle stronger than anything on Arrakis.
+
+[template_nukeTankUpgradeDesc]
+text: Nuclear Engines Research
+description: -Begins research on Nuclear Engine Technology.\n-This gives basic tanks Nuclear Engines, which increases speed.
+
+[template_stealthUpgradeDesc]
+text: Stealth System Research
+description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+
+[template_stealthUpgradeDesc]
+text: Stealth System Research
+description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.

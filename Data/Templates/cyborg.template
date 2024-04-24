@@ -1,0 +1,49 @@
+
+[core]
+copyFrom: voices.template, effects.template, strings.template
+isBio: true
+tags: cyborg
+hideScorchMark: true
+softCollisionOnAll: 30
+showActionsWithMixedSelectionIfOtherUnitsHaveTag: cyborg
+mass: 150
+fogOfWarSightRange:2
+
+soundOnNewSelection: ROOT:Data/Voices/cyborgselect.ogg:1, ROOT:Data/Voices/cyborgselect2.ogg:1, ROOT:Data/Voices/cyborgselect3.ogg:1, ROOT:Data/Voices/cyborgselect4.ogg:1, ROOT:Data/Voices/cyborgselect5.ogg:1
+
+soundOnMoveOrder: ROOT:Data/Voices/cyborgmove.ogg:1, ROOT:Data/Voices/cyborgmove2.ogg:1, ROOT:Data/Voices/cyborg.ogg:1
+
+soundOnAttackOrder: ROOT:Data/Voices/cyborg.ogg:1, ROOT:Data/Voices/cyborgattack.ogg:1, ROOT:Data/Voices/cyborgattack2.ogg:1
+
+soundOnDeath: ROOT:Data/Voices/cyborgdie.ogg:1, ROOT:Data/Voices/cyborgdie2.ogg:1, ROOT:Data/Voices/cyborgdie3.ogg:1
+
+[graphics]
+#image_offsetY:-1
+image_shadow: NONE
+#image_shadow_frames: true
+#shadowOffsetX:0
+#shadowOffsetY:0
+drawLayer: ground2
+disableLowHpFire: true
+disableLowHpSmoke: true
+
+[hiddenAction_hasParentTags]
+autoTrigger: if self.hasParent()
+requireConditional: if not self.tags(includes='hasParent')
+temporarilyAddTags: hasParent
+
+[hiddenAction_hasParentTagsRemove]
+autoTrigger: if not self.hasParent()
+requireConditional: if self.tags(includes='hasParent')
+temporarilyRemoveTags: hasParent
+
+[attack]
+turretRotateWithBody: true
+
+[movement]
+movementType: LAND
+moveSpeed: 0.4
+reverseSpeedPercentage: 0
+maxTurnSpeed: 99
+moveSlidingMode :false
+moveIgnoringBody:false

@@ -1,0 +1,176 @@
+
+[core]
+strictLevel: 1
+switchPriceWithStreamingCost: true
+logIfCreditResourceUsed: true
+numBitsOnDeath: 0
+autoTriggerCheckRate: every8Frames
+
+@global harkonnenMammoth_Limit: 1
+
+#===== Game Systems =====#
+
+[template_stealthrule]
+canOnlyAttackUnitsWithoutTags: stealthed
+
+[hiddenAction_setTeam1]
+@define team:0
+requireConditional:if self.teamId()==${team}
+autoTriggerOnEvent:created 
+temporarilyAddTags: team${team}
+
+[hiddenAction_setTeam2]
+@define team:1
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam3]
+@define team:2
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam4]
+@define team:3
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam5]
+@define team:4
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam6]
+@define team:5
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam7]
+@define team:6
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam8]
+@define team:7
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam9]
+@define team:8
+@copyFromSection:hiddenAction_setTeam1
+
+[hiddenAction_setTeam10]
+@define team:9
+@copyFromSection:hiddenAction_setTeam1
+
+[resource_sec]
+hidden:false
+
+[hiddenAction_Timer]
+autoTrigger:if self.resource(type='sec', greaterThan=0)
+addResources:sec=-1
+
+[action_reset_0]
+isVisible:if self.resource(type='sec', greaterThan=0)
+isLocked:true
+text_ru: Превратится обратно в свою команду через %{self.resource.sec} секунд
+text: Turning back in %{self.resource.sec} seconds.
+isAlsoViewableByAllies:true
+isAlsoViewableByEnemies:true
+
+[action_team_0]
+@define team=0
+autoTrigger:if self.tags(includes='team${team}') and self.resource(type='sec', equalTo=0) and self.teamId!=${team}
+# and self.teamId()<${team} or self.tags(includes='${team}') and self.resource(type='sec', equalTo=0) and self.teamId()>${team}
+switchToTeam: ${team}
+displayType:action 
+isVisible:false
+convertTo_keepCurrentTags:true
+
+[action_team_1]
+@define team=1
+@copyFromSection:action_team_0
+
+[action_team_2]
+@define team=2
+@copyFromSection:action_team_0
+
+[action_team_3]
+@define team=3
+@copyFromSection:action_team_0
+
+[action_team_4]
+@define team=4
+@copyFromSection:action_team_0
+
+[action_team_5]
+@define team=5
+@copyFromSection:action_team_0
+
+[action_team_6]
+@define team=6
+@copyFromSection:action_team_0
+
+[action_team_7]
+@define team=7
+@copyFromSection:action_team_0
+
+[action_team_8]
+@define team=8
+@copyFromSection:action_team_0
+
+[action_team_9]
+@define team=9
+@copyFromSection:action_team_0
+
+[hiddenAction_enemyKills]
+autoTriggerOnEvent: killedAnyUnit
+alsoQueueAction: enemyKillAtreides, enemyKillOrdos, enemyKillHarkonnen
+
+[hiddenAction_enemyKillAtreides]
+requireConditional: if self.globalTeamTags(includes='houseAtreidesMod')
+buildSpeed: 0s
+playSoundToPlayer: ROOT:Data/Voices/Atreides/enemyUnitDestroyed.ogg:2
+
+[hiddenAction_enemyKillOrdos]
+requireConditional: if self.globalTeamTags(includes='houseOrdosMod')
+buildSpeed: 0s
+playSoundToPlayer: ROOT:Data/Voices/Ordos/enemyUnitDestroyed.ogg:2
+
+[hiddenAction_enemyKillHarkonnen]
+requireConditional: if self.globalTeamTags(includes='houseHarkonnenMod')
+buildSpeed: 0s
+playSoundToPlayer: ROOT:Data/Voices/Harkonnen/enemyUnitDestroyed.ogg:2
+
+#===== End of Game Systems =====#
+
+[graphics]
+imageScale: 1.25
+icon_build: ROOT:Data/Images/Icons/icon_none.png
+showTransportBar:true
+showHealthBar:false
+
+[global_resource_power]
+displayName: Power
+displayRoundedDown: true
+displayWhenZero: true
+priority: 3
+displayColor: yellow
+
+[global_resource_windtrapSource]
+displayName: Windtrap Source
+hidden: true
+
+[global_resource_Spice]
+displayName: Spice
+displayRoundedDown: true
+displayWhenZero: true
+priority: 1
+displayColor: #e66b37
+
+[global_resource_spiceStorage]
+displayName: Storage
+displayRoundedDown: true
+displayWhenZero: true
+priority: 2
+displayColor: #bf7b5f
+
+[resource_rawSpice]
+displayName: Raw Spice
+equivalentGlobalResourceForAI: Spice
+
+[attack]
+aimOffsetSpread: 0
+showRangeUIGuide: false

@@ -1,0 +1,174 @@
+
+#Effects by Hyasabaru
+
+[effect_smokeFire]
+alwayStartDirAtZero:true
+attachedToUnit: true
+life: 70
+fadeOut: false
+scaleFrom: 1.25
+scaleTo: 1.25
+image:ROOT:Data/Images/smokeFire.png
+priority: critical
+drawUnderUnits:false
+animateFrameLooping:true
+animateFrameStart:0
+animateFrameEnd:2
+animateFrameSpeed:0.08
+frame_width: 16
+frame_height: 48
+
+[effect_trailMark]
+xOffsetRelative: 0
+yOffsetRelative: -3
+createWhenOffscreen: false
+createWhenZoomedOut: false
+life: 90
+alpha: 0.8
+fadeOut: false
+priority: veryhigh
+image: ROOT:Data/Images/trail-mark.png
+scaleFrom: 1.25
+scaleTo: 1.25
+attachedToUnit: false
+drawUnderUnits: true
+
+[effect_explodeLightFlash]
+priority: veryhigh
+image: SHARED:light_50.png
+life: 20
+fadeOut: true
+attachedToUnit: false
+color: #d26500
+scaleFrom: 1.25
+scaleTo: 1.25
+alpha: 0.7
+drawUnderUnits:false
+
+[effect_explodeGunHit]
+alwayStartDirAtZero:true
+priority: veryhigh
+life: 10
+fadeOut: false
+image:ROOT:Data/Images/explodeGunHit.png
+total_frames: 1
+scaleFrom: 1.25
+scaleTo: 1.25
+
+[effect_explodeDisc]
+alwayStartDirAtZero:true
+priority: veryhigh
+life: 50
+fadeOut: false
+image:ROOT:Data/Images/explodeSmall.png
+alsoPlaySound:ROOT:Data/soundFx/explode.wav, ROOT:Data/soundFx/explode2.wav, ROOT:Data/soundFx/explode8.wav
+total_frames: 3
+scaleFrom: 1.25
+scaleTo: 1.25
+animateFrameStart: 0
+animateFrameEnd: 2
+animateFrameSpeed: 0.24
+
+[effect_explodeShell]
+alwayStartDirAtZero:true
+priority: veryhigh
+life: 50
+fadeOut: false
+image:ROOT:Data/Images/explodeSmall.png
+total_frames: 3
+scaleFrom: 1.25
+scaleTo: 1.25
+animateFrameStart: 0
+animateFrameEnd: 2
+animateFrameSpeed: 0.24
+
+[effect_explodeRocket]
+alwayStartDirAtZero:true
+priority: veryhigh
+life: 60
+fadeOut: false
+alsoPlaySound: ROOT:Data/soundFx/explode.wav, ROOT:Data/soundFx/explode2.wav
+image:ROOT:Data/Images/explodeRocket.png
+total_frames: 5
+scaleFrom: 1.25
+scaleTo: 1.25
+shadow: true
+imageShadow: ROOT:Data/Images/explodeLightSmall.png
+animateFrameStart: 0
+animateFrameEnd: 4
+animateFrameSpeed: 0.16
+
+[effect_explodeMedium]
+alwayStartDirAtZero:true
+alsoPlaySound:ROOT:Data/soundFx/explode3.wav, ROOT:Data/soundFx/explode4.wav, ROOT:Data/soundFx/explode5.wav
+priority: critical
+life: 60
+fadeOut: false
+image:ROOT:Data/Images/explodeMedium.png
+scaleFrom: 1.25
+scaleTo: 1.25
+total_frames: 5
+animateFrameStart: 0
+animateFrameEnd: 4
+animateFrameSpeed: 0.16
+
+[effect_explodeLarge]
+alwayStartDirAtZero:true
+alsoPlaySound:ROOT:Data/soundFx/explode6.wav, ROOT:Data/soundFx/explode5.wav
+priority: critical
+life: 50
+fadeOut: false
+image:ROOT:Data/Images/explodeLarge.png
+scaleFrom: 1.25
+scaleTo: 1.25
+total_frames: 5
+animateFrameStart: 0
+animateFrameEnd: 4
+animateFrameSpeed: 0.16
+
+[effect_explodeGas]
+alwayStartDirAtZero:true
+alsoPlaySound:ROOT:Data/soundFx/gas.ogg:0.6
+priority: critical
+life: 60
+fadeOut: false
+image:ROOT:Data/Images/explodeGas.png
+scaleFrom: 1.25
+scaleTo: 1.25
+total_frames: 5
+animateFrameStart: 0
+animateFrameEnd: 4
+animateFrameSpeed: 0.16
+
+[effect_explodeBuilding1]
+alwayStartDirAtZero:true
+#alsoPlaySound:ROOT:Data/soundFx/explode6.wav, ROOT:Data/soundFx/explode5.wav, ROOT:Data/soundFx/crumble.wav
+priority: critical
+life: 80
+fadeOut: false
+#scaleFrom: 1.875
+#scaleTo: 1.875
+scaleFrom: 1.25
+scaleTo: 1.25
+image:ROOT:Data/Images/explodeStructureSmall.png
+total_frames: 5
+animateFrameStart: 0
+animateFrameEnd: 4
+animateFrameSpeed: 0.16
+
+[effect_explodeBuilding2]
+alwayStartDirAtZero:true
+attachedToUnit: true
+#alsoPlaySound:ROOT:Data/soundFx/explode6.wav, ROOT:Data/soundFx/explode5.wav, ROOT:Data/soundFx/crumble.wav
+priority: critical
+life: 80
+fadeOut: false
+#scaleFrom: 1.875
+#scaleTo: 1.875
+scaleFrom: 1.25
+scaleTo: 1.25
+image:ROOT:Data/Images/explodeStructureMedium.png
+total_frames: 5
+animateFrameStart: 0
+animateFrameEnd: 4
+animateFrameSpeed: 0.16

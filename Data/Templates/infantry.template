@@ -1,0 +1,79 @@
+
+[core]
+copyFrom: voices.template, effects.template, strings.template
+isBio: true
+tags: infantry
+hideScorchMark: true
+softCollisionOnAll: 30
+showActionsWithMixedSelectionIfOtherUnitsHaveTag: infantry
+mass: 150
+fogOfWarSightRange:2
+
+soundOnNewSelection:ROOT:Data/Voices/infvoices (1).wav:0.7, ROOT:Data/Voices/infvoices (2).wav:0.7, ROOT:Data/Voices/infvoices (3).wav:0.7, ROOT:Data/Voices/infvoices (4).wav:0.7, ROOT:Data/Voices/infvoices (5).wav:0.7, ROOT:Data/Voices/infvoices (15).wav:0.7, ROOT:Data/Voices/infvoices (16).wav:0.7, ROOT:Data/Voices/infvoices (3).wav:0.7
+
+soundOnMoveOrder: ROOT:Data/Voices/infvoices (6).wav:0.7, ROOT:Data/Voices/infvoices (7).wav:0.7, ROOT:Data/Voices/infvoices (8).wav:0.7, ROOT:Data/Voices/infvoices (9).wav:0.7, ROOT:Data/Voices/infvoices (10).wav:0.7, ROOT:Data/Voices/infvoices (11).wav:0.7, ROOT:Data/Voices/infvoices (12).wav:0.7, ROOT:Data/Voices/infvoices (13).wav:0.7, ROOT:Data/Voices/infvoices (14).wav:0.7, ROOT:Data/Voices/infvoices (17).wav:0.7, ROOT:Data/Voices/infvoices (18).wav:0.7, ROOT:Data/Voices/infvoices (19).wav:0.7, ROOT:Data/Voices/infvoices (20).wav:0.7, ROOT:Data/Voices/infvoices (21).wav:0.7, ROOT:Data/Voices/infvoices (22).wav:0.7
+
+soundOnAttackOrder:ROOT:Data/Voices/infvoices (6).wav:0.7, ROOT:Data/Voices/infvoices (7).wav:0.7, ROOT:Data/Voices/infvoices (8).wav:0.7, ROOT:Data/Voices/infvoices (9).wav:0.7, ROOT:Data/Voices/infvoices (10).wav:0.7, ROOT:Data/Voices/infvoices (11).wav:0.7, ROOT:Data/Voices/infvoices (12).wav:0.7, ROOT:Data/Voices/infvoices (13).wav:0.7, ROOT:Data/Voices/infvoices (14).wav:0.7, ROOT:Data/Voices/infvoices (17).wav:0.7, ROOT:Data/Voices/infvoices (18).wav:0.7, ROOT:Data/Voices/infvoices (19).wav:0.7, ROOT:Data/Voices/infvoices (20).wav:0.7, ROOT:Data/Voices/infvoices (21).wav:0.7, ROOT:Data/Voices/infvoices (22).wav:0.7
+
+soundOnDeath: ROOT:Data/Voices/dedman1.wav:0.7, ROOT:Data/Voices/dedman2.wav:0.7, ROOT:Data/Voices/dedman3.wav:0.7, ROOT:Data/Voices/dedman4.wav:0.7, ROOT:Data/Voices/dedman5.wav:0.7, ROOT:Data/Voices/dedman6.wav:0.7, ROOT:Data/Voices/dedman7.wav:0.7, ROOT:Data/Voices/dedman8.wav:0.7, ROOT:Data/Voices/dedman9.wav:0.7, ROOT:Data/Voices/dedman10.wav:0.7, ROOT:Data/Voices/dedman11.wav:0.7
+
+[hiddenAction_rammed]
+autoTrigger: if numberOfUnitsInEnemyTeam(withTag="heavyVehicle", withinRange=10, greaterThan=0)
+playSoundAtUnit: ROOT:Data/soundFx/infantryCrush.ogg:0.7
+spawnEffects: CUSTOM:crushed1
+deleteSelf: true
+
+[effect_crushed1]
+spawnChance: 1
+alwayStartDirAtZero:true
+attachedToUnit: true
+life: 1000
+fadeOut: false
+scaleFrom: 1.25
+scaleTo: 1.25
+image: ROOT:Data/Images/infantryBlood1.png
+priority: critical
+drawUnderUnits:true
+
+[effect_crushed2]
+spawnChance: 0.5
+alwayStartDirAtZero:true
+attachedToUnit: true
+life: 1000
+fadeOut: false
+scaleFrom: 1.25
+scaleTo: 1.25
+image: ROOT:Data/Images/infantryBlood2.png
+priority: critical
+drawUnderUnits:true
+
+[graphics]
+#image_offsetY:-1
+image_shadow: NONE
+#image_shadow_frames: true
+#shadowOffsetX:0
+#shadowOffsetY:0
+drawLayer: ground2
+disableLowHpFire: true
+disableLowHpSmoke: true
+
+[hiddenAction_hasParentTags]
+autoTrigger: if self.hasParent()
+requireConditional: if not self.tags(includes='hasParent')
+temporarilyAddTags: hasParent
+
+[hiddenAction_hasParentTagsRemove]
+autoTrigger: if not self.hasParent()
+requireConditional: if self.tags(includes='hasParent')
+temporarilyRemoveTags: hasParent
+
+[attack]
+turretRotateWithBody: true
+
+[movement]
+movementType: LAND
+moveSpeed: 0.4
+reverseSpeedPercentage: 0
+maxTurnSpeed: 99
+moveSlidingMode :false
+moveIgnoringBody:false

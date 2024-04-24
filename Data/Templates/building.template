@@ -1,0 +1,335 @@
+
+#Template by Hyasabaru
+
+[core]
+copyFrom: effects.template, strings.template
+class: CustomUnitMetadata
+tags: building, capturable
+mass: 4000
+softCollisionOnAll: 1
+#disableAllUnitCollisions:true
+explodeOnDeath: false
+effectOnDeath:CUSTOM:explodeBuilding2_2, CUSTOM:explodeBuilding2_3, CUSTOM:explodeBuilding2_4, CUSTOM:explodeBuilding2_5
+
+isBuilding: true
+fogOfWarSightRange:6
+buildSpeed: 0s
+selfBuildRate: 1.6s
+buildingToFootprintOffsetX:0
+buildingToFootprintOffsetY:0
+soundOnDeath: ROOT:Data/soundFx/crumble.wav, ROOT:Data/soundFx/explode6.wav
+
+#===== 2x2 =====#
+
+[effect_explodeBuilding2_2]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: -10
+yOffsetRelative: 10
+
+[effect_explodeBuilding2_3]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 10
+yOffsetRelative: 10
+delayedStartTimer: 10
+
+[effect_explodeBuilding2_4]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: -10
+yOffsetRelative: -10
+delayedStartTimer: 20
+
+[effect_explodeBuilding2_5]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 10
+yOffsetRelative: -10
+delayedStartTimer: 30
+
+#===== 3x2 =====#
+
+[effect_explodeBuilding2_b2]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 0
+yOffsetRelative: 5
+
+[effect_explodeBuilding2_b3]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 20
+yOffsetRelative: 10
+delayedStartTimer: 5
+
+[effect_explodeBuilding2_b4]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 0
+yOffsetRelative: -10
+delayedStartTimer: 25
+
+[effect_explodeBuilding2_b5]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 20
+yOffsetRelative: -10
+delayedStartTimer: 15
+
+[effect_explodeBuilding2_b6]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: -20
+yOffsetRelative: -10
+delayedStartTimer: 20
+
+[effect_explodeBuilding2_b7]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: -20
+yOffsetRelative: 10
+delayedStartTimer: 10
+
+#===== 3x3 =====#
+
+[effect_explodeBuilding2_c2]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 0
+yOffsetRelative: 20
+
+[effect_explodeBuilding2_c3]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 20
+yOffsetRelative: -20
+delayedStartTimer: 5
+
+[effect_explodeBuilding2_c4]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 0
+yOffsetRelative: -20
+delayedStartTimer: 25
+
+[effect_explodeBuilding2_c5]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: -20
+yOffsetRelative: 20
+delayedStartTimer: 15
+
+[effect_explodeBuilding2_c6]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: -20
+yOffsetRelative: -20
+delayedStartTimer: 20
+
+[effect_explodeBuilding2_c7]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 20
+yOffsetRelative: 20
+delayedStartTimer: 30
+
+[effect_explodeBuilding2_c8]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: 20
+yOffsetRelative: 0
+#delayedStartTimer: 35
+
+[effect_explodeBuilding2_c9]
+@copyFromSection: effect_explodeBuilding2
+xOffsetRelative: -20
+yOffsetRelative: 0
+delayedStartTimer: 40
+
+#===== End of Explosion Offset =====#
+
+[hiddenAction_lowHPSmokeFire]
+requireConditional: if not self.tags(includes='infantry')
+autoTrigger: if self.hp(lessThan=${core.maxHp*0.25})
+spawnEffects: CUSTOM:smokeFire*1
+
+[hiddenAction_lowHPSmokeFire2]
+requireConditional: if not self.tags(includes='infantry')
+autoTrigger: if self.hp(lessThan=${core.maxHp*0.175})
+spawnEffects: CUSTOM:smokeFire2, CUSTOM:smokeFire3
+
+[effect_smokeFire2]
+@copyFromSection: effect_smokeFire
+xOffsetRelativeRandom: 8
+yOffsetRelativeRandom: 16
+spawnChance: 0.75
+
+[effect_smokeFire3]
+@copyFromSection: effect_smokeFire
+xOffsetRelativeRandom: 12
+yOffsetRelativeRandom: -12
+spawnChance: 0.75
+
+[hiddenAction_destroyed]
+autoTriggerOnEvent: destroyed
+spawnUnits: genericSoldier*2(spawnChance=0.75, addResources=hp:-15)
+
+
+[hiddenAction_baseUnderAttack]
+autoTrigger: if self.hasTakenDamage(withinSeconds=8)
+requireConditional: if not self.tags(includes="baseUnderAttack") and not numberOfUnitsInTeam(withTag="baseUnderAttack", withinRange=320, greaterThan=0)
+temporarilyAddTags: baseUnderAttack
+alsoQueueAction: AtrUnderAttack, OrdUnderAttack, HarUnderAttack
+
+[hiddenAction_nonUnderAttack]
+autoTrigger: if not self.hasTakenDamage(withinSeconds=8)
+requireConditional: if self.tags(includes="baseUnderAttack")
+temporarilyRemoveTags: baseUnderAttack
+
+[hiddenAction_AtrUnderAttack]
+requireConditional: if self.globalTeamTags(includes='houseAtreidesMod')
+playSoundToPlayer: ROOT:Data/Voices/Atreides/underAttack.ogg:1.5
+buildSpeed: 0s
+
+[hiddenAction_OrdUnderAttack]
+requireConditional: if self.globalTeamTags(includes='houseOrdosMod')
+playSoundToPlayer: ROOT:Data/Voices/Ordos/underAttack.ogg:1.5
+buildSpeed: 0s
+
+[hiddenAction_HarUnderAttack]
+requireConditional: if self.globalTeamTags(includes='houseHarkonnenMod')
+playSoundToPlayer: ROOT:Data/Voices/Harkonnen/underAttack.ogg:1.5
+buildSpeed: 0s
+
+#===== Placement Rules =====#
+
+[placementRule_Main]
+@copyFromSection: template_placementRuleNote
+anyRuleInGroup: Main
+searchTags: mainBuilding
+searchTeam: own
+searchDistance: 55
+excludeIncompleteBuildings: false
+excludeNonBuildings: false
+minCount: 1
+maxCount: 99
+blocksPlacement: true
+
+checkEachTile: false
+
+[placementRule_1x1]
+@copyFromSection: template_placementRuleNote
+anyRuleInGroup: Main
+searchTags: 1x1
+searchTeam: own
+searchDistance: 42
+excludeIncompleteBuildings: false
+excludeNonBuildings: false
+minCount: 1
+maxCount: 99
+blocksPlacement: true
+
+checkEachTile: false
+
+[placementRule_2x2]
+@copyFromSection: template_placementRuleNote
+anyRuleInGroup: Main
+searchTags: 2x2       
+searchTeam: own
+searchDistance: 55
+excludeIncompleteBuildings: false
+excludeNonBuildings: false
+minCount: 1
+maxCount: 99
+blocksPlacement: true
+
+checkEachTile: false
+
+[placementRule_3x2]
+@copyFromSection: template_placementRuleNote
+anyRuleInGroup: Main
+searchTags: 3x2
+searchTeam: own
+searchDistance: 60.05
+excludeIncompleteBuildings: false
+excludeNonBuildings: false
+minCount: 1
+maxCount: 99
+blocksPlacement: true
+
+checkEachTile: false
+
+[placementRule_3x3]
+@copyFromSection: template_placementRuleNote
+anyRuleInGroup: Main
+searchTags: 3x3
+searchTeam: own
+searchDistance: 61
+excludeIncompleteBuildings: false
+excludeNonBuildings: false
+minCount: 1
+maxCount: 99
+blocksPlacement: true
+
+checkEachTile: false
+
+#===== End of Placement Rules =====#
+
+[action_repairOn]
+@copyFromSection: template_repairOnNote, template_createQueueNote
+isLockedAlt: if self.queueSize(greaterThan=0)
+isVisible: if not self.hasFlag(id=29) and self.hp(lessThan=${int(core.maxHp)})
+pos: 9999
+price: 0
+
+buildSpeed: 0s
+isLocked: if not self.resource(type="Spice", greaterThan=0)
+
+iconImage: ROOT:Data/Images/Icons/icon_repair.png
+highPriorityQueue: true
+#displayType: infoOnly
+addResources: setFlag=29
+allowMultipleInQueue: true
+ai_isHighPriority: if self.hp(lessThan=${core.maxHp*0.75}) and not self.hasTakenDamage(withinSeconds=2) and not self.globalTeamTags(includes="survivalMode")
+
+[action_stopRepair]
+@copyFromSection: template_repairOffNote
+autoTrigger: if self.hasFlag(id=29) and self.hp(full=true) and self.resource(type="Spice", greaterThan=0) or not self.resource(type="Spice", greaterThan=0)
+isVisible: if self.hasFlag(id=29)
+price:  0
+
+addResources: unsetFlag=29
+iconImage: ROOT:Data/Images/Icons/icon_repair.png
+#displayType: infoOnly
+allowMultipleInQueue: true
+isGuiBlinking: true
+buildSpeed: 0s
+pos: 9999
+
+[hiddenAction_repair]
+autoTrigger: if self.hasFlag(id=29) and self.hp(lessThan=${int(core.maxHp)})
+#addResources: hp=${int(core.maxHp*0.06)}, Spice=-${int(core.maxHp*0.06)}
+addResources: hp=8, Spice=-4
+
+[hiddenAction_onCreate]
+autoTriggerOnEvent: created
+playSoundAtUnit: ROOT:Data/soundFx/placeStructure.wav, ROOT:Data/soundFx/placeStructure2.wav
+
+[animation_build]
+onActions: underConstruction
+blendOut: 0.5s
+KeyframeTimeScale: 1
+body_0s: {frame:0}
+body_0.6s: {frame:1}
+body_0.7s: {frame:1}
+body_0.8s: {frame:1}
+body_0.9s: {frame:0}
+body_1.0s: {frame:1}
+body_1.1s: {frame:1}
+body_1.2s: {frame:1}
+body_1.3s: {frame:0}
+body_1.4s: {frame:1}
+body_1.5s: {frame:1}
+body_1.6s: {frame:1}
+pingPong: true
+
+[graphics]
+imageScale: 1.25
+default_frame: 1
+disableLowHpFire: true
+disableLowHpSmoke: true
+drawLayer: ground
+whenBeingBuiltMakeTransparentTill:0
+image_wreak: ROOT:Data/Images/wreak_2x2.png
+
+[movement]
+movementType: BUILDING
+moveSpeed: 0
+moveAccelerationSpeed: 0
+moveDecelerationSpeed: 0
+maxTurnSpeed: 1.4
+turnAcceleration: 0.7

@@ -1,0 +1,119 @@
+
+[core]
+copyFrom: voices.template, strings.template
+explodeOnDeath: false
+tags: lightVehicle, vehicle
+transportSlotsNeeded:3
+fogOfWarSightRange:6
+softCollisionOnAll: 1
+mass: 1000
+
+#===== Repair Facility System =====#
+
+[hiddenAction_repairInside]
+autoTrigger: if self.hasParent(withTag='repairFacility') and self.hp(lessThan=${core.maxHp*1 - 1})
+requireConditional: if self.resource(type="Spice", greaterThan=0) and not self.tags(includes="repairing")
+alsoTriggerAction: whileRepairing
+
+[hiddenAction_repairMaintain1]
+autoTrigger: if self.tags(includes="repairing")
+requireConditional: if self.resource(type="Spice", greaterThan=0)
+addResources: hp=${int(core.maxHp*0.02)}, Spice=-${int(core.maxHp*0.02)}
+
+[hiddenAction_repairMaintain2]
+autoTrigger: if self.tags(includes="repairing")
+requireConditional: if self.resource(type="Spice", greaterThan=0)
+addResources: hp=1, Spice=-1
+
+[hiddenAction_whileRepairing]
+temporarilyAddTags: repairing
+
+[hiddenAction_repairTooLate]
+autoTrigger: if self.hasParent(withTag='repairFacility') and self.hp(empty=true)
+addResources: Spice=20
+deleteSelf: true
+
+[hiddenAction_repairedReady]
+requireConditional: if self.hasParent(withTag='repairFacility')
+autoTrigger: if self.hp(full=true) and self.tags(includes='repairing')
+temporarilyAddTags: repairDone
+temporarilyRemoveTags: repairing
+
+[hiddenAction_repairDone]
+requireConditional: if self.hasParent(withTag='repairFacility')
+autoTrigger: if self.hp(full=true) and self.tags(includes='repairDone')
+resetToDefaultTags: true
+alsoQueueAction: repairDoneAtreides, repairDoneOrdos, repairDoneHarkonnen
+alsoTriggerAction: repairDiscard
+disconnectFromParent: true
+
+[hiddenAction_repairDiscard]
+clearAllWaypoints: true
+addWaypoint_type: move
+addWaypoint_prepend: true
+addWaypoint_position_offsetFromSelf: 0, 30
+
+[hiddenAction_repairDoneAtreides]
+requireConditional: if self.globalTeamTags(includes='houseAtreidesMod')
+playSoundToPlayer: ROOT:Data/Voices/Atreides/unitRepaired.ogg:2
+buildSpeed: 0s
+
+[hiddenAction_repairDoneOrdos]
+requireConditional: if self.globalTeamTags(includes='houseOrdosMod')
+playSoundToPlayer: ROOT:Data/Voices/Ordos/unitRepaired.ogg:2
+buildSpeed: 0s
+
+[hiddenAction_repairDoneHarkonnen]
+requireConditional: if self.globalTeamTags(includes='houseHarkonnenMod')
+playSoundToPlayer: ROOT:Data/Voices/Harkonnen/unitRepaired.ogg:2
+buildSpeed: 0s
+
+[hiddenAction_repairTags1]
+autoTrigger: if not self.hasParent(withTag='repairFacility')
+requireConditional: if self.tags(includes='repairing')
+temporarilyRemoveTags: repairing
+
+#[hiddenAction_hasParentTags]
+#autoTrigger: if self.hasParent()
+#requireConditional: if not self.tags(includes='hasParent')
+#temporarilyAddTags: hasParent
+
+#[hiddenAction_hasParentTagsRemove]
+#autoTrigger: if not self.hasParent()
+#requireConditional: if self.tags(includes='hasParent')
+#resetToDefaultTags: true
+
+#===== End of Repair Facility =====#
+
+[graphics]
+drawLayer: ground2
+image_shadow: SHADOW:${section.image}
+image_shadow_frames: true
+shadowOffsetX:0
+shadowOffsetY:0
+disableLowHpFire: true
+disableLowHpSmoke: true
+
+[hiddenAction_destroyed]
+autoTriggerOnEvent: destroyed
+spawnUnits: genericSoldier(spawnChance=0.25)
+
+[hiddenAction_lowHPSmokeFire]
+requireConditional: if not self.tags(includes='infantry') and not self.hasParent(withTag='hasParent')
+autoTrigger: if self.hp(lessThan=${core.maxHp*0.25}) and not self.hasParent(withTag='repairFacility')
+spawnEffects: CUSTOM:smokeFire*1
+
+[effect_trikeWreak]
+alwayStartDirAtZero:true
+attachedToUnit: false
+life: 30
+alpha: 5
+hSpeed: 0
+image: ROOT:Data/Images/trike_wreak.png
+priority: critical
+drawUnderUnits:true
+total_frames:2
+animateFrameStart:0
+animateFrameEnd:1
+animateFrameSpeed:0.12
+alsoPlaySound:ROOT:Data/soundFx/explode.wav, ROOT:Data/soundFx/explode2.wav, ROOT:Data/soundFx/explode3.wav, ROOT:Data/soundFx/explode4.wav, ROOT:Data/soundFx/explode5.wav, ROOT:Data/soundFx/explode7.wav

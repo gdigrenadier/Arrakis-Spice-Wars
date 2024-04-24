@@ -1,0 +1,31 @@
+
+[core]
+class: CustomUnitMetadata
+copyFrom: effects.template, strings.template
+mass: 1000
+tags: aircraft, airUnit, airborne
+explodeOnDeath: false
+explodeOnDeathGroundCollision: false
+effectOnDeathGroundCollision: CUSTOM:explodeMedium
+fogOfWarSightRange:6
+
+[graphics]
+drawLayer: air
+image_shadow: SHADOW:${section.image}
+image_shadow_frames: true
+shadowOffsetX:1
+shadowOffsetY:1
+disableLowHpFire: true
+disableLowHpSmoke: true
+
+[movement]
+movementType: AIR
+moveSpeed: 2
+moveAccelerationSpeed: 0.05
+moveDecelerationSpeed: 0.05
+slowDeathFall: true
+maxTurnSpeed: 2.0
+turnAcceleration: 2
+moveSlidingMode :false
+moveIgnoringBody:false
+reverseSpeedPercentage: 0
