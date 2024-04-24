@@ -20,5 +20,5 @@ PC
  
   - Major thanks to Hyasabaru for making the original Dune II mod for Rusted Warfare.
   - Westwood Studios for making the original Dune games.
-  - Norio Katyusha for major moral support back before when the mod was originally titled Dune II: Extended.
+  - Norio Katyusha for major moral support back before the mod was originally titled Dune II: Extended.
   - Luke for creating Rusted Warfare.
