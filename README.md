@@ -6,7 +6,7 @@ Arrakis: Broken Planet (or ABP for short) is a mega mod based off Westwood's ori
 # HIGHLY UNRECOMMENDED TO INSTALL THE MOD IN ITS CURRENT STATE!
 At the moment, Arrakis Broken Planet is not at all properly functional, with many, many problems still in the mod. Heck, its not even at a proper ready for release state. I highly recommend waiting until a release has been made, as those hopefully run much more stable with less bugs appearing. YOU HAVE BEEN WARNED!
 
-# HOW TO INSTALL
+# How To Install
 
 Mobile:
  - Download the latest release, open the game and use the "Import New Mod" button on the mods menu to add ABP to your game. Once done, enable ABP on the mod menu.
@@ -16,7 +16,7 @@ PC:
  - WARNING: Highly recommended to run the mod only in the 64 bit version of the game, as it may be unstable on the 32 bit version. You can make Steam open Rusted Warfare in  64 bit by selecting "Play Rusted Warfare (64bit)" and then clicking the "Always use this option" tick box and then pressing "Play".
  - (This may subject to change, as I may release the mod on the Steam Workshop in the future.)
 
- # CREDITS
+ # Credits
  
   - Major thanks to Hyasabaru for making the original Dune II mod for Rusted Warfare.
   - Westwood Studios for making the original Dune games.
