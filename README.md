@@ -16,6 +16,9 @@ PC:
  - WARNING: Highly recommended to run the mod only in the 64 bit version of the game, as it may be unstable on the 32 bit version. You can make Steam open Rusted Warfare in  64 bit by selecting "Play Rusted Warfare (64bit)" and then clicking the "Always use this option" tick box and then pressing "Play".
  - (This may subject to change, as I may release the mod on the Steam Workshop in the future.)
 
+Expansions:
+ - Follow the same steps as installing the main mod, but make sure that ASW is enabled, as the expansions will not function properly without.
+
  # Credits
  
   - Major thanks to Hyasabaru for making the original Dune II mod for Rusted Warfare.
