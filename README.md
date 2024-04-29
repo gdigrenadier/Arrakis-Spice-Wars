@@ -8,9 +8,9 @@ At the moment, Arrakis: Spice Wars is not at all properly functional, with many,
 
 # Expansions
 Currently, there are 3 extra pieces of downloadable content planned for ASW: 
- - Fremen Rising
- - Sarduakar Assault
- - Music Expansion
+ - Fremen Rising (https://github.com/gdigrenadier/ASW-Fremen-Rising)
+ - Sarduakar Assault (https://github.com/gdigrenadier/ASW-Sarduakar-Assault)
+ - Music Expansion (https://github.com/gdigrenadier/ASW-Music-Expansion)
 
 The reason behind some content being extra downloadables is due to file sizes. Most of the Rusted Warfare playerbase are mobile players. Typically, phones don't have much storage space and are not the most powerful. Seperating some things into their own bits of downloadable content should hopefully avoid these issues. The Music Expansion is very large in file size, with Fremen Rising and Sarduakar Assault being relatively low in file size.
 
