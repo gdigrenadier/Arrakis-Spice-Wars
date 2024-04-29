@@ -6,6 +6,13 @@ Arrakis: Spice Wars (or ASW for short) is a mega mod based off Westwood's origin
 # HIGHLY UNRECOMMENDED TO INSTALL THE MOD IN ITS CURRENT STATE!
 At the moment, Arrakis: Spice Wars is not at all properly functional, with many, many problems still in the mod. Heck, its not even at a proper ready for release state. I highly recommend waiting until a release has been made, as those hopefully run much more stable with less bugs appearing. YOU HAVE BEEN WARNED!
 
+# Expansions
+Currently, there are 3 extra pieces of downloadable content planned for ASW: 
+ - Fremen Rising
+ - Sarduakar Assault
+ - Music Expansion
+The reason behind some content being extra downloadables is due to file sizes. Most of the Rusted Warfare playerbase are mobile players. Typically, phones don't have much storage space and are not the most powerful. Seperating some things into their own bits of downloadable content should hopefully avoid these issues. The Music Expansions are very large in file size, with Fremen Rising and Sarduakar Assault being relatively low in file size.
+
 # How To Install
 
 Mobile:
