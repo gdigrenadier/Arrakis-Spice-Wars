@@ -12,7 +12,7 @@ Currently, there are 3 extra pieces of downloadable content planned for ASW:
  - Sarduakar Assault
  - Music Expansion
 
-The reason behind some content being extra downloadables is due to file sizes. Most of the Rusted Warfare playerbase are mobile players. Typically, phones don't have much storage space and are not the most powerful. Seperating some things into their own bits of downloadable content should hopefully avoid these issues. The Music Expansions are very large in file size, with Fremen Rising and Sarduakar Assault being relatively low in file size.
+The reason behind some content being extra downloadables is due to file sizes. Most of the Rusted Warfare playerbase are mobile players. Typically, phones don't have much storage space and are not the most powerful. Seperating some things into their own bits of downloadable content should hopefully avoid these issues. The Music Expansion is very large in file size, with Fremen Rising and Sarduakar Assault being relatively low in file size.
 
 # How To Install
 
