@@ -6,9 +6,11 @@ logIfCreditResourceUsed: true
 numBitsOnDeath: 0
 autoTriggerCheckRate: every8Frames
 
-@global harkonnenMammoth_Limit: 1
+
 
 #===== Game Systems =====#
+
+@global harkonnenMammoth_Limit: 1
 
 [template_stealthrule]
 canOnlyAttackUnitsWithoutTags: stealthed
