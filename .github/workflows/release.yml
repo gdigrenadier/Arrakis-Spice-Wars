@@ -1,14 +1,15 @@
 name: Package
-on: [push]
+on: 
+  push:
+    tags:
+    - '*'
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
-      repository-projects: write
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v3
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.5
       with:
