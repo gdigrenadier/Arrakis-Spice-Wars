@@ -1,6 +1,8 @@
 # Arrakis: Spice Wars
 A mod for [Rusted Warfare](https://store.steampowered.com/app/647960/Rusted_Warfare__RTS/), a RTS game that is essentially modding heaven.
 
+ [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases) [![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme) [![GitHub issues](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/issues-raw/navendu-pottekkat/awesome-readme) [![GitHub pull requests](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/issues-pr/navendu-pottekkat/awesome-readme) [![GitHub](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)](https://img.shields.io/github/license/navendu-pottekkat/awesome-readme)
+
 Arrakis: Spice Wars (or ASW for short) is a mega mod based off Westwood's original Dune games (DUNE II, Dune 2000, Emperor: Battle For Dune) with some extra features and things from Westwood's Command & Conquer franchise. It features many units from across the games while keeping DUNE II's simplistic artstyle.
 
 # WARNING
