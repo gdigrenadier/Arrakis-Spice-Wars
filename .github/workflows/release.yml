@@ -9,11 +9,10 @@ jobs:
       uses: thedoctor0/zip-release@0.7.5
       with:
         type: 'zip'
-        filename: 'ASW-$GITHUB_REF_NAME.rwmod'
+        filename: 'release.zip'
         exclusions: '*.git*'
-        path: build/zip/
     - name: Upload Release
       uses: ncipollo/release-action@v1.12.0
       with:
-        artifacts: "ASW-$GITHUB_REF_NAME.rwmod"
+        artifacts: "release.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
