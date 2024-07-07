@@ -11,7 +11,7 @@ jobs:
     container: node:10.18-jessie
     steps:
       - name: Clone Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: painandsuffering/repo
 
