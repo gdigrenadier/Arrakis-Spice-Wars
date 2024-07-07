@@ -8,14 +8,18 @@ on:
 jobs:
   Release:
     runs-on: ubuntu-latest
+    container: node:10.18-jessie
     steps:
-      - name: Zips code
-        uses: thedoctor0/zip-release@0.7.5
+      - name: Clone Repository
+        uses: actions/checkout@v3
         with:
-          type: 'zip'
-          filename: '${{ github.ref }}.rwmod'
-          exclusions: '*.git* /*node_modules/* .editorconfig'
-          command: "mkdir -p build/release"
+          path: painandsuffering/repo
+
+      - name: Install Zip
+        run: sudo apt install zip unzip
+      
+      - name: Archive Repository
+        run: zip -r ASW-${{ github.ref }}.rwmod painandsuffering/repo
 
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
