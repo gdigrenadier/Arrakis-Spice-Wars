@@ -21,13 +21,13 @@ jobs:
         run: sudo apt install zip unzip
       
       - name: Archive Repository
-        run: zip -r ASW-${{ github.ref }}.rwmod painandsuffering/
+        run: zip -r ASW-${{ github.ref_name }}.rwmod painandsuffering/
 
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ASW-${{ github.ref }}.rwmod
-          asset_name: ASW-${{ github.ref }}.rwmod
-          tag: ${{ github.ref }}
+          file: ASW-${{ github.ref_name }}.rwmod
+          asset_name: ASW-${{ github.ref_name }}.rwmod
+          tag: ${{ github.ref_name }}
           overwrite: true
