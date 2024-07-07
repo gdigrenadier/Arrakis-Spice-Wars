@@ -7,25 +7,27 @@ on:
 
 jobs:
   Release:
-    runs-on: ubuntu-latest
-    container: node:10.18-jessie
+    runs-on: ubuntu-22.04
     steps:
+      - name: Create Directory
+        run: mkdir -p painandsuffering/
+
       - name: Clone Repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
-          path: painandsuffering/repo
+          path: painandsuffering/
 
       - name: Install Zip
         run: sudo apt install zip unzip
       
       - name: Archive Repository
-        run: zip -r ASW-${{ github.ref }}.rwmod painandsuffering/repo
+        run: zip -r ASW-${{ github.ref }}.rwmod painandsuffering/
 
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: build/release/ASW-${{ github.ref }}.rwmod
+          file: ASW-${{ github.ref }}.rwmod
           asset_name: ASW-${{ github.ref }}.rwmod
           tag: ${{ github.ref }}
           overwrite: true
