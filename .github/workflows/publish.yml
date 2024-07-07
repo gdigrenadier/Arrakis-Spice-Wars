@@ -19,7 +19,7 @@ jobs:
         uses: thedoctor0/zip-release@0.7.5
         with:
           type: 'zip'
-          filename: 'ASW-${{ github.ref }}.rwmod'
+          filename: '${{ github.ref }}.rwmod'
           exclusions: '*.git* /*node_modules/* .editorconfig'
 
       - name: Move file
