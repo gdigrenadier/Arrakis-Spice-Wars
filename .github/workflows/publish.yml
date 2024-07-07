@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create directory
-        run: mkdir -p build/release
+        run: |
+          mkdir -p build/release
+          echo "Directory created."
+  
 
       - name: Zips code
         uses: thedoctor0/zip-release@0.7.5
@@ -20,7 +23,9 @@ jobs:
           exclusions: '*.git* /*node_modules/* .editorconfig'
 
       - name: Move file
-        run: mv ASW-${{ github.ref }}.rwmod build/release
+        run: |
+          mv ASW-${{ github.ref }}.rwmod build/release
+          echo "Moving file"
 
       - name: Upload release
         uses: svenstaro/upload-release-action@v2
