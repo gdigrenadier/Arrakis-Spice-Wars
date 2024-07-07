@@ -12,12 +12,8 @@ jobs:
         filename: 'ASW-$GITHUB_REF_NAME.rwmod'
         exclusions: '*.git*'
         path: build/zip/
-    - name: Upload Packages
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref }}
-          prerelease: true
-          overwrite: true
-          file_glob: true
-          file: build/zip/*
+    - name: Upload Release
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        artifacts: "ASW-$GITHUB_REF_NAME.rwmod"
+        token: ${{ secrets.GITHUB_TOKEN }}
