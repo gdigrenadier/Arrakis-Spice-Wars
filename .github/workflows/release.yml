@@ -20,4 +20,4 @@ jobs:
       with:
         artifacts: "release.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
-        allowUpdates = "true"
+        allowUpdates: = "true"
