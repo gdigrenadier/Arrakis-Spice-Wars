@@ -1,0 +1,32 @@
+name: Publish
+
+on:
+  release:
+    types:
+      - created
+
+jobs:
+  Release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create directory
+        run: mkdir -p build/release
+
+      - name: Zips code
+        uses: thedoctor0/zip-release@0.7.5
+        with:
+          type: 'zip'
+          filename: 'ASW-${{ github.ref }}.rwmod'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+
+      - name: Move file
+        run: mv ASW-${{ github.ref }}.rwmod build/release
+
+      - name: Upload release
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: build/release/ASW-${{ github.ref }}.rwmod
+          asset_name: ASW-${{ github.ref }}.rwmod
+          tag: ${{ github.ref }}
+          overwrite: true
