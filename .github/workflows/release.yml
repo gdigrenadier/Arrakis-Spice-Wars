@@ -18,5 +18,6 @@ jobs:
     - name: Upload Release
       uses: ncipollo/release-action@v1.12.0
       with:
+        discussionCategory: "Releases"
         artifacts: "release.zip"
         token: ${{ secrets.GITHUB_TOKEN }}
