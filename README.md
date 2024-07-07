@@ -6,26 +6,4 @@ Arrakis: Spice Wars (or ASW for short) is a mega mod based off Westwood's origin
 # WARNING
 At the moment, Arrakis: Spice Wars is not at all properly functional, with many, many problems still in the mod. Heck, its not even at a proper ready for release state. I highly recommend waiting until a release has been made, as those hopefully run much more stable with less bugs appearing. YOU HAVE BEEN WARNED!
 
-# Expansions
-Currently, there are 3 extra pieces of downloadable content planned for ASW: 
- - Fremen Rising (https://github.com/gdigrenadier/ASW-Fremen-Rising)
- - Sarduakar Assault (https://github.com/gdigrenadier/ASW-Sarduakar-Assault)
- - Music Expansion (https://github.com/gdigrenadier/ASW-Music-Expansion)
-
-(Currently the repositories are privated, this is because these are not finished yet.)
-
-The reason behind some content being extra downloadables is due to file sizes. Most of the Rusted Warfare playerbase are mobile players. Typically, phones don't have much storage space and are not the most powerful. Seperating some things into their own bits of downloadable content should hopefully avoid these issues. The Music Expansion is very large in file size, with Fremen Rising and Sarduakar Assault being relatively low in file size.
-
-# How To Install
-
-Mobile:
- - Download the latest release, open the game and use the "Import New Mod" button on the mods menu to add ABP to your game. Once done, enable ABP on the mod menu.
-
-PC:
- - Download the latest release and extract it. Then open Steam and right click on Rusted Warfare in the list of games on your library. Hover your cursor over the "Manage" button and then select "Browse local files". This should bring up your Rusted Warfare game files. If so, open the folder called "mods" and then select the folder called "units" inside it. This is where you should put ASW inside. Once done, enable ASW on the mod menu.
- - Highly recommended to run the mod only in the 64 bit version of the game, as it may be unstable on the 32 bit version. You can make Steam open Rusted Warfare in  64 bit by selecting "Play Rusted Warfare (64bit)" when pressing the and then clicking the PLAY button and then ticking the "Always use this option" when prompted with launch options and then pressing Play. Alternatively, you could go to the properties menu on Rusted Warfare in your Steam library. Then on the general tab, you can find the launch options box, where you can then set it to "Play Rusted Warfare (64bit)" as default.
-
-(This may subject to change, as I may release the mod on the Steam Workshop in the future.)
-
-Expansions:
- - Follow the same steps as installing the main mod, but make sure that ASW is enabled, as the expansions will not function properly without.
+Check the wiki to see additional information such as how to install, extra content and the official discord link: https://github.com/gdigrenadier/Arrakis-Spice-Wars/wiki/Home-&-FAQ
