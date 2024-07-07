@@ -4,4 +4,3 @@ title: Arrakis: Spice Wars (1.0)
 description: Using Hyasabaru's DUNE II mod as a basis, Arrakis: Spice Wars is a mod that basically combines all the Dune RTS games (DUNE II, DUNE 2000 and Emperor: Battle For Dune) with some other additions into one while using DUNE II's artstyle. \n DISCLAIMER: All the assets like sound effects and sprites are Westwood Studios', originally used for the original game made back in the 90s. \n Thank you Hyasabaru for making such a excellent mod. \n Made by GDI Grenadier.
 
 tags: asw, starting-units, units, total conversion, tanks, hi-tech, planetary warfare, dune
-
