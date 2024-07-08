@@ -297,7 +297,7 @@ displayDescription: -The Civilians and Natives of Arrakis use harvesters themsel
 
 [template_advharvesterDesc]
 displayText: Advanced Harvester
-displayDescription: -Atredies' advanced harvester. It allows for more spice collection than the other factions' harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+displayDescription: -Atreides' advanced harvester. It allows for more spice collection than the other factions' harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
 displayText_ru:Улучшеный харвестер
 displayDescription_ru: -Усовершенствованный харвестер Атриды. Это позволяет собирать больше специй, чем сборщики других фракций. \n-Комбайн отделяет спайс от песка .\n-Непригодный песок выбрасывается через выхлопную систему.\n-После заполнения комбайн автоматически отправляет сырой снюс на перерабатывающий завод для переработки на Спайс.
 
@@ -406,325 +406,139 @@ displayDescription_ru: - Этот танк, разработанный Харк�
 displayText: "Mammoth" Super Heavy Tank
 displayDescription: -This titan of a tank is peak Harkonnen Engineering, its surpasses all known life on Arrakis.\n-This tank is capable of destoying everything in its path with a inferno following its treads, civilisations have fell due to its sheer might.\n-The Mammoth Super Heavy Tank is a near invincible land cruiser armed with cannons the sizes of men and ammo capable of destroying civilian buildings in one shot.\n-It is that expensive and monstrous that Harkonnen commanders are only allowed one in the battlefield.\n-Use it wisely.
 
-[template_sardaukarTrooperDesc]
-displayText: Sardaukar Trooper
-displayDescription: -The Sardauker are the Emperor's elite troopers.\n-They have superior firepower and armor.\n-Spies report the Sardaukar's armament includes a rotary cannon which fires armor piercing rounds in addition to a mobile missle launcher that fires shaped charge.
-displayText_ru: Сардаукарский солдат displayDescription_ru: -Сардаукеры - элитные солдаты Императора.\n-Они обладают превосходной огневой мощью и броней.\n-Шпионы сообщают, что вооружение сардаукаров включает вращающуюся пушку, которая стреляет бронебойными снарядами, в дополнение к мобильной ракетной установке, стреляющей кумулятивными зарядами.
-
-#displayDescription_tl: -Ang Sardauker ay mga elite troopers ng Emperor.\n-Nagtatataglay sila ng malakas na armas at matibay na kasuutan.\n-Ayon sa mga espiya, ang sandata ng Sardaukar ay nagsasama ng isang Rotary Cannon na may armor-piercing bullets at bilang karagdagan sa isang mobile missile launcher na gumagamit ng shaped charge na rocket
-
-
-[template_sardaukarTroopersDesc]
-displayText: Sardaukar Troopers
-displayDescription: -The Sardauker are the Emperor's elite troopers.\n-They have superior firepower and armor.\n-Spies report the Sardaukar's armament includes a rotary cannon which fires armor piercing rounds in addition to a mobile missle launcher that fires shaped charge.
-displayText_ru: Сардаукарские солдаты
-displayDescription_ru: -Сардаукеры - элитные солдаты Императора.\n-Они обладают превосходной огневой мощью и броней.\n-Шпионы сообщают, что вооружение сардаукаров включает вращающуюся пушку, которая стреляет бронебойными снарядами, в дополнение к мобильной ракетной установке, стреляющей кумулятивными зарядами.
-
-#displayDescription_tl: -Ang Sardauker ay mga elite troopers ng Emperor.\n-Nagtatataglay sila ng malakas na armas at matibay na kasuutan.\n-Ayon sa mga espiya, ang sandata ng Sardaukar ay nagsasama ng isang Rotary Cannon na may armor-piercing bullets at bilang karagdagan sa isang mobile missile launcher na gumagamit ng shaped charge na rocket
-
-
 [template_fremenWarriorDesc]
 displayText: Fremen Warrior
 displayDescription: -The Fremen are native to dune.\n-Elite fighters, the Fremens' familiarity with the hostile terrain makes them a difficult adversary.
-displayText_ru: Фриман
-displayDescription_ru: - Фриманы родом из дюн.\n - Элитные бойцы, знакомство фрименов с враждебной местностью делает их опасными противниками.
-#displayDescription_tl: -Ang Fremen ay mga katutubo ng dune.\n-Mga pawang mandirigma, ang pagkaka-pamilyar ng Fremens sa mapang-akit na lupain ay hindi madali para sa kanila.
-
 
 [template_fremenWarriorsDesc]
 displayText: Fremen Warriors
 displayDescription: -The Fremen are native to dune.\n-Elite fighters, the Fremens' familiarity with the hostile terrain makes them a difficult adversary.
-displayText_ru: отряд Фриманов
-displayDescription_ru: - Фриманы родом из дюн.\n - Элитные бойцы, знакомство фрименов с враждебной местностью делает их опасными противниками.
-#displayDescription_tl: -Ang Fremen ay mga katutubo ng dune.\n-Mga pawang mandirigma, ang pagkaka-pamilyar ng Fremens sa mapang-akit na lupain ay hindi madali para sa kanila.
 
-#=====Additions=====#
+# Misc
 
 [template_rawSpiceDesc]
 displayText: Spice
 displayDescription: -Harvestable
-displayText_ru: Снюс 
-displayDescription_ru: -Урожай, можно собрать харвестером
 
 [template_houseSelectorDesc]
 displayText: House Selector
 displayDescription: -Selects House
-displayText_ru: Селектор домов(фракции для тупых)
-displayDescription_ru: -Выбирает Дом
 
 [template_razingOutpostDesc]
 displayText: Outpost
 displayDescription: -Calls Reinforcement
-displayText_ru: Аванпост
-displayDescription_ru: -Вызывает подкрепление
 
 [template_starportFrigateDesc]
 displayText: Frigate
 displayDescription: -Used to Deliver the traded units \n -Cannot be attack
-displayText_ru: Фрегат
-displayDescription_ru: -Используется для доставки проданных юнитов\n -Не может быть атакован
 
 [template_sandboxFrigateDesc]
 displayText: Sandbox Frigate
 displayDescription: -Sandbox Unit\n-Can't be attacked\n-Can transport units too
-displayText_ru: фрегат песочницы
-displayDescription_ru: - Юнит-песочница\n-Не может быть атакован\n-Можно также транспортировать юниты
-
-#=====Miscellaneous=====#
 
 [template_upgradeNote]
 text: Upgrade
 description: -Upgrade this building
 isLockedMessage: -Needs repair first
-text_ru: Улучшить
-description_ru: -Улучшить данное строение 
-isLockedMessage_ru: -Нужно сначала поченить
 
 [template_repairOnNote]
 text: Repair
 description: -Repair this building
 isLockedMessage: -Insufficient Spice
-text_ru: ремонт
-description_ru: -Отремонтировать это здание
-isLockedMessage: -Недостаточно Спайса
 
 [template_repairFacilityNote]
 isLockedAltMessage: -Still repairing a unit...
-isLockedAltMessage_ru: -Все еще чиню юнит...
+
 [template_buildingRepairNote]
 isLockedAlt2Message: -Still repairing...
-isLockedAlt2Message_ru: -Все еще ремонтирую...
 
 [template_createQueueNote]
 isLockedAltMessage: -Queue in progress...
-isLockedAltMessage_ru: -Выполняется очередь...
 
 [template_repairOffNote]
 text: Stop Repair
 description: -Cancel this repairing
-text_ru: Остановить ремонт
-description_ru: -Отменить этот ремонт
 
 [template_actionHarvestNote]
 text: Harvest
-text_ru: Урожай
+
 [template_actionUnloadNote]
 text: Unload
-text_ru: Разгрузить
+
 [template_actionQueueBuilding]
 isLockedMessage: Building in progress
 isLockedAlt2Message: Low Power
 
 [template_placementRuleNote]
-cannotPlaceMessage: Must place together with another building
-cannotPlaceMessage_ru:Должен размещаться рядом с другим зданием
+cannotPlaceMessage: Must be placed next to another building.
+
 [template_mcvDeploymentNote]
-isLockedMessage: -Cannot deploy on slabs
-isLockedMessage_ru: -Невозможно развернуть на плитах
-[template_houseAtreidesDesc]
-text: House Atreides
-description: [Technology & Economics Faction]\n\n[Features]\n-Sonic Weaponry\n-Fremen Allies
-text_ru:Дом Атриды
-description_ru:[Фракция технологий и экономики]\n\n[Особенности]\n-Звуковое оружие\n-Союзники фрименов
+isLockedMessage: -Unable to deploy here
 
-[template_houseOrdosDesc]
-text: House Ordos
-description: [Stealth & Sabotage Faction]\n\n[Features]\n-Deviator Weaponry\n-Map Reveal
-text_ru: Дом Ордосы
-description_ru:[Фракция скрытности и саботажа]\n\n[Особенности]\n-Оружие Девиатора\n-Открытие карты
-
-[template_houseHarkonnenDesc]
-text: House Harkkonen
-description: [Strength & Offensive Faction]\n\n[Features]\n-Devastator Weaponry\n-Tank Reinforcements
-text_ru: Дом Харконены 
-description_ru:[Сила и наступательная фракция]\n\n[Особенности]\n-оружие-опустошитель\n-танковые подкрепления
-
-[template_houseSardaukarDesc]
-text: Emperor's Army
-description: [Infantry & Manpower Faction]\n\n[Features]\n-Sardaukar Troopers\n-
-text_ru: Дом Сардоукары
-description_ru:[Фракция пехоты и живой силы]\n\n[Особенности]\n-Сардаукарские солдаты\n-
-
-#=====Abilities=====#
+# Abilities
 
 [template_selfDestructDesc]
 text: Self-Destruct
-description: -This will make the Tank go Self-Destruct\n-Cannot be cancel
-text_ru: Самоуничтожение
-description_ru: -Это приведет к самоуничтожению танка\n-Нельзя отменить
+description: -This will make the Tank go Self-Destruct\n-Cannot be cancelled.
 
 [template_selfDestructingDesc]
 text: Self-Destructing
-description: -This Tank is about to Self-Destruct!
-text_ru: Самоуничтожение
-description_ru: - Этот танк вот-вот самоуничтожится!
+description: -Self-destruction imminent!
 
-[template_tankreincool]
-@copyFromSection: template_cooldownNote
-description: -We are gathering the Reinforcements necessary.
-description_ru: -Мы собираем необходимое подкрепление.
-
-[template_revealcool]
-@copyFromSection: template_cooldownNote
-description: -Charging the Satelite.
-
-[template_reveal]
-@copyFromSection: template_cooldownNote
-description: -Reveal Area?
-
-[template_tankrein]
-text: Release the Tank Reinforcements.
-text_ru: Выпустите танковые подкрепления.
-[template_cooldownNote]
-text: Cooldown...
-text_ru:Перезарядка...
-
-[template_cooldownNote]
+[template_CooldownNote]
 text: Cooldown...
 
-[template_atreidesPalaceActionDesc]
-text: Call Fremen
-text_ru: Позвоните фрименов
-
-[template_atreidesCooldownNote]
-@copyFromSection: template_cooldownNote
-description: -Calling Fremen for Reinforcements...
-description_ru:-Вызов фрименов за подкреплением...
-
-[template_ordosCooldownNote]
-@copyFromSection: template_cooldownNote
-description: -Looking for a soldier to be choosen...
-description_ru: -Ищу солдата для выбора...
-
-[template_ordosPalaceActionDesc]
-text: Call Saboteur
-text_ru: Вызов саботажника
-
-[template_harkonnenCooldownNote]
-@copyFromSection: template_cooldownNote
-description: -We are gathering the Reinforcements necessary.
-description_ru: Мы собираем необходимое подкрепление.
-
-[template_deathHandDesc]
-text: -Fire the Death Hand. Finish the job.
-text_ru:-Огонь ракетой Рука Смерти. Закончить войну.
-
-[template_deathCooldownDesc]
-@copyFromSection: template_cooldownNote
-description: -Creating a missile for use...
-description_ru:-Создание ракеты для использования...
-
-[template_harkonnenPalaceActionDesc]
-text: Release the Tank Reinforcements.
-text_ru:Выпустить танковые подкрепления.
+# Starport
 
 [template_tradingDesc]
 isLockedMessage: -Out of stock!
-isLockedMessage_ru: -Нет в наличии!
 
 [template_resetAuctionDesc]
 text: Reset Order
-text_ru:Сбросить заказ
 
 [template_orderProceedDesc]
 text: Send Order
-text_ru:Отправить заказ
 
 [template_deliveryOnTheWayDesc]
 text: Arriving...
 description: -Ordered units will arrive in 10 seconds.
-text_ru:Прибытие...
-description_ru:- Заказанные юниты прибудут через 10 секунд.
 
-#=====Requirements=====#
+# Requirements
 
 [template_requiresWindtrap]
 isLockedAltMessage: Requires Windtrap
-isLockedAltMessage_ru:Требуется Ветряк
 
 [template_requiresOutpost]
 isLockedAltMessage: Requires Outpost
-isLockedAltMessage_ru:Требуется Аванпост
 
 [template_requiresOutpostAndLightFactory]
 isLockedAltMessage: Requires Outpost and Light Factory
-isLockedAltMessage_ru:Требуется Аванпост и Завод лёгкой техники
 
 [template_requiresRefinery]
 isLockedAltMessage: Requires Spice Refinery
-isLockedAltMessage_ru:Требуется Перерабатывающий завод Спайса
 
 [template_requiresLightFactory]
 isLockedAltMessage: Requires Light Factory
-isLockedAltMessage_ru:Требуется Завод лёгкой техники
 
 [template_requiresHeavyFactory]
 isLockedAltMessage: Requires Heavy Factory
 
 [template_requiresBarracks]
 isLockedAltMessage: Requires Barracks
-isLockedAltMessage_ru:Требуется Казарма 
 
 [template_requiresStarport]
 isLockedAltMessage: Requires Starport
-isLockedAltMessage_ru:Требуется Космопорт
 
 [template_requiresHouseOfIX]
 isLockedAltMessage: Requires House of IX
-isLockedAltMessage_ru:Требуется Дом IX
 
 [template_researchLock]
-isLockedAltMessage: The required research for this unit has not been completed.
-isLockedAlt2Message: The required research for this unit has not been completed.
+isLockedAltMessage: The required research for this unit has not been completed
+isLockedAlt2Message: The required research for this unit has not been completed
 
 [template_unitCap]
 isLockedMessage: You cannot build anymore of this unit.
 
-#=====Help Infos=====#
-
-[template_helpShowItDesc]
-text: Show Help
-description: -Shows the basics on how to play Dune II: Expanded.
-
-[template_helpHideItDesc]
-text: Hide Help
-description: -Hide the basics.
-
-[template_helpAboutSpiceDesc]
-text: Spice
-description: -Spice can be converted as your funds.\n-To get Spice, you need an Harvester and Refinery, they're needed to collect and convert to Funds.
-
-[template_helpAboutStorageDesc]
-text: Storage
-description: -When your storage is full, Spice cannot be collect.\n-You need to build Silos to get more Storage\n-Refinery also provide Storage.
-
-[template_helpAboutUpgradeDesc]
-text: Upgrade
-description: -Upgrade can unlock new units.\n-Factories and Barracks are upgradable, low tier Units aren't really effective in small numbers so it is better to produce high tier Units.
-
-[template_helpAboutDefenseDesc]
-text: Defense
-description: -Turrets are used to protect your Territory.\n-The Basic Turrets are good due to their cheap cost, but the Tier-3 Turrets are better due to their strength at the cost of money and power.
-
-[template_helpAboutExpandDesc]
-text: Expand
-description: -Expanding to more territory is the best way to get more Spice in D2E.\n-MCVs can be used to expand easily, deploying near Spice Fields is the best choice for you to expand your economy.\n-MCVs are purchasable through Upgraded Heavy Factory and Starport.
-
-[template_helpAboutTransportDesc]
-text: Transport
-description: -Some land units are too slow to travel long distances.\n-Carryalls are the most effective to transport any unit with.\n-Carryalls are purchasable through Hi-Tech, which can be unlocked by building a Light Factory.
-
-[template_helpAboutIXDesc]
-text: House Of IX Research
-description: -The House Of IX allows commanders in combat aquire technologies to give them an advantage when fighting in the spice fields.
-
-[template_helpAboutPalaceDesc]
-text: Palace Abilities
-description: -Each Faction has their own unique abilities from Palace.\n-Atredies can request Fremen Reinforcements which automatically charge into battle.\n-Harkonnen have access to Tank Reinforcements.\n-Ordos have access to a a small map reveal, which are useful to find out the enemy's plans.
-
-[template_helpAboutDeathDesc]
-text: Death Hand Missiles
-description: -Every faction have the ability to construct the Death Hand Silo, a building which allows the use of the Dteah Hand superweapon.\n-Death Hands can be countered using Counter-DT weaponry.
 
 #=====Research=====#
 

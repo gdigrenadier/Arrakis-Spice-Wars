@@ -1,0 +1,20 @@
+[template_houseHarkonnenDesc]
+text: House Harkkonen
+description: [Strength & Aggression]\n\n[Features]\n-Devastator Armourments\n-Tank Reinforcements
+
+# Palace
+[template_tankreinCool]
+@copyFromSection: template_CooldownNote
+description: -Rallying reinforcements...
+
+[template_tankrein]
+text: Release the Tank Reinforcements.
+
+# Death Hand
+[template_deathCooldownDesc]
+@copyFromSection: template_CooldownNote
+description: -Missile under construction...
+
+[template_deathHandDesc]
+text: -Fire the Death Hand. Finish the job.
+

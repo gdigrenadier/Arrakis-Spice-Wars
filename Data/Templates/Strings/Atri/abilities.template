@@ -1,0 +1,11 @@
+[template_houseAtreidesDesc]
+text: House Atreides
+description: [Technology & Economics]\n\n[Features]\n-Sonic Weaponry\n-Artillery Strike
+
+# Palace
+[template_artyCool]
+@copyFromSection: template_CooldownNote
+description: Rearming artillery...
+
+[template_fireArty]
+text: Fire artillery strike?
