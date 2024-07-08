@@ -1,0 +1,27 @@
+# Vehicles
+
+[template_advHarvesterDesc]
+displayText: Advanced Harvester
+displayDescription: -Atreides' advanced harvester. It allows for more spice collection than the other factions' harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+
+[template_mediumTankDesc]
+displayText: Medium Tank
+displayDescription: -The medium tank is a medium armored, tracked tank firing high explosive rounds.\n-It has average speed.
+
+[template_mirageTankDesc]
+displayText: Mirage Tank
+displayDescription: -The Mirage Tank is a vehicle that can disguise itself as common objects like spice when not moving. \n-It has a powerful cannon which can take enemies by surprise paired with its disguise ability.\n-Hiding it in Spice Fields will bring a advantage against the enemy.
+
+[template_atreidesSonicTankDesc]
+displayText: Sonic Tank
+displayDescription: -Developed by the Atreides, this tank utilizes sound waves technology to fire a powerful blast of sonic energy at its target.\n-The high energy frequencies break down the molecular structure of affected victims.
+
+[template_atreidesDisruptorTankDesc]
+displayText: Disruptor Tank
+displayDescription: -Developed by the Atreides, this enhanced version of the sonic tank utilizes sound beam technology to fire a powerful beam of sonic energy at its target.\n-The high energy frequencies break down the molecular structure of affected victims.
+
+# Aircraft
+
+[template_ornithopterDesc]
+displayText: Ornithopter
+displayDescription: -The Ornithopter is a lightly armored aircraft capable of firing battle support rockets.\n-The Ornithopter utilizes the unusual M-Flex technology which creates the distinctive "flapping" motion of the wings.\n-It is the highly maneuverable and the fastest aircraft on Dune.

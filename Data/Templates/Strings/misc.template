@@ -1,0 +1,60 @@
+# Misc
+
+[template_rawSpiceDesc]
+displayText: Spice
+displayDescription: -Harvestable
+
+[template_houseSelectorDesc]
+displayText: House Selector
+displayDescription: -Selects House
+
+[template_razingOutpostDesc]
+displayText: Outpost
+displayDescription: -Calls Reinforcement
+
+[template_starportFrigateDesc]
+displayText: Frigate
+displayDescription: -Used to Deliver the traded units \n -Cannot be attack
+
+[template_sandboxFrigateDesc]
+displayText: Sandbox Frigate
+displayDescription: -Sandbox Unit\n-Can't be attacked\n-Can transport units too
+
+[template_upgradeNote]
+text: Upgrade
+description: -Upgrade this building
+isLockedMessage: -Needs repair first
+
+[template_repairOnNote]
+text: Repair
+description: -Repair this building
+isLockedMessage: -Insufficient Spice
+
+[template_repairFacilityNote]
+isLockedAltMessage: -Still repairing a unit...
+
+[template_buildingRepairNote]
+isLockedAlt2Message: -Still repairing...
+
+[template_createQueueNote]
+isLockedAltMessage: -Queue in progress...
+
+[template_repairOffNote]
+text: Stop Repair
+description: -Cancel this repairing
+
+[template_actionHarvestNote]
+text: Harvest
+
+[template_actionUnloadNote]
+text: Unload
+
+[template_actionQueueBuilding]
+isLockedMessage: Building in progress
+isLockedAlt2Message: Low Power
+
+[template_placementRuleNote]
+cannotPlaceMessage: Must be placed next to another building.
+
+[template_mcvDeploymentNote]
+isLockedMessage: -Unable to deploy here

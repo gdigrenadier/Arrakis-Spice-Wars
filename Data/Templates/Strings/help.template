@@ -1,4 +1,4 @@
-# Help
+# Help Text
 
 [template_helpShowItDesc]
 text: Show Help
@@ -15,6 +15,10 @@ description: -In ASW, each faction has its own specialty that allows it to perfo
 [template_helpAboutEconomyDesc]
 text: Economy
 description: -Spice is the universal economy in ASW.\n-Spice can be harvested by building a refinery, which has a slow harvester attached that collects spice and brings it back to the refinery.
+
+[template_helpAboutLogisticsDesc]
+text: Carryall Logistics
+description: -Carryalls are the supreme logistics tool, as they are able to carry most units across the dunes. Carryalls also act as automated transport for harvesters, where they carry the harvester from the refinery to the nearest spice geyser.
 
 [template_helpAboutStorageDesc]
 text: Storage
@@ -35,10 +39,6 @@ description: -Expanding to more territory is the best way to get more Spice.\n-M
 [template_helpAboutCivilianDesc]
 text: Neutral Structures
 description: -In some parts of Arrakis, civilians have built certain structures with you can capture by sending engineers into.\n-These stuctures can provide additional building space, refineries, power and other technologies.
-
-[template_helpAboutTransportDesc]
-text: Transport
-description: -Some land units are too slow to travel long distances.\n-Carryalls are the most effective to transport any unit with.\n-Carryalls are purchasable through Hi-Tech, which can be unlocked by building a Light Factory.
 
 [template_helpAboutIXDesc]
 text: House Of IX Research

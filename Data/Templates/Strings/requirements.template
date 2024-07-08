@@ -1,0 +1,35 @@
+# Requirements
+
+[template_requiresWindtrap]
+isLockedAltMessage: Requires Windtrap
+
+[template_requiresOutpost]
+isLockedAltMessage: Requires Outpost
+
+[template_requiresOutpostAndLightFactory]
+isLockedAltMessage: Requires Outpost and Light Factory
+
+[template_requiresRefinery]
+isLockedAltMessage: Requires Spice Refinery
+
+[template_requiresLightFactory]
+isLockedAltMessage: Requires Light Factory
+
+[template_requiresHeavyFactory]
+isLockedAltMessage: Requires Heavy Factory
+
+[template_requiresBarracks]
+isLockedAltMessage: Requires Barracks
+
+[template_requiresStarport]
+isLockedAltMessage: Requires Starport
+
+[template_requiresHouseOfIX]
+isLockedAltMessage: Requires House of IX
+
+[template_researchLock]
+isLockedAltMessage: The required research for this unit has not been completed
+isLockedAlt2Message: The required research for this unit has not been completed
+
+[template_unitCap]
+isLockedMessage: You cannot build anymore of this unit.

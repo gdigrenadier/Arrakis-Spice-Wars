@@ -1,0 +1,12 @@
+# Abilities
+
+[template_selfDestructDesc]
+text: Self-Destruct
+description: -This will make the Tank go Self-Destruct\n-Cannot be cancelled.
+
+[template_selfDestructingDesc]
+text: Self-Destructing
+description: -Self-destruction imminent!
+
+[template_CooldownNote]
+text: Cooldown...

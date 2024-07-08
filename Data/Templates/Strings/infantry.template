@@ -1,0 +1,9 @@
+# Shared Infantry
+
+[template_soldierDesc]
+displayText: Soldier
+displayDescription: -An lightly armored foot soldier, equipped with 9mm RP assault rifle which fire armor piercing rounds.\n-Only have a limited firing range and speed.
+
+[template_trooperDesc]
+displayText: Trooper
+displayDescription: -Trooper is armed with 10mm Rotary Cannon firing armor piercing incendiary rounds and FS Rockets.\n-Has heavy, mechanized power sits which enhance performance and speed.

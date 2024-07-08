@@ -1,0 +1,21 @@
+# Research
+
+[template_sonicUpgradeDesc]
+text: Sonic Research
+description: -Begins research on Advanced Sonic Technology.\n-This allows the construction of weapons capable of ripping apart solid objects.
+
+[template_heavyWeapUpgradeDesc]
+text: Heavy Weapons Improvements Research
+description: -Begins research on Heavy Weapons Technology.\n-This upgrades infantry to have better weapons.
+
+[template_guardianUpgradeDesc]
+text: Guardian Tank Research
+description: -Begins research on Guardian Tank Technology.\n-Replaces the Medium Tank with the Guardian tank.
+
+[template_autoloaderUpgradeDesc]
+text: Automatic Loaders Research
+description: -Begins research on Automatic Loading Technology.\n-Replaces the Medium Tank/Guardian Tank and the Hawk Artillery's with a automatic shell loader, which greatly increases rate of fire.
+
+[template_disruptorUpgradeDesc]
+text: Disruptor Heavy Tank Research
+description: -Begins research on Disruptor Tank Technology.\n-Replaces the Sonic Tank with the Disruptor Heavy Tank, a improved Sonic Tank that is heavier, slower, more heavily armoured tank that packs a massive punch.

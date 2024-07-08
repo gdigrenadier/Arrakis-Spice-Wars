@@ -1,0 +1,14 @@
+# Starport
+
+[template_tradingDesc]
+isLockedMessage: -Out of stock!
+
+[template_resetAuctionDesc]
+text: Reset Order
+
+[template_orderProceedDesc]
+text: Send Order
+
+[template_deliveryOnTheWayDesc]
+text: Arriving...
+description: -Ordered units will arrive in 10 seconds.

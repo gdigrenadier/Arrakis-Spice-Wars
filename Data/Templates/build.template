@@ -144,21 +144,12 @@ isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
 @define flagId: 14
 streamingCost: Spice=300
 buildSpeed: 9s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap") and not self.globalTeamTags(includes="houseSardaukarMod")
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap")
 
 [canBuild_placeBarracks]
 @copyFromSection: template_placeBuilding
 @define target: genericBarracks
 @define flagId: 14
-
-[action_buildWOR]
-@copyFromSection: template_actionQueueBuilding
-@define target: genericWOR
-@define flagId: 15
-streamingCost: Spice=350
-buildSpeed: 13s
-isVisible: if not self.hasFlag(id=${flagId}) and self.globalTeamTags(includes="houseSardaukarMod") and self.hasUnitInTeam(withTag="windtrap")
-ai_isHighPriority: if numberOfUnitsInEnemyTeam(withTag="vehicle", greaterThan=0) and not self.hasUnitInTeam(withTag="wor")
 
 [canBuild_placeWOR]
 @copyFromSection: template_placeBuilding
