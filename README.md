@@ -8,6 +8,6 @@ Arrakis: Spice Wars (or ASW for short) is a mega mod based off Westwood's origin
 # WARNING
 At the moment, Arrakis: Spice Wars is not at all properly functional, with many, many problems still in the mod. Heck, its not even at a proper ready for release state. I highly recommend waiting until a release has been made, as those hopefully run much more stable with less bugs appearing. YOU HAVE BEEN WARNED!
 
-Check the wiki to see additional information such as how to install, the FAQ and extra content: https://github.com/gdigrenadier/Arrakis-Spice-Wars/wiki/Home-&-FAQ
+Check the [wiki](https://github.com/gdigrenadier/Arrakis-Spice-Wars/wiki/Home) to see additional information such as [how to install](https://github.com/gdigrenadier/Arrakis-Spice-Wars/wiki/Installation), the [FAQ](https://github.com/gdigrenadier/Arrakis-Spice-Wars/wiki/FAQ) and [extra content](https://github.com/gdigrenadier/Arrakis-Spice-Wars/wiki/Expansions). 
 
 Join the [discord](https://discord.gg/qA4Tms9f87)!
