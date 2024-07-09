@@ -18,6 +18,19 @@ jobs:
         with:
           path: painandsuffering/
 
+      - name: Replace single file
+        uses: richardrigutins/replace-in-files@v2
+        with:
+          files: 'mod-info.txt'
+          search-text: '{0}'
+          replacement-text: '42'
+      - name: Change version name in 'mod-text.txt'
+        uses: richardrigutins/replace-in-files@v2
+        with:
+          files: 'README.md'
+          search-text: '()'
+          replacement-text: '(${{ github.ref_name }})'
+          
       - name: Install Zip
         run: sudo apt install zip unzip
       
