@@ -2,7 +2,7 @@
 [core]
 @copyFromSection: template_consYardDesc
 class: CustomUnitMetadata
-copyFrom: ROOT:Data/Strings/buildings.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/help.template
+copyFrom: ROOT:Data/Strings/buildings.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/help.template, ROOT:Data/Templates/help.template
 tags: building, consYard, capturable, mainBuilding, 2x2
 #showInEditor: true
 #overrideAndReplace: commandCenter
