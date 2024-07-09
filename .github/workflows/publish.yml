@@ -21,7 +21,7 @@ jobs:
       - name: Change version name in 'mod-text.txt'
         uses: richardrigutins/replace-in-files@v2
         with:
-          files: 'painandsuffering/mod-text.txt'
+          files: 'painandsuffering/Arrakis-Spice-Wars/mod-text.txt'
           search-text: '()'
           replacement-text: '(${{ github.ref_name }})'
 
