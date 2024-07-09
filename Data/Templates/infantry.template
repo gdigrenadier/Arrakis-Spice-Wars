@@ -1,6 +1,6 @@
 
 [core]
-copyFrom: voices.template, effects.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/infantry.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/help.template, ROOT:Data/Strings/Atri/infantry.template, ROOT:Data/Strings/Atri/abilities.template, ROOT:Data/Strings/Atri/research.template, ROOT:Data/Strings/Hark/infantry.template, ROOT:Data/Strings/Hark/abilities.template, ROOT:Data/Strings/Hark/research.template, ROOT:Data/Strings/Ordo/infantry.template, ROOT:Data/Strings/Ordo/abilities.template, ROOT:Data/Strings/Ordo/research.template
+copyFrom: voices.template, effects.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/infantry.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/Atri/infantry.template, ROOT:Data/Strings/Atri/abilities.template, ROOT:Data/Strings/Atri/research.template, ROOT:Data/Strings/Hark/infantry.template, ROOT:Data/Strings/Hark/abilities.template, ROOT:Data/Strings/Hark/research.template, ROOT:Data/Strings/Ordo/infantry.template, ROOT:Data/Strings/Ordo/abilities.template, ROOT:Data/Strings/Ordo/research.template
 isBio: true
 tags: infantry
 hideScorchMark: true
