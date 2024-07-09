@@ -18,13 +18,6 @@ jobs:
         with:
           path: painandsuffering/
 
-      - name: Change version name in 'mod-text.txt'
-        uses: richardrigutins/replace-in-files@v2
-        with:
-          files: 'painandsuffering/Arrakis-Spice-Wars/mod-text.txt'
-          search-text: '()'
-          replacement-text: '(${{ github.ref_name }})'
-
       - name: Install Zip
         run: sudo apt install zip unzip
       
