@@ -1,6 +1,6 @@
 
 [core]
-copyFrom: voices.template, effects.template, strings.template
+copyFrom: voices.template, effects.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/infantry.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/help.template, ROOT:Data/Strings/Atri/infantry.template, ROOT:Data/Strings/Atri/abilities.template, ROOT:Data/Strings/Atri/research.template, ROOT:Data/Strings/Hark/infantry.template, ROOT:Data/Strings/Hark/abilities.template, ROOT:Data/Strings/Hark/research.template, ROOT:Data/Strings/Ordo/infantry.template, ROOT:Data/Strings/Ordo/abilities.template, ROOT:Data/Strings/Ordo/research.template
 isBio: true
 tags: infantry
 hideScorchMark: true
@@ -9,17 +9,17 @@ showActionsWithMixedSelectionIfOtherUnitsHaveTag: infantry
 mass: 150
 fogOfWarSightRange:2
 
-soundOnNewSelection:ROOT:Data/Voices/infvoices (1).wav:0.7, ROOT:Data/Voices/infvoices (2).wav:0.7, ROOT:Data/Voices/infvoices (3).wav:0.7, ROOT:Data/Voices/infvoices (4).wav:0.7, ROOT:Data/Voices/infvoices (5).wav:0.7, ROOT:Data/Voices/infvoices (15).wav:0.7, ROOT:Data/Voices/infvoices (16).wav:0.7, ROOT:Data/Voices/infvoices (3).wav:0.7
+soundOnNewSelection:ROOT:Data/Sound/Voices/infvoices (1).wav:0.7, ROOT:Data/Sound/Voices/infvoices (2).wav:0.7, ROOT:Data/Sound/Voices/infvoices (3).wav:0.7, ROOT:Data/Sound/Voices/infvoices (4).wav:0.7, ROOT:Data/Sound/Voices/infvoices (5).wav:0.7, ROOT:Data/Sound/Voices/infvoices (15).wav:0.7, ROOT:Data/Sound/Voices/infvoices (16).wav:0.7, ROOT:Data/Sound/Voices/infvoices (3).wav:0.7
 
-soundOnMoveOrder: ROOT:Data/Voices/infvoices (6).wav:0.7, ROOT:Data/Voices/infvoices (7).wav:0.7, ROOT:Data/Voices/infvoices (8).wav:0.7, ROOT:Data/Voices/infvoices (9).wav:0.7, ROOT:Data/Voices/infvoices (10).wav:0.7, ROOT:Data/Voices/infvoices (11).wav:0.7, ROOT:Data/Voices/infvoices (12).wav:0.7, ROOT:Data/Voices/infvoices (13).wav:0.7, ROOT:Data/Voices/infvoices (14).wav:0.7, ROOT:Data/Voices/infvoices (17).wav:0.7, ROOT:Data/Voices/infvoices (18).wav:0.7, ROOT:Data/Voices/infvoices (19).wav:0.7, ROOT:Data/Voices/infvoices (20).wav:0.7, ROOT:Data/Voices/infvoices (21).wav:0.7, ROOT:Data/Voices/infvoices (22).wav:0.7
+soundOnMoveOrder: ROOT:Data/Sound/Voices/infvoices (6).wav:0.7, ROOT:Data/Sound/Voices/infvoices (7).wav:0.7, ROOT:Data/Sound/Voices/infvoices (8).wav:0.7, ROOT:Data/Sound/Voices/infvoices (9).wav:0.7, ROOT:Data/Sound/Voices/infvoices (10).wav:0.7, ROOT:Data/Sound/Voices/infvoices (11).wav:0.7, ROOT:Data/Sound/Voices/infvoices (12).wav:0.7, ROOT:Data/Sound/Voices/infvoices (13).wav:0.7, ROOT:Data/Sound/Voices/infvoices (14).wav:0.7, ROOT:Data/Sound/Voices/infvoices (17).wav:0.7, ROOT:Data/Sound/Voices/infvoices (18).wav:0.7, ROOT:Data/Sound/Voices/infvoices (19).wav:0.7, ROOT:Data/Sound/Voices/infvoices (20).wav:0.7, ROOT:Data/Sound/Voices/infvoices (21).wav:0.7, ROOT:Data/Sound/Voices/infvoices (22).wav:0.7
 
-soundOnAttackOrder:ROOT:Data/Voices/infvoices (6).wav:0.7, ROOT:Data/Voices/infvoices (7).wav:0.7, ROOT:Data/Voices/infvoices (8).wav:0.7, ROOT:Data/Voices/infvoices (9).wav:0.7, ROOT:Data/Voices/infvoices (10).wav:0.7, ROOT:Data/Voices/infvoices (11).wav:0.7, ROOT:Data/Voices/infvoices (12).wav:0.7, ROOT:Data/Voices/infvoices (13).wav:0.7, ROOT:Data/Voices/infvoices (14).wav:0.7, ROOT:Data/Voices/infvoices (17).wav:0.7, ROOT:Data/Voices/infvoices (18).wav:0.7, ROOT:Data/Voices/infvoices (19).wav:0.7, ROOT:Data/Voices/infvoices (20).wav:0.7, ROOT:Data/Voices/infvoices (21).wav:0.7, ROOT:Data/Voices/infvoices (22).wav:0.7
+soundOnAttackOrder:ROOT:Data/Sound/Voices/infvoices (6).wav:0.7, ROOT:Data/Sound/Voices/infvoices (7).wav:0.7, ROOT:Data/Sound/Voices/infvoices (8).wav:0.7, ROOT:Data/Sound/Voices/infvoices (9).wav:0.7, ROOT:Data/Sound/Voices/infvoices (10).wav:0.7, ROOT:Data/Sound/Voices/infvoices (11).wav:0.7, ROOT:Data/Sound/Voices/infvoices (12).wav:0.7, ROOT:Data/Sound/Voices/infvoices (13).wav:0.7, ROOT:Data/Sound/Voices/infvoices (14).wav:0.7, ROOT:Data/Sound/Voices/infvoices (17).wav:0.7, ROOT:Data/Sound/Voices/infvoices (18).wav:0.7, ROOT:Data/Sound/Voices/infvoices (19).wav:0.7, ROOT:Data/Sound/Voices/infvoices (20).wav:0.7, ROOT:Data/Sound/Voices/infvoices (21).wav:0.7, ROOT:Data/Sound/Voices/infvoices (22).wav:0.7
 
-soundOnDeath: ROOT:Data/Voices/dedman1.wav:0.7, ROOT:Data/Voices/dedman2.wav:0.7, ROOT:Data/Voices/dedman3.wav:0.7, ROOT:Data/Voices/dedman4.wav:0.7, ROOT:Data/Voices/dedman5.wav:0.7, ROOT:Data/Voices/dedman6.wav:0.7, ROOT:Data/Voices/dedman7.wav:0.7, ROOT:Data/Voices/dedman8.wav:0.7, ROOT:Data/Voices/dedman9.wav:0.7, ROOT:Data/Voices/dedman10.wav:0.7, ROOT:Data/Voices/dedman11.wav:0.7
+soundOnDeath: ROOT:Data/Sound/Voices/dedman1.wav:0.7, ROOT:Data/Sound/Voices/dedman2.wav:0.7, ROOT:Data/Sound/Voices/dedman3.wav:0.7, ROOT:Data/Sound/Voices/dedman4.wav:0.7, ROOT:Data/Sound/Voices/dedman5.wav:0.7, ROOT:Data/Sound/Voices/dedman6.wav:0.7, ROOT:Data/Sound/Voices/dedman7.wav:0.7, ROOT:Data/Sound/Voices/dedman8.wav:0.7, ROOT:Data/Sound/Voices/dedman9.wav:0.7, ROOT:Data/Sound/Voices/dedman10.wav:0.7, ROOT:Data/Sound/Voices/dedman11.wav:0.7
 
 [hiddenAction_rammed]
 autoTrigger: if numberOfUnitsInEnemyTeam(withTag="heavyVehicle", withinRange=10, greaterThan=0)
-playSoundAtUnit: ROOT:Data/soundFx/infantryCrush.ogg:0.7
+playSoundAtUnit: ROOT:Data/Sound/infantryCrush.ogg:0.7
 spawnEffects: CUSTOM:crushed1
 deleteSelf: true
 
@@ -31,7 +31,7 @@ life: 1000
 fadeOut: false
 scaleFrom: 1.25
 scaleTo: 1.25
-image: ROOT:Data/Images/infantryBlood1.png
+image: ROOT:Data/Graphics/Remains/infantryBlood1.png
 priority: critical
 drawUnderUnits:true
 
@@ -43,7 +43,7 @@ life: 1000
 fadeOut: false
 scaleFrom: 1.25
 scaleTo: 1.25
-image: ROOT:Data/Images/infantryBlood2.png
+image: ROOT:Data/Graphics/Remains/infantryBlood2.png
 priority: critical
 drawUnderUnits:true
 

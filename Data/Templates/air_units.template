@@ -1,7 +1,7 @@
 
 [core]
 class: CustomUnitMetadata
-copyFrom: effects.template, strings.template
+copyFrom: voices.template, effects.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/vehicles.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/help.template, ROOT:Data/Strings/Atri/vehicles.template, ROOT:Data/Strings/Atri/abilities.template, ROOT:Data/Strings/Atri/research.template, ROOT:Data/Strings/Hark/vehicles.template, ROOT:Data/Strings/Hark/abilities.template, ROOT:Data/Strings/Hark/research.template, ROOT:Data/Strings/Ordo/vehicles.template, ROOT:Data/Strings/Ordo/abilities.template, ROOT:Data/Strings/Ordo/research.template
 mass: 1000
 tags: aircraft, airUnit, airborne
 explodeOnDeath: false

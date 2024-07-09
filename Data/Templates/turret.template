@@ -1,6 +1,6 @@
 
 [core]
-copyFrom: building.template, strings.template
+copyFrom: effects.template, building.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/buildings.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/Atri/buildings.template, ROOT:Data/Strings/Atri/research.template, ROOT:Data/Strings/Hark/buildings.template, ROOT:Data/Strings/Hark/research.template, ROOT:Data/Strings/Ordo/buildings.template, ROOT:Data/Strings/Ordo/research.template
 fogOfWarSightRange:5
 tags: 1x1, turret, building
 buildSpeed: 0s
@@ -38,7 +38,7 @@ searchDistance: 48
 @copyFrom_skipThisSection: true
 
 [graphics]
-image_wreak:ROOT:Data/Images/wreak_1x1.png
+image_wreak:ROOT:Data/Graphics/Remains/wreak_1x1.png
 showQueueBar: false
 
 [ai]

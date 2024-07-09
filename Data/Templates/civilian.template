@@ -1,0 +1,2 @@
+[core]
+copyFrom: effects.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/buildings.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/help.template, ROOT:Data/Strings/Civi/buildings.template, ROOT:Data/Strings/Civi/vehicles.template

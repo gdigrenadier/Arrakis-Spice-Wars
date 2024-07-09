@@ -124,23 +124,23 @@ alsoQueueAction: enemyKillAtreides, enemyKillOrdos, enemyKillHarkonnen
 [hiddenAction_enemyKillAtreides]
 requireConditional: if self.globalTeamTags(includes='houseAtreidesMod')
 buildSpeed: 0s
-playSoundToPlayer: ROOT:Data/Voices/Atreides/enemyUnitDestroyed.ogg:2
+playSoundToPlayer: ROOT:Data/Sound/Voices/Atreides/enemyUnitDestroyed.ogg:2
 
 [hiddenAction_enemyKillOrdos]
 requireConditional: if self.globalTeamTags(includes='houseOrdosMod')
 buildSpeed: 0s
-playSoundToPlayer: ROOT:Data/Voices/Ordos/enemyUnitDestroyed.ogg:2
+playSoundToPlayer: ROOT:Data/Sound/Voices/Ordos/enemyUnitDestroyed.ogg:2
 
 [hiddenAction_enemyKillHarkonnen]
 requireConditional: if self.globalTeamTags(includes='houseHarkonnenMod')
 buildSpeed: 0s
-playSoundToPlayer: ROOT:Data/Voices/Harkonnen/enemyUnitDestroyed.ogg:2
+playSoundToPlayer: ROOT:Data/Sound/Voices/Harkonnen/enemyUnitDestroyed.ogg:2
 
 #===== End of Game Systems =====#
 
 [graphics]
 imageScale: 1.25
-icon_build: ROOT:Data/Images/Icons/icon_none.png
+icon_build: ROOT:Data/Graphics/Icons/icon_none.png
 showTransportBar:true
 showHealthBar:false
 

@@ -2,7 +2,7 @@
 #Template by Hyasabaru
 
 [core]
-copyFrom: effects.template, strings.template
+copyFrom: effects.template, ROOT:Data/Strings/general.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/buildings.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/help.template, ROOT:Data/Strings/Atri/buildings.template, ROOT:Data/Strings/Atri/abilities.template, ROOT:Data/Strings/Atri/research.template, ROOT:Data/Strings/Hark/buildings.template, ROOT:Data/Strings/Hark/abilities.template, ROOT:Data/Strings/Hark/research.template, ROOT:Data/Strings/Ordo/buildings.template, ROOT:Data/Strings/Ordo/abilities.template, ROOT:Data/Strings/Ordo/research.template
 class: CustomUnitMetadata
 tags: building, capturable
 mass: 4000
@@ -17,7 +17,7 @@ buildSpeed: 0s
 selfBuildRate: 1.6s
 buildingToFootprintOffsetX:0
 buildingToFootprintOffsetY:0
-soundOnDeath: ROOT:Data/soundFx/crumble.wav, ROOT:Data/soundFx/explode6.wav
+soundOnDeath: ROOT:Data/Sound/crumble.wav, ROOT:Data/Sound/explode6.wav
 
 #===== 2x2 =====#
 
@@ -172,17 +172,17 @@ temporarilyRemoveTags: baseUnderAttack
 
 [hiddenAction_AtrUnderAttack]
 requireConditional: if self.globalTeamTags(includes='houseAtreidesMod')
-playSoundToPlayer: ROOT:Data/Voices/Atreides/underAttack.ogg:1.5
+playSoundToPlayer: ROOT:Data/Sound/Voices/Atreides/underAttack.ogg:1.5
 buildSpeed: 0s
 
 [hiddenAction_OrdUnderAttack]
 requireConditional: if self.globalTeamTags(includes='houseOrdosMod')
-playSoundToPlayer: ROOT:Data/Voices/Ordos/underAttack.ogg:1.5
+playSoundToPlayer: ROOT:Data/Sound/Voices/Ordos/underAttack.ogg:1.5
 buildSpeed: 0s
 
 [hiddenAction_HarUnderAttack]
 requireConditional: if self.globalTeamTags(includes='houseHarkonnenMod')
-playSoundToPlayer: ROOT:Data/Voices/Harkonnen/underAttack.ogg:1.5
+playSoundToPlayer: ROOT:Data/Sound/Voices/Harkonnen/underAttack.ogg:1.5
 buildSpeed: 0s
 
 #===== Placement Rules =====#
@@ -269,7 +269,7 @@ price: 0
 buildSpeed: 0s
 isLocked: if not self.resource(type="Spice", greaterThan=0)
 
-iconImage: ROOT:Data/Images/Icons/icon_repair.png
+iconImage: ROOT:Data/Graphics/Icons/icon_repair.png
 highPriorityQueue: true
 #displayType: infoOnly
 addResources: setFlag=29
@@ -283,7 +283,7 @@ isVisible: if self.hasFlag(id=29)
 price:  0
 
 addResources: unsetFlag=29
-iconImage: ROOT:Data/Images/Icons/icon_repair.png
+iconImage: ROOT:Data/Graphics/Icons/icon_repair.png
 #displayType: infoOnly
 allowMultipleInQueue: true
 isGuiBlinking: true
@@ -297,7 +297,7 @@ addResources: hp=8, Spice=-4
 
 [hiddenAction_onCreate]
 autoTriggerOnEvent: created
-playSoundAtUnit: ROOT:Data/soundFx/placeStructure.wav, ROOT:Data/soundFx/placeStructure2.wav
+playSoundAtUnit: ROOT:Data/Sound/placeStructure.wav, ROOT:Data/Sound/placeStructure2.wav
 
 [animation_build]
 onActions: underConstruction
@@ -324,7 +324,7 @@ disableLowHpFire: true
 disableLowHpSmoke: true
 drawLayer: ground
 whenBeingBuiltMakeTransparentTill:0
-image_wreak: ROOT:Data/Images/wreak_2x2.png
+image_wreak: ROOT:Data/Graphics/Remains/wreak_2x2.png
 
 [movement]
 movementType: BUILDING

@@ -1,6 +1,6 @@
 
 [core]
-copyFrom: voices.template, strings.template
+copyFrom: voices.template, effects.template, ROOT:Data/Strings/misc.template, ROOT:Data/Strings/vehicles.template, ROOT:Data/Strings/requirements.template, ROOT:Data/Strings/help.template, ROOT:Data/Strings/Atri/vehicles.template, ROOT:Data/Strings/Atri/abilities.template, ROOT:Data/Strings/Atri/research.template, ROOT:Data/Strings/Hark/vehicles.template, ROOT:Data/Strings/Hark/abilities.template, ROOT:Data/Strings/Hark/research.template, ROOT:Data/Strings/Ordo/vehicles.template, ROOT:Data/Strings/Ordo/abilities.template, ROOT:Data/Strings/Ordo/research.template
 explodeOnDeath: false
 tags: lightVehicle, vehicle
 transportSlotsNeeded:3
@@ -55,17 +55,17 @@ addWaypoint_position_offsetFromSelf: 0, 30
 
 [hiddenAction_repairDoneAtreides]
 requireConditional: if self.globalTeamTags(includes='houseAtreidesMod')
-playSoundToPlayer: ROOT:Data/Voices/Atreides/unitRepaired.ogg:2
+playSoundToPlayer: ROOT:Data/Sound/Voices/Atreides/unitRepaired.ogg:2
 buildSpeed: 0s
 
 [hiddenAction_repairDoneOrdos]
 requireConditional: if self.globalTeamTags(includes='houseOrdosMod')
-playSoundToPlayer: ROOT:Data/Voices/Ordos/unitRepaired.ogg:2
+playSoundToPlayer: ROOT:Data/Sound/Voices/Ordos/unitRepaired.ogg:2
 buildSpeed: 0s
 
 [hiddenAction_repairDoneHarkonnen]
 requireConditional: if self.globalTeamTags(includes='houseHarkonnenMod')
-playSoundToPlayer: ROOT:Data/Voices/Harkonnen/unitRepaired.ogg:2
+playSoundToPlayer: ROOT:Data/Sound/Voices/Harkonnen/unitRepaired.ogg:2
 buildSpeed: 0s
 
 [hiddenAction_repairTags1]
@@ -109,11 +109,11 @@ attachedToUnit: false
 life: 30
 alpha: 5
 hSpeed: 0
-image: ROOT:Data/Images/trike_wreak.png
+image: ROOT:Data/Graphics/Remains/trike_wreak.png
 priority: critical
 drawUnderUnits:true
 total_frames:2
 animateFrameStart:0
 animateFrameEnd:1
 animateFrameSpeed:0.12
-alsoPlaySound:ROOT:Data/soundFx/explode.wav, ROOT:Data/soundFx/explode2.wav, ROOT:Data/soundFx/explode3.wav, ROOT:Data/soundFx/explode4.wav, ROOT:Data/soundFx/explode5.wav, ROOT:Data/soundFx/explode7.wav
+alsoPlaySound:ROOT:Data/Sound/explode.wav, ROOT:Data/Sound/explode2.wav, ROOT:Data/Sound/explode3.wav, ROOT:Data/Sound/explode4.wav, ROOT:Data/Sound/explode5.wav, ROOT:Data/Sound/explode7.wav
