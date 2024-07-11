@@ -174,7 +174,7 @@ buildSpeed: 18s
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: harkonnenSuperFactory
 @define flagId: 27
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix") and self.hasUnitInTeam(withTag="heavyFactory") and not self.globalTeamTags(includes='spiceRaceMode') and not self.globalTeamTags(includes='houseHarkonnenMod')
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix") and self.hasUnitInTeam(withTag="heavyFactory") and self.globalTeamTags(includes='houseHarkonnenMod')
 isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
 ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility")
 streamingCost: Spice=1000
