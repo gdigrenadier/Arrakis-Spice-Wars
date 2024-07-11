@@ -8,7 +8,7 @@ text: Cooldown...
 description: -Rallying reinforcements...
 
 [template_tankrein]
-text: Release the Tank Reinforcements.
+text: Tank Reinforcements
 
 # Death Hand
 [template_deathCooldownDesc]
@@ -16,5 +16,5 @@ text: Cooldown...
 description: -Missile under construction...
 
 [template_deathHandDesc]
-text: -Fire the Death Hand. Finish the job.
+text: -Death Hand
 
