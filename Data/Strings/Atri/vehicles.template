@@ -2,7 +2,7 @@
 
 [template_advHarvesterDesc]
 displayText: Advanced Harvester
-displayDescription: -Atreides' advanced harvester. It allows for more spice collection than the other factions' harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+displayDescription: -The Atreides harvester. It allows for more spice collection than the other faction harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
 
 [template_mediumTankDesc]
 displayText: Medium Tank
