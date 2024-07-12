@@ -10,7 +10,11 @@ description: -Begins research on Heavy Weapons Technology.\n-This upgrades infan
 
 [template_guardianUpgradeDesc]
 text: Guardian Tank Research
-description: -Begins research on Guardian Tank Technology.\n-Replaces the Medium Tank with the Guardian tank.
+description: -Begins research on Guardian Tank Technology.\n-Replaces the Medium Tank with the Guardian tank.\n-Adds further armour.
+
+[template_mirageUpgradeDesc]
+text: Guardian Tank Research
+description: -Begins research on Mirage Tank Technology.\n-Replaces the Medium Tank with the Mirage tank.\n-Adds the ability to camoflage within spice.
 
 [template_autoloaderUpgradeDesc]
 text: Automatic Loaders Research
@@ -18,4 +22,4 @@ description: -Begins research on Automatic Loading Technology.\n-Replaces the Me
 
 [template_disruptorUpgradeDesc]
 text: Disruptor Heavy Tank Research
-description: -Begins research on Disruptor Tank Technology.\n-Replaces the Sonic Tank with the Disruptor Heavy Tank, a improved Sonic Tank that is heavier, slower, more heavily armoured tank that packs a massive punch.
+description: -Begins research on Disruptor Tank Technology.\n-Replaces the Sonic Tank with the Disruptor Heavy Tank.
