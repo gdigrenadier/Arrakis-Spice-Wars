@@ -29,7 +29,7 @@ nanoRange: 9999
 
 energyMax: 2
 startEnergyAtZero: true
-
+borrowResourcesWhileAlive: spiceStorage=-5000
 
 [hiddenAction_onCreate]
 addResources: IGNORE
