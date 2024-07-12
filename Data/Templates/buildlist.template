@@ -86,7 +86,7 @@ isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
 [canBuild_placeOutpost]
 @copyFromSection: template_placeBuilding
 @define target: genericOutpost
-@define flagId: 7
+@define flagId: 6
 
 [action_buildTurret]
 @copyFromSection: template_actionQueueBuilding, template_requiresBarracks
