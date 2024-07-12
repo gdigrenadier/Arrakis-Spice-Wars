@@ -12,9 +12,13 @@ displayDescription: -The light tank is a lightly armored, tracked tank firing hi
 displayText: Hover Light Tank
 displayDescription: -The hover light tank is a lightly armored, hovering tank firing high explosive rounds.\n-It is much faster than the other tanks.
 
-[template_laserHoverTankDesc]
+[template_laserTankDesc]
 displayText: Laser Light Tank
-displayDescription: -The laser light tank is a lightly armored, hovering tank that uses lasers to defeat its enemy.\n-It is much faster than the other tanks.
+displayDescription: -The laser light tank is a lightly armored, tracked tank that uses lasers to defeat its enemy.
+
+[template_laserHoverTankDesc]
+displayText: H.L Light Tank
+displayDescription: -The h.l light tank is a lightly armored, hovering tank that uses lasers to defeat its enemy.\n-It is much faster than the other tanks.
 
 [template_stealthTankDesc]
 displayText: Stealth Tank
