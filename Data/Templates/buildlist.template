@@ -67,7 +67,6 @@ streamingCost: Spice=150
 buildSpeed: 6s
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap") and self.globalTeamTags(includes="houseAtreidesMod")
 isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
-
 ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='spiceStorage',byMoreThan=-200)
 
 [canBuild_placeAdvSilo]
