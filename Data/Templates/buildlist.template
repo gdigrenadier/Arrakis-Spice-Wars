@@ -170,15 +170,15 @@ buildSpeed: 18s
 @define target: genericHeavyFactory
 @define flagId: 17
 
-[action_buildSuperFactory]
-@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: harkonnenSuperFactory
-@define flagId: 27
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix") and self.hasUnitInTeam(withTag="heavyFactory") and self.globalTeamTags(includes='houseHarkonnenMod')
-isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
-ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility")
-streamingCost: Spice=1000
-buildSpeed: 30s
+#[action_buildSuperFactory]
+#@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
+#@define target: harkonnenSuperFactory
+#@define flagId: 27
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix") and self.hasUnitInTeam(withTag="heavyFactory") and not self.globalTeamTags(includes='spiceRaceMode') and not self.globalTeamTags(includes='houseHarkonnenMod')
+#isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
+#ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility")
+#streamingCost: Spice=1000
+#buildSpeed: 30s
 
 [canBuild_placeSuperFactory]
 @copyFromSection: template_placeBuilding
@@ -209,10 +209,10 @@ buildSpeed: 10s
 #streamingCost: Spice=500
 #buildSpeed: 15s
 
-#[canBuild_placeStarport]
-#@copyFromSection: template_placeBuilding
-#@define target: genericStarport
-#@define flagId: 19
+[canBuild_placeStarport]
+@copyFromSection: template_placeBuilding
+@define target: genericStarport
+@define flagId: 19
 
 #[action_buildHi-Tech]
 #@copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
@@ -232,10 +232,10 @@ buildSpeed: 10s
 #streamingCost: Spice=500
 #buildSpeed: 15s
 
-#[canBuild_placeHi-Tech]
-#@copyFromSection: template_placeBuilding
-#@define target: genericHi-Tech
-#@define flagId: 10
+[canBuild_placeHi-Tech]
+@copyFromSection: template_placeBuilding
+@define target: genericHi-Tech
+@define flagId: 10
 
 [action_buildHouseOfIX]
 @copyFromSection: template_actionQueueBuilding
@@ -251,74 +251,74 @@ buildSpeed: 15s
 @define target: genericHouseOfIX
 @define flagId: 20 
 
-[action_buildSonicTurret]
-@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: AtreidesSonicTurret
-@define flagId: 21
-streamingCost: Spice=500
-buildSpeed: 20s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseAtreidesMod')
-isLockedAlt: if not self.hasUnitInTeam(withTag="ix") and not self.globalTeamTags(includes='sonicup')
-isLockedAltMessage: The required research for this unit has not been completed.
+#[action_buildSonicTurret]
+#@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
+#@define target: AtreidesSonicTurret
+#@define flagId: 21
+#streamingCost: Spice=500
+#buildSpeed: 20s
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseAtreidesMod')
+#isLockedAlt: if not self.hasUnitInTeam(withTag="ix") and not self.globalTeamTags(includes='sonicup')
+#isLockedAltMessage: The required research for this unit has not been completed.
 
 [canBuild_placeSonicTurret]
 @copyFromSection: template_placeBuilding
 @define target: AtreidesSonicTurret
 @define flagId: 21
 
-[action_buildDevastatorTurret]
-@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: harkonnenDevastatorTurret
-@define flagId: 22
-streamingCost: Spice=500
-buildSpeed: 20s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseHarkonnenMod')
+#[action_buildDevastatorTurret]
+#@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
+#@define target: harkonnenDevastatorTurret
+#@define flagId: 22
+#streamingCost: Spice=500
+#buildSpeed: 20s
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseHarkonnenMod')
 
-isLockedAlt: if not self.hasUnitInTeam(withTag="ix") and not self.globalTeamTags(includes='devastatorup')
-isLockedAltMessage: The required research for this unit has not been completed.
+#isLockedAlt: if not self.hasUnitInTeam(withTag="ix") and not self.globalTeamTags(includes='devastatorup')
+#isLockedAltMessage: The required research for this unit has not been completed.
 
 [canBuild_placeDevastatorTurret]
 @copyFromSection: template_placeBuilding
 @define target: harkonnenDevastatorTurret
 @define flagId: 22
 
-[action_buildDeviatorTurret]
-@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: ordosDeviatorTurret
-@define flagId: 23
-streamingCost: Spice=500
-buildSpeed: 20s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseOrdosMod')
-isLockedAlt: if not self.hasUnitInTeam(withTag="ix") and not self.globalTeamTags(includes='deviatorup')
-isLockedAltMessage: The required research for this unit has not been completed.
+#[action_buildDeviatorTurret]
+#@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
+#@define target: ordosDeviatorTurret
+#@define flagId: 23
+#streamingCost: Spice=500
+#buildSpeed: 20s
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseOrdosMod')
+#isLockedAlt: if not self.hasUnitInTeam(withTag="ix") and not self.globalTeamTags(includes='deviatorup')
+#isLockedAltMessage: The required research for this unit has not been completed.
 
 [canBuild_placeDeviatorTurret]
 @copyFromSection: template_placeBuilding
 @define target: ordosDeviatorTurret
 @define flagId: 23
 
-[action_buildPalace]
-@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: genericPalace
-@define flagId: 24
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.hasUnitInTeam(withTag='palace') and not self.globalTeamTags(includes='spiceRaceMode')
-isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
-streamingCost: Spice=1000
-buildSpeed: 16.25s
+#[action_buildPalace]
+#@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
+#@define target: genericPalace
+#@define flagId: 24
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.hasUnitInTeam(withTag='palace') and not self.globalTeamTags(includes='spiceRaceMode')
+#isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
+#streamingCost: Spice=1000
+#buildSpeed: 16.25s
 
 [canBuild_placePalace]  
 @copyFromSection: template_placeBuilding
 @define target: genericPalace
 @define flagId: 24
 
-[action_buildDTsilo]
-@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: genericDTSilo
-@define flagId: 25
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix")
-isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
-streamingCost: Spice=3000
-buildSpeed: 30s
+#[action_buildDTsilo]
+#@copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
+#@define target: genericDTSilo
+#@define flagId: 25
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix")
+#isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
+#streamingCost: Spice=3000
+#buildSpeed: 30s
 
 [canBuild_placeDTSilo]
 @copyFromSection: template_placeBuilding
