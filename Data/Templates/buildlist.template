@@ -159,7 +159,7 @@ buildSpeed: 18s
 @copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
 @define target: genericRepairFacility
 @define flagId: 12
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery")
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.globalTeamTags(includes="houseHarkonnenMod")
 isLockedAlt: if not self.hasUnitInTeam(withTag="lightFactory")
 #ai_isHighPriority: if self.hasUnitInTeam(withTag="heavyFactory") and not self.hasUnitInTeam(withTag="repairFacility")
 streamingCost: Spice=700
@@ -169,7 +169,7 @@ buildSpeed: 10s
 @copyFromSection: template_actionQueueBuilding, template_requiresHeavyFactory
 @define target: genericRepairFacility
 @define flagId: 12
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery")
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and self.globalTeamTags(includes="houseHarkonnenMod")
 isLockedAlt: if not self.hasUnitInTeam(withTag="heavyFactory")
 #ai_isHighPriority: if self.hasUnitInTeam(withTag="heavyFactory") and not self.hasUnitInTeam(withTag="repairFacility")
 streamingCost: Spice=700
