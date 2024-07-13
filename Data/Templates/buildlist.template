@@ -224,28 +224,28 @@ buildSpeed: 10s
 #@define target: genericStarport
 #@define flagId: 19
 
-[action_buildHi-Tech]
-@copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
-@define target: genericHi-Tech
-@define flagId: 14
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost") and not self.globalTeamTags(includes='houseHarkonnenMod')
-isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
-streamingCost: Spice=500
-buildSpeed: 15s
+# [action_buildHi-Tech]
+#@copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
+#@define target: genericHi-Tech
+#@define flagId: 14
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost") and not self.globalTeamTags(includes='houseHarkonnenMod')
+#isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
+#streamingCost: Spice=500
+#buildSpeed: 15s
 
-[action_buildHHi-Tech]
-@copyFromSection: template_actionQueueBuilding, template_requiresHeavyFactory
-@define target: genericHi-Tech
-@define flagId: 14
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost") and self.globalTeamTags(includes='houseHarkonnenMod')
-isLockedAlt: if not self.hasUnitInTeam(withTag="heavyFactory")
-streamingCost: Spice=500
-buildSpeed: 15s
+#[action_buildHHi-Tech]
+#@copyFromSection: template_actionQueueBuilding, template_requiresHeavyFactory
+#@define target: genericHi-Tech
+#@define flagId: 14
+#isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost") and self.globalTeamTags(includes='houseHarkonnenMod')
+#isLockedAlt: if not self.hasUnitInTeam(withTag="heavyFactory")
+#streamingCost: Spice=500
+#buildSpeed: 15s
 
-[canBuild_placeHi-Tech]
-@copyFromSection: template_placeBuilding
-@define target: genericHi-Tech
-@define flagId: 14
+#[canBuild_placeHi-Tech]
+#@copyFromSection: template_placeBuilding
+#@define target: genericHi-Tech
+#@define flagId: 14
 
 [action_buildHouseOfIX]
 @copyFromSection: template_actionQueueBuilding
