@@ -3,7 +3,7 @@
 [action_buildWindTrap]
 @copyFromSection: template_actionQueueBuilding
 @define target: genericWindTrap
-@define flagId: 3
+@define flagId: 1
 isLockedAlt2: IGNORE
 isLockedAlt2Message: IGNORE
 ai_isHighPriority: if not self.resource(type="Power", greaterThan=0)
@@ -13,42 +13,42 @@ buildSpeed: 6s
 [canBuild_placeWindTrap]
 @copyFromSection: template_placeBuilding
 @define target: genericWindTrap
-@define flagId: 3
+@define flagId: 1
 
 [action_buildAdvWindTrap]
-@copyFromSection: template_actionQueueBuilding, template_requiresOutpost
+@copyFromSection: template_actionQueueBuilding
 @define target: genericAdvWindTrap
-@define flagId: 4
+@define flagId: 2
+isLockedAlt2: IGNORE
+isLockedAlt2Message: IGNORE
 ai_isHighPriority: if not self.resource(type="Power", greaterThan=0)
-isVisible: if self.hasUnitInTeam(withTag="outpost")
-isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
-streamingCost: Spice=1000
-buildSpeed: 8s
+streamingCost: Spice=700
+buildSpeed: 6s
 
 [canBuild_placeAdvWindTrap]
 @copyFromSection: template_placeBuilding
 @define target: genericAdvWindTrap
-@define flagId: 4
+@define flagId: 2
 
 [action_buildBarracks]
 @copyFromSection: template_actionQueueBuilding
 @define target: genericBarracks
-@define flagId: 14
+@define flagId: 3
 streamingCost: Spice=300
 buildSpeed: 9s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap")
+isVisible: if not self.hasFlag(id=${flagId})
 isLockedAlt: if not self.hasUnitInTeam(withTag="windtrap")
 
 [canBuild_placeBarracks]
 @copyFromSection: template_placeBuilding
 @define target: genericBarracks
-@define flagId: 14
+@define flagId: 3
 
 [action_buildRefinery]
 @copyFromSection: template_actionQueueBuilding, template_requiresWindtrap
 @define target: genericSpiceRefinery
-@define flagId: 5
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap")
+@define flagId: 4
+isVisible: if not self.hasFlag(id=${flagId})
 isLockedAlt: if not self.hasUnitInTeam(withTag="windtrap")
 ai_isHighPriority: if not self.hasUnitInTeam(withTag="spiceRefinery")
 streamingCost: Spice=400
@@ -57,38 +57,37 @@ buildSpeed: 10s
 [canBuild_placeRefinery]
 @copyFromSection: template_placeBuilding
 @define target: genericSpiceRefinery
-@define flagId: 5
+@define flagId: 4
 
 [action_buildSilo]
 @copyFromSection: template_actionQueueBuilding, template_requiresRefinery
 @define target: genericSilo
-@define flagId: 8
+@define flagId: 5
 streamingCost: Spice=150
 buildSpeed: 6s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.globalTeamTags(includes="houseAtreidesMod")
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap") and not self.globalTeamTags(includes="houseAtreidesMod")
 isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
 ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='spiceStorage',byMoreThan=-200)
 
 [canBuild_placeSilo]
 @copyFromSection: template_placeBuilding
 @define target: genericSilo
-@define flagId: 8
+@define flagId: 5
 
 [action_buildAdvSilo]
 @copyFromSection: template_actionQueueBuilding, template_requiresRefinery
 @define target: AtreidesAdvSilo
-@define flagId: 9
+@define flagId: 6
 streamingCost: Spice=150
 buildSpeed: 6s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and self.globalTeamTags(includes="houseAtreidesMod")
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap") and self.globalTeamTags(includes="houseAtreidesMod")
 isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
-
 ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='spiceStorage',byMoreThan=-200)
 
 [canBuild_placeAdvSilo]
 @copyFromSection: template_placeBuilding
 @define target: AtreidesAdvSilo
-@define flagId: 9
+@define flagId: 6
 
 [action_buildOutpost]
 @copyFromSection: template_actionQueueBuilding, template_requiresWindtrap
@@ -96,7 +95,8 @@ ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='s
 @define flagId: 7
 streamingCost: Spice=400
 buildSpeed: 10s
-isLockedAlt: if not self.hasUnitInTeam(withTag="windtrap")
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap")
+isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
 
 [canBuild_placeOutpost]
 @copyFromSection: template_placeBuilding
@@ -104,76 +104,76 @@ isLockedAlt: if not self.hasUnitInTeam(withTag="windtrap")
 @define flagId: 7
 
 [action_buildTurret]
-@copyFromSection: template_actionQueueBuilding, template_requiresOutpost
+@copyFromSection: template_actionQueueBuilding, template_requiresBarracks
 @define target: genericCannonTurret
-@define flagId: 11
+@define flagId: 8
 streamingCost: Spice=125
 buildSpeed: 8s
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap")
-isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
+isLockedAlt: if not self.hasUnitInTeam(withTag="barracks")
 
 [canBuild_placeTurret]
 @copyFromSection: template_placeBuilding
 @define target: genericCannonTurret
-@define flagId: 11
+@define flagId: 8
 
 [action_buildRocketTurret]
 @copyFromSection: template_actionQueueBuilding, template_requiresOutpost
 @define target: genericRocketTurret
-@define flagId: 12
+@define flagId: 9
 streamingCost: Spice=250
 buildSpeed: 12s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap") and not self.globalTeamTags(includes='spiceRaceMode')
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery")
 isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
 
 [canBuild_placeRocketTurret]
 @copyFromSection: template_placeBuilding
 @define target: genericRocketTurret
-@define flagId: 12
+@define flagId: 9
 
 [action_buildFactory]
 @copyFromSection: template_actionQueueBuilding, template_requiresRefinery
 @define target: genericFactory
-@define flagId: 13
+@define flagId: 10
 streamingCost: Spice=400
 buildSpeed: 12s
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.globalTeamTags(includes='houseHarkonnenMod')
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="windtrap") and not self.globalTeamTags(includes='houseHarkonnenMod')
 isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
 
 [canBuild_placeFactory]
 @copyFromSection: template_placeBuilding
 @define target: genericFactory
-@define flagId: 13
+@define flagId: 10
 
 [action_buildHeavyFactory]
 @copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
 @define target: genericHeavyFactory
-@define flagId: 17
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost") and not self.globalTeamTags(includes="houseHarkonnenMod")
-isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
+@define flagId: 11
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.globalTeamTags(includes="houseHarkonnenMod")
+isLockedAlt: if not self.hasUnitInTeam(withTag="lightFactory")
 ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility") and not self.hasUnitInTeam(withTag="heavyFactory") or not self.hasUnitInTeam(withTag="heavyFactory")
 streamingCost: Spice=600
 buildSpeed: 18s
 
 [action_buildHHeavyFactory]
-@copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
+@copyFromSection: template_actionQueueBuilding, template_requiresRefinery
 @define target: genericHeavyFactory
-@define flagId: 17
-isVisible: if not self.hasFlag(id=${flagId}) and self.globalTeamTags(includes="houseHarkonnenMod") and self.hasUnitInTeam(withTag="spiceRefinery")
+@define flagId: 11
+isVisible: if not self.hasFlag(id=${flagId}) and self.globalTeamTags(includes="houseHarkonnenMod") and self.hasUnitInTeam(withTag="windtrap")
 isLockedAlt: if not self.hasUnitInTeam(withTag="spiceRefinery")
-ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility") and not self.hasUnitInTeam(withTag="heavyFactory") or not self.hasUnitInTeam(withTag="heavyFactory")
+ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility") and not self.hasUnitInTeam(withTag="heavyFactory")
 streamingCost: Spice=600
 buildSpeed: 18s
 
 [canBuild_placeHeavyFactory]
 @copyFromSection: template_placeBuilding
 @define target: genericHeavyFactory
-@define flagId: 17
+@define flagId: 11
 
 [action_buildSuperFactory]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: harkonnenSuperFactory
-@define flagId: 27
+@define flagId: 12
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix") and self.hasUnitInTeam(withTag="heavyFactory") and not self.globalTeamTags(includes='spiceRaceMode') and not self.globalTeamTags(includes='houseHarkonnenMod')
 isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
 ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility")
@@ -183,14 +183,24 @@ buildSpeed: 30s
 [canBuild_placeSuperFactory]
 @copyFromSection: template_placeBuilding
 @define target: harkonnenSuperFactory
-@define flagId: 27
+@define flagId: 12
 
 [action_buildRepairFacility]
 @copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
 @define target: genericRepairFacility
-@define flagId: 16
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost")
+@define flagId: 13
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.globalTeamTags(includes="houseHarkonnenMod")
 isLockedAlt: if not self.hasUnitInTeam(withTag="lightFactory")
+#ai_isHighPriority: if self.hasUnitInTeam(withTag="heavyFactory") and not self.hasUnitInTeam(withTag="repairFacility")
+streamingCost: Spice=700
+buildSpeed: 10s
+
+[action_buildHRepairFacility]
+@copyFromSection: template_actionQueueBuilding, template_requiresHeavyFactory
+@define target: genericRepairFacility
+@define flagId: 13
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and self.globalTeamTags(includes="houseHarkonnenMod")
+isLockedAlt: if not self.hasUnitInTeam(withTag="heavyFactory")
 #ai_isHighPriority: if self.hasUnitInTeam(withTag="heavyFactory") and not self.hasUnitInTeam(withTag="repairFacility")
 streamingCost: Spice=700
 buildSpeed: 10s
@@ -198,7 +208,7 @@ buildSpeed: 10s
 [canBuild_placeRepairFacility]
 @copyFromSection: template_placeBuilding
 @define target: genericRepairFacility
-@define flagId: 16
+@define flagId: 13
 
 #[action_buildStarport]
 #@copyFromSection: template_actionQueueBuilding, template_requiresRefinery
@@ -217,7 +227,7 @@ buildSpeed: 10s
 [action_buildHi-Tech]
 @copyFromSection: template_actionQueueBuilding, template_requiresLightFactory
 @define target: genericHi-Tech
-@define flagId: 10
+@define flagId: 14
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost") and not self.globalTeamTags(includes='houseHarkonnenMod')
 isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
 streamingCost: Spice=500
@@ -226,7 +236,7 @@ buildSpeed: 15s
 [action_buildHHi-Tech]
 @copyFromSection: template_actionQueueBuilding, template_requiresHeavyFactory
 @define target: genericHi-Tech
-@define flagId: 10
+@define flagId: 14
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="outpost") and self.globalTeamTags(includes='houseHarkonnenMod')
 isLockedAlt: if not self.hasUnitInTeam(withTag="heavyFactory")
 streamingCost: Spice=500
@@ -235,12 +245,12 @@ buildSpeed: 15s
 [canBuild_placeHi-Tech]
 @copyFromSection: template_placeBuilding
 @define target: genericHi-Tech
-@define flagId: 10
+@define flagId: 14
 
 [action_buildHouseOfIX]
 @copyFromSection: template_actionQueueBuilding
 @define target: genericHouseOfIX
-@define flagId: 20
+@define flagId: 15
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.globalTeamTags(includes='spiceRaceMode')
 isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
 streamingCost: Spice=500
@@ -249,12 +259,12 @@ buildSpeed: 15s
 [canBuild_placeHouseOfIX]
 @copyFromSection: template_placeBuilding
 @define target: genericHouseOfIX
-@define flagId: 20 
+@define flagId: 15 
 
 [action_buildSonicTurret]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: AtreidesSonicTurret
-@define flagId: 21
+@define flagId: 16
 streamingCost: Spice=500
 buildSpeed: 20s
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseAtreidesMod')
@@ -264,12 +274,12 @@ isLockedAltMessage: The required research for this unit has not been completed.
 [canBuild_placeSonicTurret]
 @copyFromSection: template_placeBuilding
 @define target: AtreidesSonicTurret
-@define flagId: 21
+@define flagId: 16
 
 [action_buildDevastatorTurret]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: harkonnenDevastatorTurret
-@define flagId: 22
+@define flagId: 17
 streamingCost: Spice=500
 buildSpeed: 20s
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseHarkonnenMod')
@@ -280,12 +290,12 @@ isLockedAltMessage: The required research for this unit has not been completed.
 [canBuild_placeDevastatorTurret]
 @copyFromSection: template_placeBuilding
 @define target: harkonnenDevastatorTurret
-@define flagId: 22
+@define flagId: 17
 
 [action_buildDeviatorTurret]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: ordosDeviatorTurret
-@define flagId: 23
+@define flagId: 18
 streamingCost: Spice=500
 buildSpeed: 20s
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="Outpost") and self.globalTeamTags(includes='houseOrdosMod')
@@ -295,12 +305,12 @@ isLockedAltMessage: The required research for this unit has not been completed.
 [canBuild_placeDeviatorTurret]
 @copyFromSection: template_placeBuilding
 @define target: ordosDeviatorTurret
-@define flagId: 23
+@define flagId: 18
 
 [action_buildPalace]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: genericPalace
-@define flagId: 24
+@define flagId: 19
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery") and not self.hasUnitInTeam(withTag='palace') and not self.globalTeamTags(includes='spiceRaceMode')
 isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
 streamingCost: Spice=1000
@@ -309,12 +319,12 @@ buildSpeed: 16.25s
 [canBuild_placePalace]  
 @copyFromSection: template_placeBuilding
 @define target: genericPalace
-@define flagId: 24
+@define flagId: 19
 
 [action_buildDTsilo]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: genericDTSilo
-@define flagId: 25
+@define flagId: 20
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix")
 isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
 streamingCost: Spice=3000
@@ -323,4 +333,4 @@ buildSpeed: 30s
 [canBuild_placeDTSilo]
 @copyFromSection: template_placeBuilding
 @define target: genericDTSilo
-@define flagId: 25
+@define flagId: 20
