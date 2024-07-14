@@ -143,6 +143,7 @@ imageScale: 1.25
 icon_build: ROOT:Data/Graphics/Icons/icon_none.png
 showTransportBar:true
 showHealthBar:false
+showShotDelayBar:false
 
 [global_resource_power]
 displayName: Power
