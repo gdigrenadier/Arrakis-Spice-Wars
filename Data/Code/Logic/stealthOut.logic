@@ -1,3 +1,7 @@
+[core]
+showOnMinimapToEnemies: false
+canNotBeDirectlyAttacked: true
+
 [action_unstealth]
 isVisible: false
 autoTrigger: if self.isAttacking() or self.hp(lessThan=45) or numberOfUnitsInEnemyTeam(withinRange=50, greaterThan=0) or self.hasTakenDamage(withinSeconds=1) or self.numberOfUnitsInEnemyTeam(withTag="detector", withinRange=180, greaterThan=0)
