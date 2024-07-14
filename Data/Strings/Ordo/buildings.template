@@ -10,6 +10,6 @@ displayDescription: -Stealth Generators are capable of giving buildings stealth 
 
 # Defences
 
-[template_deviatorTurretDesc]
-displayText: Deviator Turret
-displayDescription: -Ground Based Turret armed with Deviator Missiles.\n-This stationary turret fires Deviator Missiles which are capable of confusing the enemy, turning them to your side.
+[template_ultraviolentTurretDesc]
+displayText: Ultraviolent Turret
+displayDescription: -Ground Based Turret armed with the Ultraviolent Artillery System.\n-This stationary turret fires Deviator Missiles which are capable of confusing the enemy, turning them to your side.

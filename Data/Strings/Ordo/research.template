@@ -13,8 +13,8 @@ text: H.M.S Research
 description: -Begins research on Hover Movement Systems.\n-This allows the construction of hovering vehicles that move much faster.
 
 [template_ultraviolentUpgradeDesc]
-text: Ultraviolet Artillery Research
-description: -Begins research on Ultraviolent Artillery Technology.\n-This allows contruction of buildings and units that utilise Ultraviolent Artillery.
+text: U.A.S Research
+description: -Begins research on Ultraviolent Artillery Systems.\n-This allows contruction of buildings and units that utilise Ultraviolent Artillery.
 
 [template_stealthUpgradeDesc]
 text: Stealth System Research

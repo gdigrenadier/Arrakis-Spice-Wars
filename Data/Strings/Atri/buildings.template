@@ -8,7 +8,7 @@ displayDescription: [Atreides]\n-A Construction Yard is required to build any ne
 displayText: Spice Trader
 displayDescription: -Buildings that trade for spice with Arrakis' natives. -Generates 5 spice every second.
 
-[template_advSiloDesc]
+[template_advancedSiloDesc]
 displayText: Advanced Silo
 displayDescription: -Advanced Silos hold more harvested spice than a basic silo.\n-When the Refinery completes the conversion process, it automatically distributes the spice evenly among the silos. 
 

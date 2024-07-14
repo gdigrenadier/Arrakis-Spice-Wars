@@ -76,7 +76,7 @@ ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='s
 
 [action_buildAdvSilo]
 @copyFromSection: template_actionQueueBuilding, template_requiresRefinery
-@define target: AtreidesAdvSilo
+@define target: atreidesAdvSilo
 @define flagId: 6
 streamingCost: Spice=150
 buildSpeed: 6s
@@ -86,7 +86,7 @@ ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='s
 
 [canBuild_placeAdvSilo]
 @copyFromSection: template_placeBuilding
-@define target: AtreidesAdvSilo
+@define target: atreidesAdvSilo
 @define flagId: 6
 
 [action_buildOutpost]
@@ -294,7 +294,7 @@ isLockedAltMessage: The required research for this unit has not been completed.
 
 [action_buildDeviatorTurret]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: ordosDeviatorTurret
+@define target: ordosUltraViolentTurret
 @define flagId: 18
 streamingCost: Spice=500
 buildSpeed: 20s
@@ -304,7 +304,7 @@ isLockedAltMessage: The required research for this unit has not been completed.
 
 [canBuild_placeDeviatorTurret]
 @copyFromSection: template_placeBuilding
-@define target: ordosDeviatorTurret
+@define target: ordosUltraViolentTurret
 @define flagId: 18
 
 [action_buildPalace]
@@ -323,7 +323,7 @@ buildSpeed: 16.25s
 
 [action_buildDTsilo]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: genericDTSilo
+@define target: harkonnenDeathHandSilo
 @define flagId: 20
 isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix")
 isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
@@ -332,5 +332,5 @@ buildSpeed: 30s
 
 [canBuild_placeDTSilo]
 @copyFromSection: template_placeBuilding
-@define target: genericDTSilo
+@define target: harkonnenDeathHandSilo
 @define flagId: 20
