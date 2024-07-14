@@ -1,0 +1,66 @@
+[core]
+@memory EZAR_Target: unit
+@memory EZAR_Spawn: unit
+@memory EZAR_Distance: float
+
+disableAllUnitCollisions: true
+isUnrepairableUnit: true
+isUnselectable: true
+canNotBeDirectlyAttacked: true
+canNotBeGivenOrdersByPlayer: true
+price: 1
+maxHp: 1
+mass: 1
+buildSpeed: 0
+radius: 1
+hideScorchMark: true
+explodeOnDeath: false
+effectOnDeath: none
+showOnMinimap: false
+
+[graphics]
+drawLayer: top
+image: SHARED:blank.png
+
+[hiddenAction_EZAR_Death]
+autoTrigger: if self.timeAlive >= memory.EZAR_Distance
+deleteSelf: true
+fireTurretXAtGround: dummy
+fireTurretXAtGround_withOffset: 0,0
+
+[turret_dummy]
+x: 0
+y: 0
+
+[attack]
+canAttack: false
+canAttackFlyingUnits: false
+canAttackLandUnits:   false
+canAttackUnderwaterUnits: false
+
+[hiddenAction_EZAR_created]
+autoTriggerOnEvent: created
+setUnitMemory: """
+EZAR_Target=customTarget1.readUnitMemory(name="EZAR_lastAttack",type="unit"),
+EZAR_Target=memory.EZAR_Target.getOffsetRelative(y=rnd(0,${EZAR_InaccuracyAtMaxDistance})*(distanceBetween(self,memory.EZAR_Target)/${EZAR_MaxDistance}),dirOffset=rnd(0,360)),
+EZAR_Spawn=createMarker(self.x, self.y),
+EZAR_Distance=distanceBetween(memory.EZAR_Target,memory.EZAR_Spawn)/${EZAR_ProjectileSpeed}/60"""
+alsoTriggerAction: EZAR_Waypoint
+
+[hiddenAction_EZAR_Waypoint]
+addWaypoint_type: move
+addWaypoint_target_fromReference: memory.EZAR_Target
+setBodyRotation: directionBetween(self,memory.EZAR_Target)
+
+[template_EZAR_Decal]
+basePosition: self.getOffsetRelative(height=cos(self.timeAlive/memory.EZAR_Distance*180-90)*${EZAR_ProjectileHeight})
+onlyWhileAlive: true
+
+[movement]
+movementType: AIR
+moveSpeed: ${EZAR_ProjectileSpeed}
+moveAccelerationSpeed: ${EZAR_ProjectileSpeed}
+moveDecelerationSpeed: ${EZAR_ProjectileSpeed}
+maxTurnSpeed: 0
+targetHeight: 0
+targetHeightDrift: 0

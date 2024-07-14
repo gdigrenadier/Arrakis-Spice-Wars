@@ -1,0 +1,224 @@
+
+[template_SuperWeaponX]
+@define name: Death Hand
+@define superWeaponPos: 1
+
+[global_resource_TimerSuperWeaponXTeam0]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player0
+[global_resource_TimerSuperWeaponXTeam1]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player1
+[global_resource_TimerSuperWeaponXTeam2]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player2
+[global_resource_TimerSuperWeaponXTeam3]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player3
+[global_resource_TimerSuperWeaponXTeam4]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player4
+[global_resource_TimerSuperWeaponXTeam5]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player5
+[global_resource_TimerSuperWeaponXTeam6]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player6
+[global_resource_TimerSuperWeaponXTeam7]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player7
+[global_resource_TimerSuperWeaponXTeam8]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player8
+[global_resource_TimerSuperWeaponXTeam9]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponX, template_player9
+
+[template_SuperWeaponY]
+@define name: Sheep Launcher
+@define superWeaponPos: 2
+
+[global_resource_TimerSuperWeaponYTeam0]
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player0
+[global_resource_TimerSuperWeaponYTeam1]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player1
+[global_resource_TimerSuperWeaponYTeam2]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player2
+[global_resource_TimerSuperWeaponYTeam3]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player3
+[global_resource_TimerSuperWeaponYTeam4]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player4
+[global_resource_TimerSuperWeaponYTeam5]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player5
+[global_resource_TimerSuperWeaponYTeam6]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player6
+[global_resource_TimerSuperWeaponYTeam7]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player7
+[global_resource_TimerSuperWeaponYTeam8]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player8
+[global_resource_TimerSuperWeaponYTeam9]                                  
+@copyFromSection: template_ResourceTimerSuperWeapon, template_SuperWeaponY, template_player9
+
+
+
+[hiddenAction_TimerDownX]
+@copyFromSection: template_timerDown
+@define SuperWeaponTag: X
+
+[hiddenAction_TimerDownY]
+@copyFromSection: template_timerDown
+@define SuperWeaponTag:
+
+[template_refreshResources]
+setResourcesWithLogic: """
+TimerSuperWeaponXTeam${Nr}=${IgnoreThisOne}X${IgnoreThisTwo}XTeam${Nr}),
+TimerSuperWeaponYTeam${Nr}=select(eventData(name="weaponTag",type="string") == "Y",eventData(name="timer",type="float"),self.resource.TimerSuperWeaponYTeam${Nr})
+"""
+
+[template_giveTag]
+temporarilyAddTags: ${core.name}${Nr}
+requireConditional: if self.teamId() == ${Nr}
+
+[hiddenAction_createdGiveTeamTagAndStartTimer]
+autoTriggerOnEvent: created
+alsoTriggerAction: giveTagTeam0, giveTagTeam1, giveTagTeam2, giveTagTeam3, giveTagTeam4, giveTagTeam5, giveTagTeam6, giveTagTeam7, giveTagTeam8, giveTagTeam9
+
+[hiddenAction_giveTagTeam0]
+@copyFromSection: template_giveTag
+@define Nr: 0
+[hiddenAction_giveTagTeam1]
+@copyFromSection: template_giveTag
+@define Nr: 1
+[hiddenAction_giveTagTeam2]
+@copyFromSection: template_giveTag
+@define Nr: 2
+[hiddenAction_giveTagTeam3]
+@copyFromSection: template_giveTag
+@define Nr: 3
+[hiddenAction_giveTagTeam4]
+@copyFromSection: template_giveTag
+@define Nr: 4
+[hiddenAction_giveTagTeam5]
+@copyFromSection: template_giveTag
+@define Nr: 5
+[hiddenAction_giveTagTeam6]
+@copyFromSection: template_giveTag
+@define Nr: 6
+[hiddenAction_giveTagTeam7]
+@copyFromSection: template_giveTag
+@define Nr: 7
+[hiddenAction_giveTagTeam8]
+@copyFromSection: template_giveTag
+@define Nr: 8
+[hiddenAction_giveTagTeam9]
+@copyFromSection: template_giveTag
+@define Nr: 9
+
+[template_timerDown]
+autoTrigger: true
+setResourcesWithLogic: """
+TimerSuperWeapon${SuperWeaponTag}Team0=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}0", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team0-1),
+TimerSuperWeapon${SuperWeaponTag}Team1=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}1", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team1-1),
+TimerSuperWeapon${SuperWeaponTag}Team2=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}2", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team2-1),
+TimerSuperWeapon${SuperWeaponTag}Team3=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}3", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team3-1),
+TimerSuperWeapon${SuperWeaponTag}Team4=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}4", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team4-1),
+TimerSuperWeapon${SuperWeaponTag}Team5=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}5", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team5-1),
+TimerSuperWeapon${SuperWeaponTag}Team6=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}6", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team6-1),
+TimerSuperWeapon${SuperWeaponTag}Team7=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}7", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team7-1),
+TimerSuperWeapon${SuperWeaponTag}Team8=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}8", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team8-1),
+TimerSuperWeapon${SuperWeaponTag}Team9=max(0+select( self.numberOfUnitsInAllTeams(withTag="${SuperWeaponTag}9", greaterThan=0), 0.9, 0 ),self.resource.TimerSuperWeapon${SuperWeaponTag}Team9-1)"""
+
+[template_refresh]
+@copyFromSection: template_refreshResources
+requireConditional: if ${Nr} == int(eventData(name="teamId", type="float"))
+@define IgnoreThisOne: select(eventData(name="weaponTag",type="string") == "
+@define IgnoreThisTwo: ",eventData(name="timer",type="float"),self.resource.TimerSuperWeapon
+
+[hiddenAction_refresh]
+autoTriggerOnEvent: newMessage(withTag="UpdateTimer")
+alsoTriggerAction: refreshTeam0, refreshTeam1, refreshTeam2, refreshTeam3, refreshTeam4, refreshTeam5, refreshTeam6, refreshTeam7, refreshTeam8, refreshTeam9
+
+[hiddenAction_refreshTeam0]
+@copyFromSection: template_refresh
+@define Nr: 0
+[hiddenAction_refreshTeam1]
+@copyFromSection: template_refresh
+@define Nr: 1
+[hiddenAction_refreshTeam2]
+@copyFromSection: template_refresh
+@define Nr: 2
+[hiddenAction_refreshTeam3]
+@copyFromSection: template_refresh
+@define Nr: 3
+[hiddenAction_refreshTeam4]
+@copyFromSection: template_refresh
+@define Nr: 4
+[hiddenAction_refreshTeam5]
+@copyFromSection: template_refresh
+@define Nr: 5
+[hiddenAction_refreshTeam6]
+@copyFromSection: template_refresh
+@define Nr: 6
+[hiddenAction_refreshTeam7]
+@copyFromSection: template_refresh
+@define Nr: 7
+[hiddenAction_refreshTeam8]
+@copyFromSection: template_refresh
+@define Nr: 8
+[hiddenAction_refreshTeam9]
+@copyFromSection: template_refresh
+@define Nr: 9
+
+[template_ResourceTimerSuperWeapon]
+displayName: ${name}
+displayPostfixInHUD: s
+displayColor: ${color}
+displayPos: ${10*Player+superWeaponPos}
+displayRoundedDown: true
+displayDigitGrouping: none
+
+[template_player0]
+@define color:#00FF00
+@define Player: 0
+[template_player1]
+@define color:#d02013
+@define Player: 1
+[template_player2]
+@define color:#0463f3
+@define Player: 2
+[template_player3]
+@define color:#ffff40
+@define Player: 3
+[template_player4]
+@define color:#00ffff
+@define Player: 4
+[template_player5]
+@define color:#d0f8f7
+@define Player: 5
+[template_player6]
+@define color:#000000
+@define Player: 6
+[template_player7]
+@define color:#ff00ea
+@define Player: 7
+[template_player8]
+@define color:#ff7f18
+@define Player: 8
+[template_player9]
+@define color:#9368c4
+@define Player: 9
+
+[core]
+name:  superWeaponTimerController
+mass: 1
+price: 1
+maxHp: 1
+radius: 50
+autoTriggerCooldownTime: 59
+onNewMapSpawn: mapCenter_eachActiveTeam
+isUnselectable: true
+canNotBeDirectlyAttacked: true
+canNotBeDamaged: true
+showInEditor: false
+
+[graphics]
+image: SHARED:blank.png
+
+[attack]
+canAttack: false
+canAttackFlyingUnits: false
+canAttackLandUnits: false
+canAttackUnderwaterUnits: false
+
+[movement]
+movementType: NONE

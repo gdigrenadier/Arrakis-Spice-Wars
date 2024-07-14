@@ -1,0 +1,133 @@
+[core]
+generation_resources: Timer=-1
+generation_delay: 59
+generation_active: if ${generation_active}
+
+[resource_Timer]
+hidden: true
+
+[template_giveTag]
+temporarilyAddTags: ${superWeaponTag}${Nr}
+requireConditional: if self.teamId() == ${Nr}
+
+[hiddenAction_created]
+autoTriggerOnEvent: created
+setResourcesWithLogic: Timer=${Warmup}
+alsoTriggerAction: refreshControlTimer
+
+[hiddenAction_refreshWhenOff]
+autoTrigger: if not (${generation_active})
+alsoTriggerAction: refreshControlTimer
+
+[hiddenAction_resync]
+autoTrigger: if self.timeAlive() % 5 < 1 and self.resource.Timer > 0
+alsoTriggerAction: refreshControlTimer
+debugMessage: asdf
+
+
+[hiddenAction_refreshControlTimer]
+alsoTriggerAction: refreshXSuperWeaponForTeam0, refreshXSuperWeaponForTeam1, refreshXSuperWeaponForTeam2, refreshXSuperWeaponForTeam3, refreshXSuperWeaponForTeam3, refreshXSuperWeaponForTeam4, refreshXSuperWeaponForTeam5, refreshXSuperWeaponForTeam6, refreshXSuperWeaponForTeam7, refreshXSuperWeaponForTeam8, refreshXSuperWeaponForTeam9
+
+[template_refreshTeam]
+autoTriggerOnEvent: destroyed
+sendMessageTo: globalSearchForFirstUnit(withTag="superWeaponTimerController${Nr}")
+sendMessageWithTags: UpdateTimer
+sendMessageWithData: timer=self.resource.Timer, teamId=self.teamId(), weaponTag="${superWeaponTag}"
+#debugMessage: Sending timer=%{self.resource.Timer}, teamId=%{self.teamId()}, weaponTag="${superWeaponTag}" to [%{globalSearchForFirstUnit(withTag="superWeaponTimerController${Nr}")}] withTag superWeaponTimerController${Nr}
+
+[hiddenAction_refreshXSuperWeaponForTeam0]
+@copyFromSection: template_refreshTeam
+@define Nr: 0
+setResourcesWithLogic: Timer=select(self.hp() > 0, self.resource.Timer, 0)
+
+[hiddenAction_refreshXSuperWeaponForTeam1]
+@copyFromSection: template_refreshTeam
+@define Nr: 1
+
+[hiddenAction_refreshXSuperWeaponForTeam2]
+@copyFromSection: template_refreshTeam
+@define Nr: 2
+
+[hiddenAction_refreshXSuperWeaponForTeam3]
+@copyFromSection: template_refreshTeam
+@define Nr: 3
+
+[hiddenAction_refreshXSuperWeaponForTeam4]
+@copyFromSection: template_refreshTeam
+@define Nr: 4
+
+[hiddenAction_refreshXSuperWeaponForTeam5]
+@copyFromSection: template_refreshTeam
+@define Nr: 5
+
+[hiddenAction_refreshXSuperWeaponForTeam6]
+@copyFromSection: template_refreshTeam
+@define Nr: 6
+
+[hiddenAction_refreshXSuperWeaponForTeam7]
+@copyFromSection: template_refreshTeam
+@define Nr: 7
+
+[hiddenAction_refreshXSuperWeaponForTeam8]
+@copyFromSection: template_refreshTeam
+@define Nr: 8
+
+[hiddenAction_refreshXSuperWeaponForTeam9]
+@copyFromSection: template_refreshTeam
+@define Nr: 9
+
+[hiddenAction_createdGiveTeamTagAndStartTimer]
+autoTriggerOnEvent: created
+alsoTriggerAction: giveTagTeam0, giveTagTeam1, giveTagTeam2, giveTagTeam3, giveTagTeam4, giveTagTeam5, giveTagTeam6, giveTagTeam7, giveTagTeam8, giveTagTeam9
+
+[hiddenAction_giveTagTeam0]
+@copyFromSection: template_giveTag
+@define Nr: 0
+
+[hiddenAction_giveTagTeam1]
+@copyFromSection: template_giveTag
+@define Nr: 1
+
+[hiddenAction_giveTagTeam2]
+@copyFromSection: template_giveTag
+@define Nr: 2
+
+[hiddenAction_giveTagTeam3]
+@copyFromSection: template_giveTag
+@define Nr: 3
+
+[hiddenAction_giveTagTeam4]
+@copyFromSection: template_giveTag
+@define Nr: 4
+
+[hiddenAction_giveTagTeam5]
+@copyFromSection: template_giveTag
+@define Nr: 5
+
+[hiddenAction_giveTagTeam6]
+@copyFromSection: template_giveTag
+@define Nr: 6
+
+[hiddenAction_giveTagTeam7]
+@copyFromSection: template_giveTag
+@define Nr: 7
+
+[hiddenAction_giveTagTeam8]
+@copyFromSection: template_giveTag
+@define Nr: 8
+
+[hiddenAction_giveTagTeam9]
+@copyFromSection: template_giveTag
+@define Nr: 9
+	
+[graphics]
+image: SHARED:icon_downgrade.png
+
+[attack]
+canAttack: false
+canAttackFlyingUnits: false
+canAttackLandUnits: false
+canAttackUnderwaterUnits: false
+
+[movement]
+movementType: NONE

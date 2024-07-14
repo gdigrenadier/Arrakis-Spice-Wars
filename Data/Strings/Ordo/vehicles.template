@@ -2,7 +2,7 @@
 
 [template_ordosRaiderDesc]
 displayText: Raider
-displayDescription: -The Ordos Raider is similar to the standard Trike, however, it has the power to turn invisible when not in combat.
+displayDescription: -The Raider is similar to the standard Trike, except it has the ability to stealth itself when not in combat.
 
 [template_lightTankDesc]
 displayText: Light Tank
@@ -10,23 +10,23 @@ displayDescription: -The light tank is a lightly armored, tracked tank firing hi
 
 [template_hoverTankDesc]
 displayText: Hover Light Tank
-displayDescription: -The hover light tank is a lightly armored, hovering tank firing high explosive rounds.\n-It is much faster than the other tanks.
+displayDescription: -The Hover Light Tank is a lightly armored, hovering tank firing high explosive rounds.\n-It is much faster than the other tanks.
 
 [template_laserTankDesc]
 displayText: Laser Light Tank
-displayDescription: -The laser light tank is a lightly armored, tracked tank that uses lasers to defeat its enemy.
+displayDescription: -The Laser Light Tank is a lightly armored, tracked tank that uses lasers to defeat its enemy.
 
 [template_laserHoverTankDesc]
 displayText: H.L Light Tank
-displayDescription: -The h.l light tank is a lightly armored, hovering tank that uses lasers to defeat its enemy.\n-It is much faster than the other tanks.
+displayDescription: -The H.L Light Tank is a lightly armored, hovering tank that uses lasers to defeat its enemy.\n-It is much faster than the other tanks.
 
 [template_stealthTankDesc]
 displayText: Stealth Tank
-displayDescription: -The Stealth tank is a lightly armored, tracked tank that can fire direct impact missiles which destroy air and land units.\n-It is fast and capable of using Stealth.\n-Its weapon may be limited on its own, paired with Stealth there are chances to make moves which can end wars.
+displayDescription: -The Stealth Tank is a lightly armored, tracked tank that can fire direct impact missiles which destroy air and land units.\n-It is fast and capable of using Stealth.\n-Its weapon may be limited on its own, paired with Stealth there are chances to make moves which can end wars.
 
 [template_stealthHarvesterDesc]
 displayText: Stealth Harvester
-displayDescription: -Ordos' Stealth harvester. It has the ability to become stealthed which allows it to harvest without being easily noticed. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+displayDescription: -Ordos' Stealth Harvester. It has the ability to become stealthed which allows it to harvest without being easily noticed. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
 
 [template_ordosUltravioletDesc]
 displayText: Ultraviolet Artillery

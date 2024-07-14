@@ -1,0 +1,11 @@
+[core]
+@memory EZAR_lastAttack: unit
+
+[hiddenAction_EZAR_onShoot]
+spawnUnits: ${EZAR_Projectile}
+setUnitMemory: EZAR_lastAttack=createMarker(thisActionTarget.x, thisActionTarget.y)
+
+[projectile_dummy]
+directDamage: 0
+life: 0
+speed: 0
