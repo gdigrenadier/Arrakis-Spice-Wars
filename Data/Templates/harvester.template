@@ -1,2 +1,67 @@
 [core]
 fogOfWarSightRange:4
+
+[action_harvest]
+@copyFromSection: template_actionHarvestNote
+
+buildSpeed:0
+autoTrigger: if not self.hasFlag(id=1) and not self.hasActiveWaypoint() and not self.hasParent() and not self.hasResources(rawSpice=${spiceCapacity})
+addResources: setFlag=1
+clearAllWaypoints: true
+addWaypoint_type: reclaim
+addWaypoint_prepend: true
+addWaypoint_target_nearestUnit_tagged: rawSpice
+addWaypoint_target_nearestUnit_team: neutral
+addWaypoint_target_mapMustBeReachable: true
+ai_isHighPriority: if not self.hasActiveWaypoint(type='loadInto') and not self.isResourceLargerThan( source='Spice',compareTarget='spiceStorage',byMoreThan=-1)
+
+[action_requestUnload]
+@copyFromSection: template_actionUnloadNote
+
+autoTrigger: if self.hasResources(rawSpice=${spiceCapacity}) and self.hasActiveWaypoint(type='reclaim') and not self.hasParent
+isVisible: if self.resource(type='rawSpice', greaterThan=0)
+buildSpeed:0
+addWaypoint_type: loadInto
+addWaypoint_prepend: true
+addWaypoint_target_nearestUnit_tagged: emptyRefinery
+addWaypoint_target_nearestUnit_team: own
+addWaypoint_target_mapMustBeReachable: true
+ai_isHighPriority: if self.hasResources(rawSpice=${spiceCapacity}) and not self.isResourceLargerThan( source='Spice',compareTarget='spiceStorage',byMoreThan=-20)
+
+[hiddenAction_spiceStockLimit]
+autoTrigger: if self.hasResources(rawSpice=${spiceCapacity})
+resourceAmount: rawSpice
+resourceAmount_setValue:${spiceCapacity}
+
+[hiddenAction_stopIfFull]
+text: Unload
+buildSpeed:0
+autoTrigger: if self.hasResources(rawSpice=${spiceCapacity}) and self.hasActiveWaypoint(type='reclaim') and not self.hasParent()
+clearActiveWaypoint: true
+#addResources: rawSpice=-10
+
+[hiddenAction_unloadDone]
+autoTrigger: if not self.hasResources(rawSpice=2.5) and self.hasParent(withTag='refinery')
+alsoTriggerAction: harvest
+disconnectFromParent: true
+
+[animation_onHarvest]
+onActions : reclaim
+#body_0s: {frame:1}
+#body_1s: {frame:3}
+start: 1
+end: 3
+speed: 32
+direction_units: 45
+direction_strideX:0
+direction_strideY:1
+direction_starting:360
+
+[hiddenAction_destroyed]
+autoTriggerOnEvent: destroyed
+spawnUnits: genericSoldier(spawnChance=0.50)
+
+[hiddenAction_destroyedWithSpice]
+autoTriggerOnEvent: destroyed
+requireConditional: if self.resource(type="Spice", greaterThan=239)
+spawnUnits: neutralRawSpice(neutralTeam=true)
