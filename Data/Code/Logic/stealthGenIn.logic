@@ -1,3 +1,4 @@
 [hiddenAction_stealth]
 autoTrigger: if self.hasUnitInTeam(withTag="stealthgen", withinRange=160)
 convertTo: ${stealthIn}
+playSoundAtUnit: ROOT:Data/Sound/cloak.wav

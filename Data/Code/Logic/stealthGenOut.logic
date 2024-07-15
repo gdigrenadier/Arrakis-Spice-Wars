@@ -9,3 +9,4 @@ autoTrigger: if self.isAttacking() or self.hp(lessThan=45) or numberOfUnitsInEne
 convertTo: ${stealthOut}
 buildSpeed: 0s
 pos:-1
+playSoundAtUnit: ROOT:Data/Sound/cloak.wav
