@@ -2,52 +2,52 @@
 
 [template_helpShowItDesc]
 text: Show Help
-description: -Shows the basics on how to play Arrakis: Spice Wars.
+description: Shows the basics on how to play Arrakis: Spice Wars.
 
 [template_helpHideItDesc]
 text: Hide Help
-description: -Hide the basics.
+description: Hide the basics.
 
 [template_helpAboutFactionsDesc]
 text: Faction Specialties
-description: -In ASW, each faction has its own specialty that allows it to perform better in specific fields.\n-Atreides specialises in technology and economy.\n-Harkonnen specialises in armour and aggression.\n-Atreides specialises in sabotage and hit n' run tactics.
+description: In ASW, each faction has its own specialty that allows it to perform better in specific fields.\nAtreides specialises in technology and economy.\nHarkonnen specialises in armour and aggression.\nAtreides specialises in sabotage and hit n' run tactics.
 
 [template_helpAboutEconomyDesc]
 text: Economy
-description: -Spice is the universal economy in ASW.\n-Spice can be harvested by building a refinery, which has a slow harvester attached that collects spice and brings it back to the refinery.
+description: Spice is the universal economy in ASW.\nSpice can be harvested by building a refinery, which has a slow harvester attached that collects spice and brings it back to the refinery.
 
 [template_helpAboutLogisticsDesc]
 text: Carryall Logistics
-description: -Carryalls are the supreme logistics tool, as they are able to carry most units across the dunes. Carryalls also act as automated transport for harvesters, where they carry the harvester from the refinery to the nearest spice geyser.
+description: Carryalls are the supreme logistics tool, as they are able to carry most units across the dunes. Carryalls also act as automated transport for harvesters, where they carry the harvester from the refinery to the nearest spice geyser.
 
 [template_helpAboutStorageDesc]
 text: Storage
-description: -When your storage is full, spice cannot be collected.\n-You need to either build more silos or refineries to store more spice.
+description: When your storage is full, spice cannot be collected.\nYou need to either build more silos or refineries to store more spice.
 
 [template_helpAboutTechDesc]
 text: Tech Tree
-description: -Building specific structures give you access to better tech.\n-The more advanced the better afterall. 
+description: Building specific structures give you access to better tech.\nThe more advanced the better afterall. 
 
 [template_helpAboutDefenseDesc]
 text: Defense
-description: -Turrets are used to protect your territory.\n-The basic turrets are good due to their cheap cost, but the more advanced turrets are better due to their strength at the cost of money and power.
+description: Turrets are used to protect your territory.\nThe basic turrets are good due to their cheap cost, but the more advanced turrets are better due to their strength at the cost of money and power.
 
 [template_helpAboutExpandDesc]
 text: Expansion
-description: -Expanding to more territory is the best way to get more Spice.\n-MCVs can be used to expand easily, deploying near Spice Fields is the best choice for you to expand your economy.\n-MCVs are purchasable through Upgraded Heavy Factory and Starport.
+description: Expanding to more territory is the best way to get more Spice.\nMCVs can be used to expand easily, deploying near Spice Fields is the best choice for you to expand your economy.\nMCVs are purchasable through Upgraded Heavy Factory and Starport.
 
 [template_helpAboutCivilianDesc]
 text: Neutral Structures
-description: -In some parts of Arrakis, civilians have built certain structures you can capture by sending engineers into.\n-These stuctures can provide additional building space, refineries, power and other technologies.
+description: In some parts of Arrakis, civilians have built certain structures you can capture by sending engineers into.\nThese stuctures can provide additional building space, refineries, power and other technologies.
 
 [template_helpAboutIXDesc]
 text: House Of IX Research
-description: -The House Of IX allows commanders in combat aquire technologies to give them an advantage when fighting in the spice fields.
+description: The House Of IX allows commanders in combat aquire technologies to give them an advantage when fighting in the spice fields.
 
 [template_helpAboutPalaceDesc]
 text: Palace Abilities
-description: -Each Faction has their own unique abilities from Palace.\n-Atreides can request Fremen Reinforcements which automatically charge into battle.\n-Harkonnen have access to Tank Reinforcements.\n-Ordos have access to a a small map reveal, which are useful to find out the enemy's plans.
+description: Each Faction has their own unique abilities from Palace.\nAtreides can request Fremen Reinforcements which automatically charge into battle.\nHarkonnen have access to Tank Reinforcements.\nOrdos have access to a a small map reveal, which are useful to find out the enemy's plans.
 
 [template_helpAboutSuperDesc]
 text: Superweapons
-description: -Every faction has their own unique superweapon.\n-Atreides can fire "Rods From God" to cause extreme amounts of damage in a wide area.\n-Harkonnen have access the Death Hand missile to cause widespread destruction. \n-Ordos have access to a large artillery that fires a devestating shell that rips structures to shreds in a large area.
+description: Every faction has their own unique superweapon.\nAtreides can fire "Rods From God" to cause extreme amounts of damage in a wide area.\nHarkonnen have access the Death Hand missile to cause widespread destruction. \nOrdos have access to a large artillery that fires a devestating shell that rips structures to shreds in a large area.

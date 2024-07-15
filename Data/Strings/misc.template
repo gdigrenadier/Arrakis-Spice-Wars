@@ -2,32 +2,32 @@
 
 [template_rawSpiceDesc]
 displayText: Spice
-displayDescription: -Harvestable
+displayDescription: Harvestable
 
 [template_houseSelectorDesc]
 displayText: House Selector
-displayDescription: -Selects House
+displayDescription: Selects House
 
 [template_razingOutpostDesc]
 displayText: Outpost
-displayDescription: -Calls Reinforcement
+displayDescription: Calls Reinforcement
 
 [template_starportFrigateDesc]
 displayText: Frigate
-displayDescription: -Used to Deliver the traded units \n -Cannot be attack
+displayDescription: Used to Deliver the traded units \n -Cannot be attack
 
 [template_sandboxFrigateDesc]
 displayText: Sandbox Frigate
-displayDescription: -Sandbox Unit\n-Can't be attacked\n-Can transport units too
+displayDescription: Sandbox Unit\nCan't be attacked\nCan transport units too
 
 [template_upgradeNote]
 text: Upgrade
-description: -Upgrade this building
+description: Upgrade this building
 isLockedMessage: -Needs repair first
 
 [template_repairOnNote]
 text: Repair
-description: -Repair this building
+description: Repair this building
 isLockedMessage: -Insufficient Spice
 
 [template_repairFacilityNote]
@@ -41,7 +41,7 @@ isLockedAltMessage: -Queue in progress...
 
 [template_repairOffNote]
 text: Stop Repair
-description: -Cancel this repairing
+description: Cancel this repairing
 
 [template_actionHarvestNote]
 text: Harvest

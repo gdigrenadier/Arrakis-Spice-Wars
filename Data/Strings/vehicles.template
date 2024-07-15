@@ -2,24 +2,24 @@
 
 [template_trikeDesc]
 displayText: Trike
-displayDescription: -The Trike is a lightly armored, three-wheeled, vehicle which fires armor piercing rounds.\n-It has limited firing range, but moves rapidly.
+displayDescription: The Trike is a lightly armored, three-wheeled, vehicle which fires armor piercing rounds.\nIt has limited firing range, but moves rapidly.
 
 [template_quadDesc]
 displayText: Quad
-displayDescription: -The Quad is a lightly armored, four-wheeled vehicle which fires armor piercing incendiary rounds.\n-The slower Quad is stronger than the Trike in both armor and firepower.
+displayDescription: The Quad is a lightly armored, four-wheeled vehicle which fires armor piercing incendiary rounds.\nThe slower Quad is stronger than the Trike in both armor and firepower.
 
 [template_mcvDesc]
 displayText: MCV
-displayDescription: The MCV scout vehicle is used to find rock outcroppings suitable for erection of new installations.\n-Upon locating an appropriate site the MCV will transform itself to a Construction Yard.
+displayDescription: The MCV scout vehicle is used to find rock outcroppings suitable for erection of new installations.\nUpon locating an appropriate site the MCV will transform itself to a Construction Yard.
 
 [template_missileLauncherDesc]
 displayText: Missile Tank
-displayDescription: -The Missile Tank fires a battle support missle similar to the Rocket Turret.\n-The Missile Tank has long range strike capability, and although inaccurate, it fires two missiles for greater coverage, and moves faster than the heavier battle tanks.
+displayDescription: The Missile Tank fires a battle support missle similar to the Rocket Turret.\nThe Missile Tank has long range strike capability, and although inaccurate, it fires two missiles for greater coverage, and moves faster than the heavier battle tanks.
 
 [template_siegeTankDesc]
 displayText: Siege Tank
-displayDescription: -The Siege Tank is a tracked vehicle with dual cannons.\n-These cannons fire armor piercing incendiary rounds, giving it more than twice the firepower of the smaller Combat tank.\n-It has twice the armor, and is slower than most tanks.
+displayDescription: The Siege Tank is a tracked vehicle with dual cannons.\nThese cannons fire armor piercing incendiary rounds, giving it more than twice the firepower of the smaller Combat tank.\nIt has twice the armor, and is slower than most tanks.
 
 [template_carryallDesc]
 displayText: Carryall
-displayDescription: -The Carryall is a lightly armored aircraft with no weapons.\n-It is able to lift and transport heavy machinery and vehicles.\n-Carryalls are utilized primarily for transporting Harvesters.
+displayDescription: The Carryall is a lightly armored aircraft with no weapons.\nIt is able to lift and transport heavy machinery and vehicles.\nCarryalls are utilized primarily for transporting Harvesters.

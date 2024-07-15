@@ -2,18 +2,18 @@
 
 [template_harkonnenConsYardDesc]
 displayText: Construction Yard
-displayDescription: [Harkonnen]\n-A Construction Yard is required to build any new structures.\n-It contains all materials required for building structures on Dune.
+displayDescription: [Harkonnen]\nA Construction Yard is required to build any new structures.\nIt contains all materials required for building structures on Dune.
 
 [template_superFactoryDesc]
 displayText: Super Heavy Factory
-displayDescription: -The Super Heavy Factory produces Harkonnen's super units.
+displayDescription: The Super Heavy Factory produces Harkonnen's super units.
 
 [template_DTSiloDesc]
 displayText: Death Hand Silo
-displayDescription: -The Death Hand Silo produces and stores Death Hand Missiles for use.\n-WHile it does hold great strength its power usage is heavy.
+displayDescription: The Death Hand Silo produces and stores Death Hand Missiles for use.\nWHile it does hold great strength its power usage is heavy.
 
 # Defences
 
 [template_devastatorTurretDesc]
 displayText: Devastator Turret
-displayDescription: -Ground Based Turret armed with Devastator Cannons.\n-This stationary turret fires large rounds which are capable of destroying the biggest of targets.
+displayDescription: Ground Based Turret armed with Devastator Cannons.\nThis stationary turret fires large rounds which are capable of destroying the biggest of targets.

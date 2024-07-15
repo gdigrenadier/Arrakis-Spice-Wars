@@ -2,20 +2,20 @@
 
 [template_infantryUpgradeDesc]
 text: E.I.T.S System Research
-description: -Begins research on Enhanced Infantry Targeting Systems.\n-This upgrades existing infantry with better targeting, increasing range and firing speed.
+description: Begins research on Enhanced Infantry Targeting Systems.\nThis upgrades existing infantry with better targeting, increasing range and firing speed.
 
 [template_heavyLaserUpgradeDesc]
 text: Heavy Laser Research
-description: -Begins research on Heavy Laser Technology.\n-This allows the construction of laser weapons capable of cutting steel with little effort.
+description: Begins research on Heavy Laser Technology.\nThis allows the construction of laser weapons capable of cutting steel with little effort.
 
 [template_hoverUpgradeDesc]
 text: H.M.S Research
-description: -Begins research on Hover Movement Systems.\n-This allows the construction of hovering vehicles that move much faster.
+description: Begins research on Hover Movement Systems.\nThis allows the construction of hovering vehicles that move much faster.
 
 [template_ultraviolentUpgradeDesc]
 text: U.A.S Research
-description: -Begins research on Ultraviolent Artillery Systems.\n-This allows contruction of buildings and units that utilise Ultraviolent Artillery.
+description: Begins research on Ultraviolent Artillery Systems.\nThis allows contruction of buildings and units that utilise Ultraviolent Artillery.
 
 [template_stealthUpgradeDesc]
 text: Stealth System Research
-description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+description: Begins research on Stealth Technology.\nThis allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.

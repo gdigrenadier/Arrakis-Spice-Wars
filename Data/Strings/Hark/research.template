@@ -2,20 +2,20 @@
 
 [template_devestatorUpgradeDesc]
 text: Devastator Shell Research
-description: -Begins research on Devastator Shell Technology.\n-This allows the construction of weapons capable of destroying anything in its path.
+description: Begins research on Devastator Shell Technology.\nThis allows the construction of weapons capable of destroying anything in its path.
 
 [template_mammothUpgradeDesc]
 text: Mammoth Research
-description: -Begins research on the Mammoth.\n-This allows the construction of the Mammoth Super Heavy Tank, a vehicle stronger than anything on Arrakis.
+description: Begins research on the Mammoth.\nThis allows the construction of the Mammoth Super Heavy Tank, a vehicle stronger than anything on Arrakis.
 
 [template_nukeTankUpgradeDesc]
 text: Nuclear Engines Research
-description: -Begins research on Nuclear Engine Technology.\n-This gives basic tanks Nuclear Engines, which increases speed.
+description: Begins research on Nuclear Engine Technology.\nThis gives basic tanks Nuclear Engines, which increases speed.
 
 [template_stealthUpgradeDesc]
 text: Stealth System Research
-description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+description: Begins research on Stealth Technology.\nThis allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
 
 [template_stealthUpgradeDesc]
 text: Stealth System Research
-description: -Begins research on Stealth Technology.\n-This allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+description: Begins research on Stealth Technology.\nThis allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.

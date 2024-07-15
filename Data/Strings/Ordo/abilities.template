@@ -1,11 +1,11 @@
 [template_houseOrdosDesc]
 text: House Ordos
-description: [Stealth & Sabotage]\n\n[Features]\n-Laser Weaponry\n-Map Reveal
+description: [Stealth & Sabotage]\n\n[Features]\nLaser Weaponry\nMap Reveal
 
 # Palace
 [template_revealCool]
 text: Cooldown...
-description: -Charging the satelite.
+description: Charging the satelite.
 
 [template_reveal]
-text: -Reveal Area
+text: Reveal Area

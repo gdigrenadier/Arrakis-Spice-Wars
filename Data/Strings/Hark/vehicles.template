@@ -2,30 +2,30 @@
 
 [template_heavyQuadDesc]
 displayText: Heavy Quad
-displayDescription: -The Heavy Quad is Harkonnen's version of the Quad. It is slightly more resiliant than the normal Quad and deals slightly more damage, but at the cost of it being worth more and being slightly slower.
+displayDescription: The Heavy Quad is Harkonnen's version of the Quad. It is slightly more resiliant than the normal Quad and deals slightly more damage, but at the cost of it being worth more and being slightly slower.
 
 [template_heavyTankDesc]
 displayText: Heavy Tank
-displayDescription: -The Heavy tank is a medium armored, tracked tank firing high explosive rounds from its two barrels.\n-It is slower than the combat tank but holds more firepower.
+displayDescription: The Heavy tank is a medium armored, tracked tank firing high explosive rounds from its two barrels.\nIt is slower than the combat tank but holds more firepower.
 
 [template_heavyHarvesterDesc]
 displayText: Heavy Harvester
-displayDescription: -Harkonnen's Heavy harvester. Its fitted with more armour than the other harvesters. \n-The Harvester seperates spice from the sand.\n-Unusable sand is then dumped through the exhaust system.\n-Once filled, the Harvester will automatically take raw spice to the Refinery for processing.
+displayDescription: Harkonnen's Heavy harvester. Its fitted with more armour than the other harvesters. \nThe Harvester seperates spice from the sand.\nUnusable sand is then dumped through the exhaust system.\nOnce filled, the Harvester will automatically take raw spice to the Refinery for processing.
 
 [template_mobileAADesc]
 displayText: Mobile AA
-displayDescription: -The Mobile AA acts as Harkonnen's Anti Air as a replacement for the Missile Tank. \n-It has missiles that are incredibly accurate and fast allowing their capabilities to be unmatched. \n- It is faster then the average tank and has the ability to deny a larger area from Aircraft than the other factions Missile Tanks.
+displayDescription: The Mobile AA acts as Harkonnen's Anti Air as a replacement for the Missile Tank. \nIt has missiles that are incredibly accurate and fast allowing their capabilities to be unmatched. \n It is faster then the average tank and has the ability to deny a larger area from Aircraft than the other factions Missile Tanks.
 
 [template_harkonnenDevastatorDesc]
 displayText: Devastator
-displayDescription: -Developed by the Harkonnens, this tank fires dual plasma charges. It is the most powerful tank on Dune, yet it is very slow.\n-The Devastator is nuclear powered, and may become unstable in combat.
+displayDescription: Developed by the Harkonnens, this tank fires dual plasma charges. It is the most powerful tank on Dune, yet it is very slow.\nThe Devastator is nuclear powered, and may become unstable in combat.
 
 [template_harkonnenMammothDesc]
 displayText: "Mammoth" Super Heavy Tank
-displayDescription: -This titan of a tank is peak Harkonnen Engineering, its surpasses all known life on Arrakis.\n-This tank is capable of destoying everything in its path with a inferno following its treads, civilisations have fell due to its sheer might.\n-The Mammoth Super Heavy Tank is a near invincible land cruiser armed with cannons the sizes of men and ammo capable of destroying civilian buildings in one shot.\n-It is that expensive and monstrous that Harkonnen commanders are only allowed one in the battlefield.\n-Use it wisely.
+displayDescription: This titan of a tank is peak Harkonnen Engineering, its surpasses all known life on Arrakis.\nThis tank is capable of destoying everything in its path with a inferno following its treads, civilisations have fell due to its sheer might.\nThe Mammoth Super Heavy Tank is a near invincible land cruiser armed with cannons the sizes of men and ammo capable of destroying civilian buildings in one shot.\nIt is that expensive and monstrous that Harkonnen commanders are only allowed one in the battlefield.\nUse it wisely.
 
 # Aircraft
 
 [template_gunshipDesc]
 displayText: Gunship
-displayDescription: -The Gunship is a slow, tanky aircraft thats its highly effective against ground units.
+displayDescription: The Gunship is a slow, tanky aircraft thats its highly effective against ground units.

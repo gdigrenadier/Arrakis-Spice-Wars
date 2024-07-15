@@ -1,11 +1,11 @@
 [template_houseHarkonnenDesc]
 text: House Harkkonen
-description: [Strength & Aggression]\n\n[Features]\n-Devastator Armourments\n-Tank Reinforcements
+description: [Strength & Aggression]\n\n[Features]\nDevastator Armourments\nTank Reinforcements
 
 # Palace
 [template_tankreinCool]
 text: Cooldown...
-description: -Rallying reinforcements...
+description: Rallying reinforcements...
 
 [template_tankrein]
 text: Tank Reinforcements
@@ -13,8 +13,8 @@ text: Tank Reinforcements
 # Death Hand
 [template_deathCooldownDesc]
 text: Cooldown...
-description: -Missile under construction...
+description: Missile under construction...
 
 [template_deathHandDesc]
-text: -Death Hand
+text: Death Hand
 

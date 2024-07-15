@@ -19,8 +19,8 @@ buildSpeed: 6s
 @copyFromSection: template_actionQueueBuilding
 @define target: genericAdvWindTrap
 @define flagId: 2
-isLockedAlt2: IGNORE
-isLockedAlt2Message: IGNORE
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="spiceRefinery")
+isLockedAlt: if not self.hasUnitInTeam(withTag="outpost")
 ai_isHighPriority: if not self.resource(type="Power", greaterThan=0)
 streamingCost: Spice=700
 buildSpeed: 6s
@@ -174,7 +174,7 @@ buildSpeed: 18s
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
 @define target: harkonnenSuperFactory
 @define flagId: 12
-isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix") and self.hasUnitInTeam(withTag="heavyFactory") and not self.globalTeamTags(includes='spiceRaceMode') and not self.globalTeamTags(includes='houseHarkonnenMod')
+isVisible: if not self.hasFlag(id=${flagId}) and self.hasUnitInTeam(withTag="ix") and self.hasUnitInTeam(withTag="heavyFactory") and not self.globalTeamTags(includes='spiceRaceMode') and self.globalTeamTags(includes='houseHarkonnenMod')
 isLockedAlt: if not self.hasUnitInTeam(withTag="ix")
 ai_isHighPriority: if self.hasUnitInTeam(withTag="repairFacility")
 streamingCost: Spice=1000

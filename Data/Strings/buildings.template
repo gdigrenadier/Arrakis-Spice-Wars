@@ -2,11 +2,11 @@
 
 [template_consYardDesc]
 displayText: Construction Yard
-displayDescription: -A Construction Yard is required to build any new structures.\n-It contains all materials required for building structures on Dune.
+displayDescription: A Construction Yard is required to build any new structures.\nIt contains all materials required for building structures on Dune.
 
 [template_slabDesc]
 displayText: Slab
-displayDescription: -Slabs may serve as roadways and make up the foundations that are required before erecting structures.\n-Slabs cannot be repaired if damaged, and must be replaced or abandoned.
+displayDescription: Slabs may serve as roadways and make up the foundations that are required before erecting structures.\nSlabs cannot be repaired if damaged, and must be replaced or abandoned.
 
 [template_slabsDesc]
 @copyFromSection: template_slabDesc
@@ -14,66 +14,66 @@ displayText: Slabs
 
 [template_windtrapDesc]
 displayText: Windtrap
-displayDescription: -The Wind Traps provide power and water to an installation.\n+100 Power
+displayDescription: The Wind Traps provide power and water to an installation.\n+100 Power
 
 [template_advwindtrapDesc]
 displayText: Advanced Windtrap
-displayDescription: -The Advanced Wind Traps provide more power and water to an installation than a normal Wind Trap.\n+300 Power
+displayDescription: The Advanced Wind Traps provide more power and water to an installation than a normal Wind Trap.\n+300 Power
 
 [template_refineryDesc]
 displayText: Spice Refinery
-displayDescription: -The Refinery is the basis of all spice production on Dune.\n-Includes 1 Harvester
+displayDescription: The Refinery is the basis of all spice production on Dune.\nIncludes 1 Harvester
 
 [template_barracksDesc]
 displayText: Barracks
-displayDescription: -Barracks train Light Infantry units.
+displayDescription: Barracks train Light Infantry units.
 
 [template_outpostDesc]
 displayText: Outpost
-displayDescription: -The radar capabilities of an Outpost are used for detecting incoming enemies.\n-An Outpost is required before any new military units can be produced.
+displayDescription: The radar capabilities of an Outpost are used for detecting incoming enemies.\nAn Outpost is required before any new military units can be produced.
 
 [template_siloDesc]
 displayText: Silo
-displayDescription: -Silos hold harvested spice.\n-When the Refinery completes the conversion process, it automatically distributes the spice evenly among the silos. 
+displayDescription: Silos hold harvested spice.\nWhen the Refinery completes the conversion process, it automatically distributes the spice evenly among the silos. 
 
 [template_lightFactoryDesc]
 displayText: Light Factory
-displayDescription: -The Light Factory produces small, lightly armored, combat vehicles.
+displayDescription: The Light Factory produces small, lightly armored, combat vehicles.
 
 [template_heavyFactoryDesc]
 displayText: Heavy Factory
-displayDescription: -The Heavy Factory produces large, tracked, military or spice harvesting vehicles.
+displayDescription: The Heavy Factory produces large, tracked, military or spice harvesting vehicles.
 
 [template_repairFacilityDesc]
 displayText: Repair Facility
-displayDescription: -A Repair Facility is required to repair damaged vehicles.\n-Credits are charged according to the extent of damage and type of vehicle repaired.
+displayDescription: A Repair Facility is required to repair damaged vehicles.\nCredits are charged according to the extent of damage and type of vehicle repaired.
 
 [template_starportDesc]
 displayText: Starport
-displayDescription: -The Starport allows you to trade with the Tlalil.\n-They provide access to special units.
+displayDescription: The Starport allows you to trade with the Tlalil.\nThey provide access to special units.
 
 [template_hiTechDesc]
 displayText: Hi-Tech
-displayDescription: -The High Tech Factory produces airborne unit, such as the Carryalls.
+displayDescription: The High Tech Factory produces airborne unit, such as the Carryalls.
 
 [template_houseOfIXDesc]
 displayText: House of IX
-displayDescription: -The IX facility provides the ability to research new technologies for use in combat.
+displayDescription: The IX facility provides the ability to research new technologies for use in combat.
 
 [template_palaceDesc]
 displayText: Palace
-displayDescription: -Palaces are awarded to chosen leaders who show great bravery and prowess in their missions.\n-Many Palaces feature unique additional options.
+displayDescription: Palaces are awarded to chosen leaders who show great bravery and prowess in their missions.\nMany Palaces feature unique additional options.
 
 # Shared Defences
 
 [template_cannonTurretDesc]
 displayText: Turret
-displayDescription: -Ground Based Turret\n-This stationary turret fires armor-piercing rounds at a close range.\n-Can only attack ground units.
+displayDescription: Ground Based Turret\nThis stationary turret fires armor-piercing rounds at a close range.\nCan only attack ground units.
 
 [template_wallDesc]
 displayText: Wall
-displayDescription: -Walls can be used for structure enhancement and fortification purposes.\n-like the concrete slabs, walls cannot be repaired.
+displayDescription: Walls can be used for structure enhancement and fortification purposes.\nlike the concrete slabs, walls cannot be repaired.
 
 [template_rocketTurretDesc]
 displayText: Rocket Turret
-displayDescription: -Ground Based Turret\n-An upgraded version of the standard Turret, the missle turret also has long range, high explosive projectiles.\n-Can attack ground and air.
+displayDescription: Ground Based Turret\nAn upgraded version of the standard Turret, the missle turret also has long range, high explosive projectiles.\nCan attack ground and air.
