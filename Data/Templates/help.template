@@ -32,7 +32,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helpfaction.png
 iconExtraColor: #FFFFFFFF
@@ -43,7 +43,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helpeconomy.png
 iconExtraColor: #FFFFFFFF
@@ -54,7 +54,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helplogistic.png
 iconExtraColor: #FFFFFFFF
@@ -65,7 +65,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helpstorage.png
 iconExtraColor: #FFFFFFFF
@@ -76,7 +76,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helptech.png
 iconExtraColor: #FFFFFFFF
@@ -87,7 +87,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helpdefense.png
 iconExtraColor: #FFFFFFFF
@@ -98,7 +98,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helpexpand.png
 iconExtraColor: #FFFFFFFF
@@ -109,7 +109,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helpcivilian.png
 iconExtraColor: #FFFFFFFF
@@ -120,7 +120,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/icon_ix.png
 iconExtraColor: #FFFFFFFF
@@ -131,7 +131,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/icon_palace.png
 iconExtraColor: #FFFFFFFF
@@ -142,7 +142,7 @@ pos: 9997
 buildSpeed: 0s
 isVisible: if self.hasFlag(id=27)
 isActive: false
-displayType: infoOnly
+displayType: infoOnlyNoBox
 iconImage: SHARED:blank.png
 iconExtraImage: ROOT:Data/Graphics/Icons/Help/icon_helpsuperweapon.png
 iconExtraColor: #FFFFFFFF
