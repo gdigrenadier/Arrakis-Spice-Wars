@@ -4,16 +4,16 @@
 displayText: Construction Yard
 displayDescription: [Atreides]\nA Construction Yard is required to build any new structures.\nIt contains all materials required for building structures on Dune.
 
-[template_spiceTraderDesc]
+[template_atreidesSpiceTraderDesc]
 displayText: Spice Trader
 displayDescription: Buildings that trade for spice with Arrakis' natives. -Generates 5 spice every second.
 
-[template_advancedSiloDesc]
+[template_atreidesAdvancedSiloDesc]
 displayText: Advanced Silo
 displayDescription: Advanced Silos hold more harvested spice than a basic silo.\nWhen the Refinery completes the conversion process, it automatically distributes the spice evenly among the silos. 
 
 # Defences
 
-[template_sonicTurretDesc]
+[template_atreidesSonicTurretDesc]
 displayText: Sonic Turret
 displayDescription: Ground Based Turret armed with Sonic Weaponry.\nThis stationary turret fires Sonic Waves which are capable of ripping apart solid objects.

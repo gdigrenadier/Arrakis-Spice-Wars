@@ -4,19 +4,19 @@
 displayText: Raider
 displayDescription: The Raider is similar to the standard Trike, except it has the ability to stealth itself when not in combat.
 
-[template_lightTankDesc]
+[template_ordosLightTankDesc]
 displayText: Light Tank
 displayDescription: The light tank is a lightly armored, tracked tank firing high explosive rounds.\nIt is faster than the other tanks.
 
-[template_hoverTankDesc]
+[template_ordosLightHTankDesc]
 displayText: Hover Light Tank
 displayDescription: The Hover Light Tank is a lightly armored, hovering tank firing high explosive rounds.\nIt is much faster than the other tanks.
 
-[template_laserTankDesc]
+[template_ordosLightLTankDesc]
 displayText: Laser Light Tank
 displayDescription: The Laser Light Tank is a lightly armored, tracked tank that uses lasers to defeat its enemy.
 
-[template_laserHoverTankDesc]
+[template_ordosLightHLTankDesc]
 displayText: H.L Light Tank
 displayDescription: The H.L Light Tank is a lightly armored, hovering tank that uses lasers to defeat its enemy.\nIt is much faster than the other tanks.
 
@@ -28,6 +28,6 @@ displayDescription: The Stealth Tank is a lightly armored, tracked tank that can
 displayText: Stealth Harvester
 displayDescription: Ordos' Stealth Harvester. It has the ability to become stealthed which allows it to harvest without being easily noticed. \nThe Harvester seperates spice from the sand.\nUnusable sand is then dumped through the exhaust system.\nOnce filled, the Harvester will automatically take raw spice to the Refinery for processing.
 
-[template_ordosUltravioletDesc]
-displayText: Ultraviolet Artillery
-displayDescription: The Ordos Ultraviolet Artillery is a a immensely long ranged artillery unit.\nThe Ultraviolet Artillery can cause immense damage at long ranges. Their main drawback is their slowness and lack of armour
+[template_ordosUltraviolentDesc]
+displayText: Ultraviolent Artillery
+displayDescription: The Ordos Ultraviolent Artillery is a a immensely long ranged artillery unit.\nThe Ultraviolent Artillery can cause immense damage at long ranges. Their main drawback is their slowness and lack of armour

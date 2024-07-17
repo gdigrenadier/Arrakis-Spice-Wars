@@ -76,7 +76,7 @@ ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='s
 
 [action_buildAdvSilo]
 @copyFromSection: template_actionQueueBuilding, template_requiresRefinery
-@define target: atreidesAdvSilo
+@define target: atreidesAdvancedSilo
 @define flagId: 6
 streamingCost: Spice=150
 buildSpeed: 6s
@@ -86,7 +86,7 @@ ai_isHighPriority: if self.isResourceLargerThan( source='Spice',compareTarget='s
 
 [canBuild_placeAdvSilo]
 @copyFromSection: template_placeBuilding
-@define target: atreidesAdvSilo
+@define target: atreidesAdvancedSilo
 @define flagId: 6
 
 [action_buildOutpost]
@@ -263,7 +263,7 @@ buildSpeed: 15s
 
 [action_buildSonicTurret]
 @copyFromSection: template_actionQueueBuilding, template_requiresHouseOfIX
-@define target: AtreidesSonicTurret
+@define target: atreidesSonicTurret
 @define flagId: 16
 streamingCost: Spice=500
 buildSpeed: 20s
@@ -273,7 +273,7 @@ isLockedAltMessage: The required research for this unit has not been completed.
 
 [canBuild_placeSonicTurret]
 @copyFromSection: template_placeBuilding
-@define target: AtreidesSonicTurret
+@define target: atreidesSonicTurret
 @define flagId: 16
 
 [action_buildDevastatorTurret]

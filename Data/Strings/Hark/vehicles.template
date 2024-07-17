@@ -1,18 +1,22 @@
 # Vehicles
 
-[template_heavyQuadDesc]
+[template_harkonnenHeavyQuadDesc]
 displayText: Heavy Quad
 displayDescription: The Heavy Quad is Harkonnen's version of the Quad. It is slightly more resiliant than the normal Quad and deals slightly more damage, but at the cost of it being worth more and being slightly slower.
 
-[template_heavyTankDesc]
+[template_harkonnenHeavyTankDesc]
 displayText: Heavy Tank
-displayDescription: The Heavy tank is a medium armored, tracked tank firing high explosive rounds from its two barrels.\nIt is slower than the combat tank but holds more firepower.
+displayDescription: The Heavy tank is a medium armored, tracked tank firing high explosive rounds from its two barrels.\nIt is slower than the Medium Tank but holds more firepower.
 
-[template_heavyHarvesterDesc]
+[template_harkonnenHeavyNTankDesc]
+displayText: Heavy Tank
+displayDescription: The Nuclear Heavy Tank is a heavy armored, tracked tank firing high explosive rounds from its two barrels.\nWith its nuclear engine it is as fast as the Medium Tank.
+
+[template_harkonnenHeavyHarvesterDesc]
 displayText: Heavy Harvester
 displayDescription: Harkonnen's Heavy harvester. Its fitted with more armour than the other harvesters. \nThe Harvester seperates spice from the sand.\nUnusable sand is then dumped through the exhaust system.\nOnce filled, the Harvester will automatically take raw spice to the Refinery for processing.
 
-[template_mobileAADesc]
+[template_harkonnenMobileAADesc]
 displayText: Mobile AA
 displayDescription: The Mobile AA acts as Harkonnen's Anti Air as a replacement for the Missile Tank. \nIt has missiles that are incredibly accurate and fast allowing their capabilities to be unmatched. \n It is faster then the average tank and has the ability to deny a larger area from Aircraft than the other factions Missile Tanks.
 
@@ -26,6 +30,6 @@ displayDescription: This titan of a tank is peak Harkonnen Engineering, its surp
 
 # Aircraft
 
-[template_gunshipDesc]
+[template_harkonnenGunshipDesc]
 displayText: Gunship
 displayDescription: The Gunship is a slow, tanky aircraft thats its highly effective against ground units.

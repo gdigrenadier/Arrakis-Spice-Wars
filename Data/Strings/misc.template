@@ -12,10 +12,6 @@ displayDescription: Selects House
 displayText: Outpost
 displayDescription: Calls Reinforcement
 
-[template_starportFrigateDesc]
-displayText: Frigate
-displayDescription: Used to Deliver the traded units \n -Cannot be attack
-
 [template_sandboxFrigateDesc]
 displayText: Sandbox Frigate
 displayDescription: Sandbox Unit\nCan't be attacked\nCan transport units too

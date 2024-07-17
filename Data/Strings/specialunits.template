@@ -7,3 +7,7 @@ displayDescription: Cracked
 [template_sandwormDesc]
 displayText: Sandworm
 displayDescription: The Sand Worms are indigenous to Dune.\nAttracted by vibrations, they frequent battlefields and often devour numerous combatants.\nSand Worms are almost impossible to destroy, have a voracious appetite, and will consume military hardware.
+
+[template_genericFrigateDesc]
+displayText: Frigate
+displayDescription: Used to Deliver the traded units \n -Cannot be attack

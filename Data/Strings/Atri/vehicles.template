@@ -1,16 +1,32 @@
 # Vehicles
 
-[template_advHarvesterDesc]
+[template_atreidesAdvancedHarvesterDesc]
 displayText: Advanced Harvester
 displayDescription: Atreides' advanced harvester. It allows for more spice collection than the other factions' harvesters. \nThe Harvester seperates spice from the sand.\nUnusable sand is then dumped through the exhaust system.\nOnce filled, the Harvester will automatically take raw spice to the Refinery for processing.
 
-[template_mediumTankDesc]
+[template_atreidesMediumTankDesc]
 displayText: Medium Tank
 displayDescription: The medium tank is a medium armored, tracked tank firing high explosive rounds.\nIt has average speed.
 
-[template_mirageTankDesc]
+[template_atreidesMediumALTankDesc]
+displayText: Medium Tank
+displayDescription: The medium tank is a medium armored, tracked tank firing high explosive rounds.\nIt has average speed.\nUpgraded with an autoloader.
+
+[template_atreidesMirageTankDesc]
 displayText: Mirage Tank
-displayDescription: The Mirage Tank is a vehicle that can disguise itself as common objects like spice when not moving. \nIt has a powerful cannon which can take enemies by surprise paired with its disguise ability.\nHiding it in Spice Fields will bring a advantage against the enemy.
+displayDescription: The Mirage Tank is a vehicle that can disguise itself as common objects like spice when not moving.\nIt has a powerful cannon which can take enemies by surprise paired with its disguise ability.\nHiding it in spice fields gives the opportunity to surpise the enemy.
+
+[template_atreidesMirageALTankDesc]
+displayText: Mirage Tank
+displayDescription: The Mirage Tank is a vehicle that can disguise itself as common objects like spice when not moving.\nIt has a powerful cannon which can take enemies by surprise paired with its disguise ability.\nHiding it in spice fields gives the opportunity to surpise the enemy.\nUpgraded with an autoloader.
+
+[template_atreidesPredatorTankDesc]
+displayText: Predator Tank
+displayDescription: The Predator tank is a medium armored, tracked tank that utilises railguns.\nIt has average speed.
+
+[template_atreidesPredatorALTankDesc]
+displayText: Predator Tank
+displayDescription: The Predator tank is a medium armored, tracked tank that utilises railguns.\nIt has average speed.\nUpgraded with an autoloader.
 
 [template_atreidesSonicTankDesc]
 displayText: Sonic Tank
@@ -22,6 +38,6 @@ displayDescription: Developed by the Atreides, this enhanced version of the soni
 
 # Aircraft
 
-[template_ornithopterDesc]
+[template_atreidesOrnithopterDesc]
 displayText: Ornithopter
 displayDescription: The Ornithopter is a lightly armored aircraft capable of firing battle support rockets.\nThe Ornithopter utilizes the unusual M-Flex technology which creates the distinctive "flapping" motion of the wings.\nIt is the highly maneuverable and the fastest aircraft on Dune.

@@ -4,12 +4,12 @@
 displayText: Construction Yard
 displayDescription: [Ordos]\nA Construction Yard is required to build any new structures.\nIt contains all materials required for building structures on Dune.
 
-[template_sgenDesc]
+[template_ordosStealthGeneratorDesc]
 displayText: Stealth Generator
 displayDescription: Stealth Generators are capable of giving buildings stealth within its range.\nVehicles and Infantry cannot be stealthed.
 
 # Defences
 
-[template_ultraviolentTurretDesc]
+[template_ordosUltraviolentTurretDesc]
 displayText: Ultraviolent Turret
 displayDescription: Ground Based Turret armed with the Ultraviolent Artillery System.\nThis stationary turret fires Deviator Missiles which are capable of confusing the enemy, turning them to your side.

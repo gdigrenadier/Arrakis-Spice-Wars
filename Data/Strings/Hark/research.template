@@ -6,16 +6,8 @@ description: Begins research on Devastator Shell Technology.\nThis allows the co
 
 [template_mammothUpgradeDesc]
 text: Mammoth Research
-description: Begins research on the Mammoth.\nThis allows the construction of the Mammoth Super Heavy Tank, a vehicle stronger than anything on Arrakis.
+description: Begins research on the Mammoth.\nThis allows the construction of the Mammoth Super Heavy Tank, the most powerful tank on Arrakis.
 
 [template_nukeTankUpgradeDesc]
 text: Nuclear Engines Research
-description: Begins research on Nuclear Engine Technology.\nThis gives basic tanks Nuclear Engines, which increases speed.
-
-[template_stealthUpgradeDesc]
-text: Stealth System Research
-description: Begins research on Stealth Technology.\nThis allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
-
-[template_stealthUpgradeDesc]
-text: Stealth System Research
-description: Begins research on Stealth Technology.\nThis allows the construction of Buildings and Vehicles that are capable of using Stealth to become invisible to the enemy.
+description: Begins research on Nuclear Engine Technology.\nThis gives basic tanks nuclear engines, which increases speed.

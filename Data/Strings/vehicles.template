@@ -1,25 +1,25 @@
 # Shared Vehicles
 
-[template_trikeDesc]
+[template_genericTrikeDesc]
 displayText: Trike
 displayDescription: The Trike is a lightly armored, three-wheeled, vehicle which fires armor piercing rounds.\nIt has limited firing range, but moves rapidly.
 
-[template_quadDesc]
+[template_genericQuadDesc]
 displayText: Quad
 displayDescription: The Quad is a lightly armored, four-wheeled vehicle which fires armor piercing incendiary rounds.\nThe slower Quad is stronger than the Trike in both armor and firepower.
 
-[template_mcvDesc]
+[template_genericMCVDesc]
 displayText: MCV
 displayDescription: The MCV scout vehicle is used to find rock outcroppings suitable for erection of new installations.\nUpon locating an appropriate site the MCV will transform itself to a Construction Yard.
 
-[template_missileLauncherDesc]
+[template_genericMissileLauncherDesc]
 displayText: Missile Tank
 displayDescription: The Missile Tank fires a battle support missle similar to the Rocket Turret.\nThe Missile Tank has long range strike capability, and although inaccurate, it fires two missiles for greater coverage, and moves faster than the heavier battle tanks.
 
-[template_siegeTankDesc]
+[template_genericSiegeTankDesc]
 displayText: Siege Tank
 displayDescription: The Siege Tank is a tracked vehicle with dual cannons.\nThese cannons fire armor piercing incendiary rounds, giving it more than twice the firepower of the smaller Combat tank.\nIt has twice the armor, and is slower than most tanks.
 
-[template_carryallDesc]
+[template_genericCarryallDesc]
 displayText: Carryall
 displayDescription: The Carryall is a lightly armored aircraft with no weapons.\nIt is able to lift and transport heavy machinery and vehicles.\nCarryalls are utilized primarily for transporting Harvesters.
