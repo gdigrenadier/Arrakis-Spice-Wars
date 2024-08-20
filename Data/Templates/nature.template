@@ -1,0 +1,32 @@
+[core]
+price: 0
+maxHp: 20
+mass: 9999
+radius: 0
+stayNeutral: true
+createNeutral: true
+fogOfWarSightRange: 0
+showOnMinimap: false
+isBio: true
+isBuilding: true
+explodeOnDeath:false
+isUnselectable: true
+isUnselectableAsTarget: true
+showInEditor: false
+
+[graphics]
+frame_width: 20
+frame_height: 20
+default_frame: 0
+image_wreak: NONE
+icon_zoomed_out_neverShow: true
+image_shadow: NONE
+
+[attack]
+canAttack: false
+
+[movement]
+movementType: NONE
+
+[ai]
+notPassivelyTargetedByOtherUnits: true

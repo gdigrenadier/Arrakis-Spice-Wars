@@ -15,3 +15,11 @@ displayDescription: A Solar Array paired with some batteries. Used primarily by 
 [template_civilianContainerDesc]
 displayText: Civilian Containers
 displayDescription: Containers used by businesses and the population of Arrakis.
+
+[template_civilianAntiAirEmplacementDesc]
+displayText: Tech Anti-Air Emplacement
+displayDescription: A capturable anti-air emplacement. Does not provide build space.
+
+[template_civilianGreatWallDesc]
+displayText: Great Wall
+displayDescription: A massive near-invulnerable wall.
